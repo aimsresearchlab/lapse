@@ -29,34 +29,99 @@ exploratory/   follow-up experiments: installed pipelines, reader tasks,
 MANIFEST.sha256  SHA-256 of every data file, results file, and script
 ```
 
-## Reproducing the numbers
+## Install
 
-The confirmatory and secondary statistics regenerate from the committed
-scored traces with the standard library only, and match the frozen outputs
-byte for byte:
+Python 3.10 or newer. The scorer and analyses use only the standard library;
+`openai` is needed to query models and `pytest` to run the tests.
+
+```bash
+git clone https://github.com/aimsresearchlab/lapse.git
+cd lapse
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+The follow-up experiments under `exploratory/` have their own dependencies
+(mem0, graphiti-core, letta, scipy); their scripts name them at the top.
+
+## Reproduce the paper's numbers
+
+No model calls. Each command prints nothing on success except the test count:
 
 ```bash
 python3 tools/analysis_v2.py | cmp - results/ANALYSIS_V2_2026-08-27.txt
 python3 tools/analysis_v2_secondary.py | cmp - results/ANALYSIS_V2_SECONDARY_2026-08-27.txt
-python3 -m pytest -q tests          # 85 tests
-shasum -a 256 -c MANIFEST.sha256
+python3 -m pytest -q tests                 # 85 passed
+shasum -a 256 -c --quiet MANIFEST.sha256
 ```
 
-Rescoring a raw trace:
+## Use the stimuli
+
+Each row of `data/stimuli_v2.jsonl` is one model call. Fill the manifest's
+system template with the row's conversation history and send the row's query
+as the user turn:
+
+```python
+import json
+
+manifest = json.load(open("data/manifest_v2.json"))
+rows = [json.loads(line) for line in open("data/stimuli_v2.jsonl")]
+
+row = next(r for r in rows if r["component"] == "e1_primary")
+messages = [
+    {"role": "system", "content": manifest["system_template"].format(history=row["history"])},
+    {"role": "user", "content": row["query"]},
+]
+```
+
+Skip rows with `component == "v1_grid_extra"`; they exist only so the tests
+can check v2 against the earlier build. Field meanings are in
+`data/README.md`.
+
+## Evaluate a new model
+
+The committed stimuli are dated for an evaluation on 2026-08-11. A new run
+should rebuild them for the day it runs, so that "today" in the system prompt
+matches the session dates. The builder writes into `data/` next to `tools/`,
+so work in a copy of `tools/` and keep the reference build intact:
 
 ```bash
-python3 tools/score.py traces/<run>.jsonl
+mkdir -p ~/lapse-run && cp -r tools ~/lapse-run/ && cd ~/lapse-run
+
+# 1. Build stimuli dated today (5,916 rows, deterministic).
+python3 tools/build_stimuli_v2.py --eval-date $(date +%F)
+
+# 2. Check the call count (and, on OpenRouter, the projected cost).
+python3 tools/run_pilot_v2.py --stimuli data/stimuli_v2.jsonl \
+    --manifest data/manifest_v2.json --models <model-id> --dry
+
+# 3. Run. --smoke sends a 289-call dev subset; --full sends all 6,008 calls
+#    and requires --i-have-user-approval as a guard against accidental spend.
+export OPENROUTER_API_KEY=...
+python3 tools/run_pilot_v2.py --stimuli data/stimuli_v2.jsonl \
+    --manifest data/manifest_v2.json --models <model-id> \
+    --full --i-have-user-approval          # writes traces/run-v2-full-<time>.jsonl
+
+# 4. Score, then report the paper's per-model statistics.
+python3 tools/score.py traces/run-v2-full-<time>.jsonl     # writes .scored.jsonl
+python3 tools/evaluate.py traces/run-v2-full-<time>.scored.jsonl
 ```
 
-Rerunning inference is not expected to reproduce byte-identical responses.
+For a local OpenAI-compatible server (for example `vllm serve`), add
+`--base-url http://localhost:8000/v1`; set `LOCAL_API_KEY` if the server
+needs one, and add `--disable-thinking` for Qwen3-style chat templates. A run
+that stops partway resumes with `--resume traces/<run>.jsonl`.
 
-## Running LAPSE on a new model
+The first line of `evaluate.py` output is the main result: how many matched
+progressive/simple pairs had only the progressive note flattened (`b`) versus
+only the simple one (`c`). `score.py` also lists responses its rules could not
+label (`RESIDUAL`); these are excluded from the tests. The paper adds a
+second, model-based detector (`tools/judge.py`); it is optional for a new
+model.
 
-`tools/run_pilot_v2.py` sends the stimuli to an OpenRouter model or a local
-vLLM server (`--base-url`). `--dry` estimates cost without calls. The builder
-writes into `data/`; build new run stimuli in a scratch copy of `tools/` so the
-reference build (eval-date 2026-08-11) stays intact. Usage details are in each
-script's docstring.
+Rerunning a paper model is not expected to reproduce byte-identical
+responses. Rescoring a committed raw trace with `tools/score.py` reproduces
+the committed `.scored.jsonl` exactly.
 
 ## Model columns
 
