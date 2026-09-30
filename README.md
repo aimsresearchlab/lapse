@@ -14,6 +14,14 @@ simple-present match was kept in 244 of 381 matched pairs, and never the
 reverse (DeepSeek V4 Flash 104/0 of 128, GPT-5.6 Luna 79/0 of 128, GLM-5.2
 61/0 of 125). The installed mem0, Graphiti, and Letta pipelines flatten too.
 
+<p align="center">
+  <img src="docs/img/overview.png" alt="A user says &quot;I'm working at Corvida Analytics.&quot; The memory writer stores &quot;User works at Corvida Analytics as of August 27, 2026&quot;: the progressive, which marks an ongoing event, becomes a simple-present standing fact. LAPSE tests the write (was the temporal form preserved?) separately from the read (does a later reader use the form that survived?)." width="100%">
+</p>
+
+<p align="center">
+  <img src="docs/img/direction-frames.png" alt="(a) Across all 11 model configurations, 807 matched pairs had only the progressive destroyed and 2 had only the simple form destroyed. (b) Progressive destruction per frame for the three confirmatory writers under the controlled prompt, and temporal cues lost by the installed mem0 pipeline." width="100%">
+</p>
+
 ## Contents
 
 ```
@@ -133,26 +141,6 @@ the committed `.scored.jsonl` exactly.
 | Frontier subset | Claude Sonnet 5, Gemini 3.1 Pro, Grok 4.6, Qwen3.8-Max | 736 calls each |
 
 All runs used temperature 0 and the frozen generator v2.0.1.
-
-## Exploratory experiments
-
-| Directory | What it tests |
-|---|---|
-| `mem0-pipeline-2026-08-27` | Installed mem0 full stack, 64 records |
-| `mem0-scale-2026-09-12` | Installed mem0, 128 statements x 4 forms, DeepSeek writer |
-| `mem0-scale-gemini-2026-09-22` | Same inputs, Gemini 3 Flash writer |
-| `partd-systems-2026-09-02` | Installed Graphiti and Letta, 162 records each |
-| `read-time-ladder-2026-09-08` | Dated-note reader task, 1,152 items per reader |
-| `unrecoverability-2026-09-08` | Whether readers recover the cue after mem0, Graphiti, or Letta writes |
-| `downstream-tool-2026-09-11` | Verification-tool task, rounds R0 to R2 |
-| `downstream-tool-age-2026-09-12` | Verification-tool task by note age |
-| `downstream-tool-powered-2026-09-22` | Powered verification-tool run with preregistered cells |
-| `qualifier-ablation-2026-09-12` | Writer behavior with temporal qualifiers added or removed |
-| `reanalysis-2026-09-12` | Zero-cost reanalyses: gap gradient, replicates, jackknife, multiplicity |
-
-Some exploratory manifests and traces record absolute paths from the machine
-that produced them. They are left unedited so their hashes still match the
-paper's audit ledger.
 
 ## Not included
 
