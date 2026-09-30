@@ -1,0 +1,37 @@
+{
+  "built": "2026-09-12",
+  "experiment": "qualifier-ablation",
+  "forms": [
+    "prog",
+    "simple",
+    "simple_fornow",
+    "simple_atm"
+  ],
+  "markers": {
+    "simple_atm": " at the moment",
+    "simple_fornow": " for now"
+  },
+  "max_tokens": 350,
+  "models": [
+    "deepseek/deepseek-v4-flash",
+    "openai/gpt-5.6-luna",
+    "z-ai/glm-5.2"
+  ],
+  "n_stimuli": 512,
+  "provider_rule": {
+    "allow_fallbacks": false,
+    "quantizations": [
+      "fp8",
+      "bf16",
+      "fp16",
+      "fp32",
+      "unknown"
+    ]
+  },
+  "session_date": "2026-01-10",
+  "source_sha256": "87561af0713a9fff6bb36cfb993fc6b51c8b9939d96f7f98562d2b90d534fe32",
+  "source_stimuli": "/Users/vein/Documents/research/aspect-persistence/data/stimuli_v2.jsonl",
+  "stimuli_sha256": "f21d5384fc2b817865502d0abab75ac0dd8b0b60df8d26e7cb26bbb5fd7d20e5",
+  "system_template": "You are a personal assistant with long-term memory of your conversations with the user. Today's date: 2026-09-12. Relevant excerpts from your conversation history are shown below.\n\n--- Conversation history ---\n{history}\n--- End of history ---",
+  "temperature": 0
+}

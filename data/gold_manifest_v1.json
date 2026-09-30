@@ -1,0 +1,47 @@
+{
+ "seed": 20260813,
+ "n_total": 250,
+ "tiers": {
+  "A_forced_label": 99,
+  "B_disagreement": 24,
+  "C_v2_shapes": 35,
+  "D_fill": 92
+ },
+ "sources": {
+  "v1_scored": {
+   "path": "traces/run-full-20260812-002604.scored.jsonl",
+   "sha16": "eda8d0147d694efd"
+  },
+  "v1_judged": {
+   "path": "traces/run-full-20260812-002604.scored.judged.jsonl",
+   "sha16": "262a89ba961ac20a"
+  },
+  "v2_smoke_scored": {
+   "path": "traces/run-v2-smoke-20260812-202448.scored.jsonl",
+   "sha16": "ced05d2b7680535e"
+  }
+ },
+ "cascade_label_dist": {
+  "PROCEED-WITH-CAVEAT": 80,
+  "PROCEED": 146,
+  "HEDGE": 10,
+  "TEMPLATE": 12,
+  "CONFAB-COMMIT": 2
+ },
+ "form_dist": {
+  "perf_prog": 4,
+  "bound": 92,
+  "prog": 87,
+  "simple": 67
+ },
+ "arm_dist": {
+  "behavioral": 111,
+  "l2e2": 70,
+  "e2": 69
+ },
+ "source_dist": {
+  "v2smoke": 35,
+  "v1": 215
+ },
+ "note": "Oversamples non-PROCEED labels and detector disagreements by design (AbstentionBench-style stratification on predicted label); report per-stratum agreement alongside overall kappa."
+}

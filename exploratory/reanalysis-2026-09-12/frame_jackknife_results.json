@@ -1,0 +1,1073 @@
+{
+  "columns": [
+    {
+      "tier": "confirmatory",
+      "trace": "run-v2-full-20260825-010312",
+      "model": "deepseek/deepseek-v4-flash",
+      "confirmatory": {
+        "n": 128,
+        "b": 104,
+        "c": 0,
+        "p": 4.930380657631324e-32
+      },
+      "leave_one_frame_out": {
+        "affiliate_role": {
+          "n": 112,
+          "b": 91,
+          "c": 0,
+          "p": 4.0389678347315804e-28
+        },
+        "class": {
+          "n": 112,
+          "b": 91,
+          "c": 0,
+          "p": 4.0389678347315804e-28
+        },
+        "equipment": {
+          "n": 112,
+          "b": 88,
+          "c": 0,
+          "p": 3.2311742677852644e-27
+        },
+        "household": {
+          "n": 112,
+          "b": 97,
+          "c": 0,
+          "p": 6.310887241768095e-30
+        },
+        "lodging": {
+          "n": 112,
+          "b": 88,
+          "c": 0,
+          "p": 3.2311742677852644e-27
+        },
+        "project": {
+          "n": 112,
+          "b": 97,
+          "c": 0,
+          "p": 6.310887241768095e-30
+        },
+        "vehicle": {
+          "n": 112,
+          "b": 88,
+          "c": 0,
+          "p": 3.2311742677852644e-27
+        },
+        "workplace": {
+          "n": 112,
+          "b": 88,
+          "c": 0,
+          "p": 3.2311742677852644e-27
+        }
+      },
+      "leave_one_frame_out_worst_p": 3.2311742677852644e-27,
+      "leave_one_frame_out_min_direction_margin_b_minus_c": 88,
+      "leave_two_frames_out_vehicle_workplace": {
+        "n": 96,
+        "b": 72,
+        "c": 0,
+        "p": 2.117582368135751e-22
+      },
+      "bootstrap_frame_level": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.6484375,
+          0.953125
+        ],
+        "risk_diff_median": 0.8125,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "bootstrap_cluster_within_frame": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.7578125,
+          0.8671875
+        ],
+        "risk_diff_median": 0.8125,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "carrier_e1_b_c": {
+        "c1_fact_final": {
+          "n": 40,
+          "b": 29,
+          "c": 0,
+          "p": 1.862645149230957e-09
+        },
+        "c2_bare": {
+          "n": 40,
+          "b": 28,
+          "c": 0,
+          "p": 3.725290298461914e-09
+        },
+        "c3_embedded_mid": {
+          "n": 40,
+          "b": 29,
+          "c": 0,
+          "p": 1.862645149230957e-09
+        },
+        "c4_formal": {
+          "n": 40,
+          "b": 24,
+          "c": 0,
+          "p": 5.960464477539063e-08
+        },
+        "c5_fact_list": {
+          "n": 40,
+          "b": 23,
+          "c": 0,
+          "p": 1.1920928955078125e-07
+        }
+      }
+    },
+    {
+      "tier": "confirmatory",
+      "trace": "run-v2-full-20260825-010323",
+      "model": "openai/gpt-5.6-luna",
+      "confirmatory": {
+        "n": 128,
+        "b": 79,
+        "c": 0,
+        "p": 1.6543612251060553e-24
+      },
+      "leave_one_frame_out": {
+        "affiliate_role": {
+          "n": 112,
+          "b": 63,
+          "c": 0,
+          "p": 1.0842021724855044e-19
+        },
+        "class": {
+          "n": 112,
+          "b": 76,
+          "c": 0,
+          "p": 1.3234889800848443e-23
+        },
+        "equipment": {
+          "n": 112,
+          "b": 63,
+          "c": 0,
+          "p": 1.0842021724855044e-19
+        },
+        "household": {
+          "n": 112,
+          "b": 75,
+          "c": 0,
+          "p": 2.6469779601696886e-23
+        },
+        "lodging": {
+          "n": 112,
+          "b": 71,
+          "c": 0,
+          "p": 4.235164736271502e-22
+        },
+        "project": {
+          "n": 112,
+          "b": 79,
+          "c": 0,
+          "p": 1.6543612251060553e-24
+        },
+        "vehicle": {
+          "n": 112,
+          "b": 63,
+          "c": 0,
+          "p": 1.0842021724855044e-19
+        },
+        "workplace": {
+          "n": 112,
+          "b": 63,
+          "c": 0,
+          "p": 1.0842021724855044e-19
+        }
+      },
+      "leave_one_frame_out_worst_p": 1.0842021724855044e-19,
+      "leave_one_frame_out_min_direction_margin_b_minus_c": 63,
+      "leave_two_frames_out_vehicle_workplace": {
+        "n": 96,
+        "b": 47,
+        "c": 0,
+        "p": 7.105427357601002e-15
+      },
+      "bootstrap_frame_level": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.3359375,
+          0.8984375
+        ],
+        "risk_diff_median": 0.6171875,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "bootstrap_cluster_within_frame": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.5703125,
+          0.6640625
+        ],
+        "risk_diff_median": 0.6171875,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "carrier_e1_b_c": {
+        "c1_fact_final": {
+          "n": 32,
+          "b": 27,
+          "c": 0,
+          "p": 7.450580596923828e-09
+        },
+        "c2_bare": {
+          "n": 40,
+          "b": 28,
+          "c": 0,
+          "p": 3.725290298461914e-09
+        },
+        "c3_embedded_mid": {
+          "n": 36,
+          "b": 26,
+          "c": 0,
+          "p": 1.4901161193847656e-08
+        },
+        "c4_formal": {
+          "n": 39,
+          "b": 25,
+          "c": 0,
+          "p": 2.9802322387695312e-08
+        },
+        "c5_fact_list": {
+          "n": 39,
+          "b": 22,
+          "c": 0,
+          "p": 2.384185791015625e-07
+        }
+      }
+    },
+    {
+      "tier": "confirmatory",
+      "trace": "run-v2-full-20260825-234313",
+      "model": "z-ai/glm-5.2",
+      "confirmatory": {
+        "n": 125,
+        "b": 61,
+        "c": 0,
+        "p": 4.336808689942018e-19
+      },
+      "leave_one_frame_out": {
+        "affiliate_role": {
+          "n": 110,
+          "b": 54,
+          "c": 0,
+          "p": 5.551115123125783e-17
+        },
+        "class": {
+          "n": 110,
+          "b": 46,
+          "c": 0,
+          "p": 1.4210854715202004e-14
+        },
+        "equipment": {
+          "n": 109,
+          "b": 53,
+          "c": 0,
+          "p": 1.1102230246251565e-16
+        },
+        "household": {
+          "n": 109,
+          "b": 60,
+          "c": 0,
+          "p": 8.673617379884035e-19
+        },
+        "lodging": {
+          "n": 109,
+          "b": 58,
+          "c": 0,
+          "p": 3.469446951953614e-18
+        },
+        "project": {
+          "n": 109,
+          "b": 58,
+          "c": 0,
+          "p": 3.469446951953614e-18
+        },
+        "vehicle": {
+          "n": 109,
+          "b": 48,
+          "c": 0,
+          "p": 3.552713678800501e-15
+        },
+        "workplace": {
+          "n": 110,
+          "b": 50,
+          "c": 0,
+          "p": 8.881784197001252e-16
+        }
+      },
+      "leave_one_frame_out_worst_p": 1.4210854715202004e-14,
+      "leave_one_frame_out_min_direction_margin_b_minus_c": 46,
+      "leave_two_frames_out_vehicle_workplace": {
+        "n": 94,
+        "b": 37,
+        "c": 0,
+        "p": 7.275957614183426e-12
+      },
+      "bootstrap_frame_level": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.2755905511811024,
+          0.7096774193548387
+        ],
+        "risk_diff_median": 0.48800000000000004,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "bootstrap_cluster_within_frame": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.424,
+          0.552
+        ],
+        "risk_diff_median": 0.48800000000000004,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "carrier_e1_b_c": {
+        "c1_fact_final": {
+          "n": 40,
+          "b": 21,
+          "c": 0,
+          "p": 4.76837158203125e-07
+        },
+        "c2_bare": {
+          "n": 40,
+          "b": 22,
+          "c": 0,
+          "p": 2.384185791015625e-07
+        },
+        "c3_embedded_mid": {
+          "n": 26,
+          "b": 13,
+          "c": 0,
+          "p": 0.0001220703125
+        },
+        "c4_formal": {
+          "n": 40,
+          "b": 19,
+          "c": 0,
+          "p": 1.9073486328125e-06
+        },
+        "c5_fact_list": {
+          "n": 40,
+          "b": 21,
+          "c": 0,
+          "p": 4.76837158203125e-07
+        }
+      }
+    },
+    {
+      "tier": "frontier-subset",
+      "trace": "run-v2-full-frontier-sonnet5-20260826-104357",
+      "model": "anthropic/claude-sonnet-5",
+      "confirmatory": {
+        "n": 128,
+        "b": 64,
+        "c": 2,
+        "p": 2.99781900692242e-17
+      },
+      "leave_one_frame_out": {
+        "affiliate_role": {
+          "n": 112,
+          "b": 55,
+          "c": 2,
+          "p": 1.1476930517062556e-14
+        },
+        "class": {
+          "n": 112,
+          "b": 48,
+          "c": 2,
+          "p": 1.1333156635373598e-12
+        },
+        "equipment": {
+          "n": 112,
+          "b": 64,
+          "c": 1,
+          "p": 1.7889335846010823e-18
+        },
+        "household": {
+          "n": 112,
+          "b": 64,
+          "c": 2,
+          "p": 2.99781900692242e-17
+        },
+        "lodging": {
+          "n": 112,
+          "b": 58,
+          "c": 2,
+          "p": 1.5881393422567669e-15
+        },
+        "project": {
+          "n": 112,
+          "b": 62,
+          "c": 1,
+          "p": 6.938893903907228e-18
+        },
+        "vehicle": {
+          "n": 112,
+          "b": 48,
+          "c": 2,
+          "p": 1.1333156635373598e-12
+        },
+        "workplace": {
+          "n": 112,
+          "b": 49,
+          "c": 2,
+          "p": 5.893063814710331e-13
+        }
+      },
+      "leave_one_frame_out_worst_p": 1.1333156635373598e-12,
+      "leave_one_frame_out_min_direction_margin_b_minus_c": 46,
+      "leave_two_frames_out_vehicle_workplace": {
+        "n": 96,
+        "b": 33,
+        "c": 2,
+        "p": 1.8364517018198967e-08
+      },
+      "bootstrap_frame_level": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.1875,
+          0.78125
+        ],
+        "risk_diff_median": 0.484375,
+        "ratio_ci95": [
+          0.875,
+          1.0
+        ],
+        "ratio_median": 0.9710144927536232,
+        "n_undefined_ratio_replicates": 0
+      },
+      "bootstrap_cluster_within_frame": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.4296875,
+          0.5390625
+        ],
+        "risk_diff_median": 0.484375,
+        "ratio_ci95": [
+          0.9253731343283582,
+          1.0
+        ],
+        "ratio_median": 0.9701492537313433,
+        "n_undefined_ratio_replicates": 0
+      },
+      "carrier_e1_b_c": {
+        "c1_fact_final": {
+          "n": 0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "c2_bare": {
+          "n": 0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "c3_embedded_mid": {
+          "n": 0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "c4_formal": {
+          "n": 0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        },
+        "c5_fact_list": {
+          "n": 0,
+          "b": 0,
+          "c": 0,
+          "p": 1.0
+        }
+      }
+    },
+    {
+      "tier": "local",
+      "trace": "run-v2-full-local-qwen3-8b-20260813-060538",
+      "model": "local/qwen3-8b",
+      "confirmatory": {
+        "n": 128,
+        "b": 68,
+        "c": 0,
+        "p": 3.3881317890172014e-21
+      },
+      "leave_one_frame_out": {
+        "affiliate_role": {
+          "n": 112,
+          "b": 64,
+          "c": 0,
+          "p": 5.421010862427522e-20
+        },
+        "class": {
+          "n": 112,
+          "b": 68,
+          "c": 0,
+          "p": 3.3881317890172014e-21
+        },
+        "equipment": {
+          "n": 112,
+          "b": 52,
+          "c": 0,
+          "p": 2.220446049250313e-16
+        },
+        "household": {
+          "n": 112,
+          "b": 52,
+          "c": 0,
+          "p": 2.220446049250313e-16
+        },
+        "lodging": {
+          "n": 112,
+          "b": 67,
+          "c": 0,
+          "p": 6.776263578034403e-21
+        },
+        "project": {
+          "n": 112,
+          "b": 68,
+          "c": 0,
+          "p": 3.3881317890172014e-21
+        },
+        "vehicle": {
+          "n": 112,
+          "b": 53,
+          "c": 0,
+          "p": 1.1102230246251565e-16
+        },
+        "workplace": {
+          "n": 112,
+          "b": 52,
+          "c": 0,
+          "p": 2.220446049250313e-16
+        }
+      },
+      "leave_one_frame_out_worst_p": 2.220446049250313e-16,
+      "leave_one_frame_out_min_direction_margin_b_minus_c": 52,
+      "leave_two_frames_out_vehicle_workplace": {
+        "n": 96,
+        "b": 37,
+        "c": 0,
+        "p": 7.275957614183426e-12
+      },
+      "bootstrap_frame_level": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.21875,
+          0.859375
+        ],
+        "risk_diff_median": 0.53125,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 2
+      },
+      "bootstrap_cluster_within_frame": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.5,
+          0.5625
+        ],
+        "risk_diff_median": 0.53125,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "carrier_e1_b_c": {
+        "c1_fact_final": {
+          "n": 40,
+          "b": 19,
+          "c": 0,
+          "p": 1.9073486328125e-06
+        },
+        "c2_bare": {
+          "n": 40,
+          "b": 24,
+          "c": 0,
+          "p": 5.960464477539063e-08
+        },
+        "c3_embedded_mid": {
+          "n": 40,
+          "b": 22,
+          "c": 0,
+          "p": 2.384185791015625e-07
+        },
+        "c4_formal": {
+          "n": 40,
+          "b": 20,
+          "c": 0,
+          "p": 9.5367431640625e-07
+        },
+        "c5_fact_list": {
+          "n": 40,
+          "b": 31,
+          "c": 0,
+          "p": 4.656612873077393e-10
+        }
+      }
+    },
+    {
+      "tier": "local",
+      "trace": "run-v2-full-local-mistral-small-3.2-24b-20260813-064704",
+      "model": "local/mistral-small-3.2-24b-it",
+      "confirmatory": {
+        "n": 127,
+        "b": 72,
+        "c": 0,
+        "p": 2.117582368135751e-22
+      },
+      "leave_one_frame_out": {
+        "affiliate_role": {
+          "n": 111,
+          "b": 70,
+          "c": 0,
+          "p": 8.470329472543003e-22
+        },
+        "class": {
+          "n": 111,
+          "b": 72,
+          "c": 0,
+          "p": 2.117582368135751e-22
+        },
+        "equipment": {
+          "n": 111,
+          "b": 65,
+          "c": 0,
+          "p": 2.710505431213761e-20
+        },
+        "household": {
+          "n": 111,
+          "b": 56,
+          "c": 0,
+          "p": 1.3877787807814457e-17
+        },
+        "lodging": {
+          "n": 111,
+          "b": 57,
+          "c": 0,
+          "p": 6.938893903907228e-18
+        },
+        "project": {
+          "n": 112,
+          "b": 72,
+          "c": 0,
+          "p": 2.117582368135751e-22
+        },
+        "vehicle": {
+          "n": 111,
+          "b": 56,
+          "c": 0,
+          "p": 1.3877787807814457e-17
+        },
+        "workplace": {
+          "n": 111,
+          "b": 56,
+          "c": 0,
+          "p": 1.3877787807814457e-17
+        }
+      },
+      "leave_one_frame_out_worst_p": 1.3877787807814457e-17,
+      "leave_one_frame_out_min_direction_margin_b_minus_c": 56,
+      "leave_two_frames_out_vehicle_workplace": {
+        "n": 95,
+        "b": 40,
+        "c": 0,
+        "p": 9.094947017729282e-13
+      },
+      "bootstrap_frame_level": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.264,
+          0.8671875
+        ],
+        "risk_diff_median": 0.5634920634920635,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 2
+      },
+      "bootstrap_cluster_within_frame": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.5275590551181102,
+          0.6062992125984252
+        ],
+        "risk_diff_median": 0.5669291338582677,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "carrier_e1_b_c": {
+        "c1_fact_final": {
+          "n": 40,
+          "b": 24,
+          "c": 0,
+          "p": 5.960464477539063e-08
+        },
+        "c2_bare": {
+          "n": 40,
+          "b": 15,
+          "c": 0,
+          "p": 3.0517578125e-05
+        },
+        "c3_embedded_mid": {
+          "n": 40,
+          "b": 25,
+          "c": 0,
+          "p": 2.9802322387695312e-08
+        },
+        "c4_formal": {
+          "n": 40,
+          "b": 26,
+          "c": 0,
+          "p": 1.4901161193847656e-08
+        },
+        "c5_fact_list": {
+          "n": 40,
+          "b": 22,
+          "c": 0,
+          "p": 2.384185791015625e-07
+        }
+      }
+    },
+    {
+      "tier": "extension",
+      "trace": "run-v2-full-local-gpt-oss-20b-20260826-052612",
+      "model": "local/gpt-oss-20b",
+      "confirmatory": {
+        "n": 128,
+        "b": 85,
+        "c": 0,
+        "p": 2.5849394142282115e-26
+      },
+      "leave_one_frame_out": {
+        "affiliate_role": {
+          "n": 112,
+          "b": 85,
+          "c": 0,
+          "p": 2.5849394142282115e-26
+        },
+        "class": {
+          "n": 112,
+          "b": 73,
+          "c": 0,
+          "p": 1.0587911840678754e-22
+        },
+        "equipment": {
+          "n": 112,
+          "b": 74,
+          "c": 0,
+          "p": 5.293955920339377e-23
+        },
+        "household": {
+          "n": 112,
+          "b": 71,
+          "c": 0,
+          "p": 4.235164736271502e-22
+        },
+        "lodging": {
+          "n": 112,
+          "b": 69,
+          "c": 0,
+          "p": 1.6940658945086007e-21
+        },
+        "project": {
+          "n": 112,
+          "b": 85,
+          "c": 0,
+          "p": 2.5849394142282115e-26
+        },
+        "vehicle": {
+          "n": 112,
+          "b": 69,
+          "c": 0,
+          "p": 1.6940658945086007e-21
+        },
+        "workplace": {
+          "n": 112,
+          "b": 69,
+          "c": 0,
+          "p": 1.6940658945086007e-21
+        }
+      },
+      "leave_one_frame_out_worst_p": 1.6940658945086007e-21,
+      "leave_one_frame_out_min_direction_margin_b_minus_c": 69,
+      "leave_two_frames_out_vehicle_workplace": {
+        "n": 96,
+        "b": 53,
+        "c": 0,
+        "p": 1.1102230246251565e-16
+      },
+      "bootstrap_frame_level": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.359375,
+          0.921875
+        ],
+        "risk_diff_median": 0.671875,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "bootstrap_cluster_within_frame": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.6171875,
+          0.703125
+        ],
+        "risk_diff_median": 0.6640625,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "carrier_e1_b_c": {
+        "c1_fact_final": {
+          "n": 40,
+          "b": 26,
+          "c": 0,
+          "p": 1.4901161193847656e-08
+        },
+        "c2_bare": {
+          "n": 40,
+          "b": 31,
+          "c": 0,
+          "p": 4.656612873077393e-10
+        },
+        "c3_embedded_mid": {
+          "n": 40,
+          "b": 36,
+          "c": 0,
+          "p": 1.4551915228366852e-11
+        },
+        "c4_formal": {
+          "n": 40,
+          "b": 27,
+          "c": 0,
+          "p": 7.450580596923828e-09
+        },
+        "c5_fact_list": {
+          "n": 40,
+          "b": 17,
+          "c": 0,
+          "p": 7.62939453125e-06
+        }
+      }
+    },
+    {
+      "tier": "extension",
+      "trace": "run-v2-full-local-olmo-2-32b-instruct-20260826-060733",
+      "model": "local/olmo-2-32b-instruct",
+      "confirmatory": {
+        "n": 128,
+        "b": 76,
+        "c": 0,
+        "p": 1.3234889800848443e-23
+      },
+      "leave_one_frame_out": {
+        "affiliate_role": {
+          "n": 112,
+          "b": 76,
+          "c": 0,
+          "p": 1.3234889800848443e-23
+        },
+        "class": {
+          "n": 112,
+          "b": 76,
+          "c": 0,
+          "p": 1.3234889800848443e-23
+        },
+        "equipment": {
+          "n": 112,
+          "b": 60,
+          "c": 0,
+          "p": 8.673617379884035e-19
+        },
+        "household": {
+          "n": 112,
+          "b": 60,
+          "c": 0,
+          "p": 8.673617379884035e-19
+        },
+        "lodging": {
+          "n": 112,
+          "b": 62,
+          "c": 0,
+          "p": 2.168404344971009e-19
+        },
+        "project": {
+          "n": 112,
+          "b": 76,
+          "c": 0,
+          "p": 1.3234889800848443e-23
+        },
+        "vehicle": {
+          "n": 112,
+          "b": 60,
+          "c": 0,
+          "p": 8.673617379884035e-19
+        },
+        "workplace": {
+          "n": 112,
+          "b": 62,
+          "c": 0,
+          "p": 2.168404344971009e-19
+        }
+      },
+      "leave_one_frame_out_worst_p": 8.673617379884035e-19,
+      "leave_one_frame_out_min_direction_margin_b_minus_c": 60,
+      "leave_two_frames_out_vehicle_workplace": {
+        "n": 96,
+        "b": 46,
+        "c": 0,
+        "p": 1.4210854715202004e-14
+      },
+      "bootstrap_frame_level": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.234375,
+          0.875
+        ],
+        "risk_diff_median": 0.59375,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 4
+      },
+      "bootstrap_cluster_within_frame": {
+        "n_boot": 10000,
+        "risk_diff_ci95": [
+          0.5625,
+          0.6171875
+        ],
+        "risk_diff_median": 0.59375,
+        "ratio_ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio_median": 1.0,
+        "n_undefined_ratio_replicates": 0
+      },
+      "carrier_e1_b_c": {
+        "c1_fact_final": {
+          "n": 40,
+          "b": 27,
+          "c": 0,
+          "p": 7.450580596923828e-09
+        },
+        "c2_bare": {
+          "n": 40,
+          "b": 30,
+          "c": 0,
+          "p": 9.313225746154785e-10
+        },
+        "c3_embedded_mid": {
+          "n": 40,
+          "b": 31,
+          "c": 0,
+          "p": 4.656612873077393e-10
+        },
+        "c4_formal": {
+          "n": 40,
+          "b": 24,
+          "c": 1,
+          "p": 7.748603820800781e-07
+        },
+        "c5_fact_list": {
+          "n": 40,
+          "b": 12,
+          "c": 0,
+          "p": 0.000244140625
+        }
+      }
+    }
+  ],
+  "seed": 20260912,
+  "n_boot": 10000,
+  "input_hashes": {
+    "data/stimuli_v2.jsonl": "87561af0713a9fff6bb36cfb993fc6b51c8b9939d96f7f98562d2b90d534fe32",
+    "tools/analysis_v2.py (reference, not imported)": "447590cceb3e579e8b6fefdd101b69c8075e535650e36d75f18905b4fa8efeed",
+    "traces/run-v2-full-20260825-010312.scored.jsonl": "06966014cc4590ea0babe5f6a6dfa57ab99ccc6aa72773778ae0cfcb13d6c412",
+    "traces/run-v2-full-20260825-010323.scored.jsonl": "b7bb45fdee42c329729ed4bb2491764634cf582ee8c5cc0836ce649174500d21",
+    "traces/run-v2-full-20260825-234313.scored.jsonl": "8b243eae69d7587ad3e612c63830c8778aa611282fcdd285ccc647c24f46e4a3",
+    "traces/run-v2-full-frontier-sonnet5-20260826-104357.scored.jsonl": "afa4fec5cb51007820c29cec69a62892d3fc7d1a7b58a73d74152b81af591716",
+    "traces/run-v2-full-local-qwen3-8b-20260813-060538.scored.jsonl": "9f533cf2ac7ef96492e1e87154fd4fd870407909276a0cc31cd620cfdc6a51e2",
+    "traces/run-v2-full-local-mistral-small-3.2-24b-20260813-064704.scored.jsonl": "06369cdc25e2511d915fcd00d7fbbcade8cf95f95d2cbd0fc6d993715b1b748a",
+    "traces/run-v2-full-local-gpt-oss-20b-20260826-052612.scored.jsonl": "08444de4676ff54e3acacce4811c0ab7aceb082007ab0b4a5e03fb764117068f",
+    "traces/run-v2-full-local-olmo-2-32b-instruct-20260826-060733.scored.jsonl": "8389d7feddb481bcd3b2483dcec59e550995f5c24a624e620da2ecd2e80f8062"
+  },
+  "confirmatory_zero_inclusion_summary": [
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "loo_p_max_over_0.05_over_3": false,
+      "loo_direction_ever_flips": false,
+      "frame_boot_risk_diff_ci_includes_zero": false,
+      "cluster_boot_risk_diff_ci_includes_zero": false
+    },
+    {
+      "model": "openai/gpt-5.6-luna",
+      "loo_p_max_over_0.05_over_3": false,
+      "loo_direction_ever_flips": false,
+      "frame_boot_risk_diff_ci_includes_zero": false,
+      "cluster_boot_risk_diff_ci_includes_zero": false
+    },
+    {
+      "model": "z-ai/glm-5.2",
+      "loo_p_max_over_0.05_over_3": false,
+      "loo_direction_ever_flips": false,
+      "frame_boot_risk_diff_ci_includes_zero": false,
+      "cluster_boot_risk_diff_ci_includes_zero": false
+    }
+  ]
+}

@@ -1,0 +1,941 @@
+{
+  "generated_by": "exploratory/reanalysis-2026-09-12/perf_pair.py",
+  "destroyed_labels": [
+    "COERCED-STATIVE",
+    "MANUFACTURE"
+  ],
+  "excluded_labels": [
+    "RESIDUAL",
+    "WITNESS-DROPPED"
+  ],
+  "columns": {
+    "deepseek/deepseek-v4-flash": {
+      "tier": "confirmatory",
+      "trace_base": "run-v2-full-20260825-010312",
+      "label_distribution": {
+        "perf_prog": {
+          "COERCED-STATIVE": 53,
+          "MANUFACTURE": 11,
+          "PRESERVED": 16
+        },
+        "perf_sim": {
+          "EXTRACTED-AS-CURRENT": 39,
+          "PRESERVED": 32,
+          "RESIDUAL": 9
+        }
+      },
+      "e1_detector": "cascade-only (judged file exists but has 0 e1 rows)",
+      "perf_prog_destroyed_rate": {
+        "destroyed": 64,
+        "n_nonexcluded": 80,
+        "excluded": 0,
+        "rate": 0.8,
+        "ci95": [
+          0.6956311329945356,
+          0.8811409135950147
+        ]
+      },
+      "perf_sim_extracted_as_current_rate": {
+        "extracted": 39,
+        "n_nonexcluded": 71,
+        "excluded_by_label": {
+          "RESIDUAL": 9
+        },
+        "rate": 0.5492957746478874,
+        "ci95": [
+          0.4266186646281391,
+          0.6677308176763262
+        ]
+      },
+      "pairing_collisions_frame_cluster": 0,
+      "cross_tab_prog_destroyed_x_sim_extracted": {
+        "destroyed_and_extracted": 31,
+        "destroyed_and_not_extracted": 25,
+        "not_destroyed_and_extracted": 8,
+        "neither": 7
+      },
+      "cross_tab_pairs_used": 71,
+      "cross_tab_pairs_dropped": 9,
+      "cross_tab_note": "descriptive cross-tab only, NOT a directional McNemar -- perf_prog 'destroyed' and perf_sim 'extracted-as-current' are different error definitions over different source aspect (see tools/score.py score_note()).",
+      "per_frame": {
+        "affiliate_role": {
+          "perf_prog_destroyed": 8,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 2,
+          "perf_sim_n_nonexcluded": 8
+        },
+        "class": {
+          "perf_prog_destroyed": 8,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 2,
+          "perf_sim_n_nonexcluded": 9
+        },
+        "equipment": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 9,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "household": {
+          "perf_prog_destroyed": 3,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 7,
+          "perf_sim_n_nonexcluded": 9
+        },
+        "lodging": {
+          "perf_prog_destroyed": 9,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 1,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "project": {
+          "perf_prog_destroyed": 6,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 1,
+          "perf_sim_n_nonexcluded": 6
+        },
+        "vehicle": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 9,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "workplace": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 8,
+          "perf_sim_n_nonexcluded": 9
+        }
+      },
+      "e1_primary_same_clusters_comparison": {
+        "prog": {
+          "destroyed": 63,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        },
+        "simple": {
+          "destroyed": 0,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        }
+      }
+    },
+    "openai/gpt-5.6-luna": {
+      "tier": "confirmatory",
+      "trace_base": "run-v2-full-20260825-010323",
+      "label_distribution": {
+        "perf_prog": {
+          "COERCED-STATIVE": 58,
+          "MANUFACTURE": 5,
+          "PRESERVED": 17
+        },
+        "perf_sim": {
+          "EXTRACTED-AS-CURRENT": 19,
+          "PRESERVED": 60,
+          "RESIDUAL": 1
+        }
+      },
+      "e1_detector": "cascade-only (judged file exists but has 0 e1 rows)",
+      "perf_prog_destroyed_rate": {
+        "destroyed": 63,
+        "n_nonexcluded": 80,
+        "excluded": 0,
+        "rate": 0.7875,
+        "ci95": [
+          0.6817141914403441,
+          0.8710635049024184
+        ]
+      },
+      "perf_sim_extracted_as_current_rate": {
+        "extracted": 19,
+        "n_nonexcluded": 79,
+        "excluded_by_label": {
+          "RESIDUAL": 1
+        },
+        "rate": 0.24050632911392406,
+        "ci95": [
+          0.15143739394503616,
+          0.34982569910029804
+        ]
+      },
+      "pairing_collisions_frame_cluster": 0,
+      "cross_tab_prog_destroyed_x_sim_extracted": {
+        "destroyed_and_extracted": 19,
+        "destroyed_and_not_extracted": 43,
+        "not_destroyed_and_extracted": 0,
+        "neither": 17
+      },
+      "cross_tab_pairs_used": 79,
+      "cross_tab_pairs_dropped": 1,
+      "cross_tab_note": "descriptive cross-tab only, NOT a directional McNemar -- perf_prog 'destroyed' and perf_sim 'extracted-as-current' are different error definitions over different source aspect (see tools/score.py score_note()).",
+      "per_frame": {
+        "affiliate_role": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 8,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "class": {
+          "perf_prog_destroyed": 8,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "equipment": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 8,
+          "perf_sim_n_nonexcluded": 9
+        },
+        "household": {
+          "perf_prog_destroyed": 5,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 1,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "lodging": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "project": {
+          "perf_prog_destroyed": 0,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "vehicle": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 2,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "workplace": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        }
+      },
+      "e1_primary_same_clusters_comparison": {
+        "prog": {
+          "destroyed": 50,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        },
+        "simple": {
+          "destroyed": 0,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        }
+      }
+    },
+    "z-ai/glm-5.2": {
+      "tier": "confirmatory",
+      "trace_base": "run-v2-full-20260825-234313",
+      "label_distribution": {
+        "perf_prog": {
+          "COERCED-STATIVE": 41,
+          "MANUFACTURE": 13,
+          "PRESERVED": 25,
+          "WITNESS-DROPPED": 1
+        },
+        "perf_sim": {
+          "EXTRACTED-AS-CURRENT": 36,
+          "PRESERVED": 20,
+          "RESIDUAL": 24
+        }
+      },
+      "e1_detector": "cascade-only (judged file exists but has 0 e1 rows)",
+      "perf_prog_destroyed_rate": {
+        "destroyed": 54,
+        "n_nonexcluded": 79,
+        "excluded": 1,
+        "rate": 0.6835443037974683,
+        "ci95": [
+          0.5691927294469132,
+          0.7836576893929446
+        ]
+      },
+      "perf_sim_extracted_as_current_rate": {
+        "extracted": 36,
+        "n_nonexcluded": 56,
+        "excluded_by_label": {
+          "RESIDUAL": 24
+        },
+        "rate": 0.6428571428571429,
+        "ci95": [
+          0.5035931132982076,
+          0.7664452025477342
+        ]
+      },
+      "pairing_collisions_frame_cluster": 0,
+      "cross_tab_prog_destroyed_x_sim_extracted": {
+        "destroyed_and_extracted": 27,
+        "destroyed_and_not_extracted": 15,
+        "not_destroyed_and_extracted": 9,
+        "neither": 5
+      },
+      "cross_tab_pairs_used": 56,
+      "cross_tab_pairs_dropped": 24,
+      "cross_tab_note": "descriptive cross-tab only, NOT a directional McNemar -- perf_prog 'destroyed' and perf_sim 'extracted-as-current' are different error definitions over different source aspect (see tools/score.py score_note()).",
+      "per_frame": {
+        "affiliate_role": {
+          "perf_prog_destroyed": 2,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 1
+        },
+        "class": {
+          "perf_prog_destroyed": 9,
+          "perf_prog_n_nonexcluded": 9,
+          "perf_sim_extracted_as_current": 1,
+          "perf_sim_n_nonexcluded": 3
+        },
+        "equipment": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 7,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "household": {
+          "perf_prog_destroyed": 0,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 8,
+          "perf_sim_n_nonexcluded": 9
+        },
+        "lodging": {
+          "perf_prog_destroyed": 8,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 7
+        },
+        "project": {
+          "perf_prog_destroyed": 6,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 2,
+          "perf_sim_n_nonexcluded": 7
+        },
+        "vehicle": {
+          "perf_prog_destroyed": 9,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 9,
+          "perf_sim_n_nonexcluded": 9
+        },
+        "workplace": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 9,
+          "perf_sim_n_nonexcluded": 10
+        }
+      },
+      "e1_primary_same_clusters_comparison": {
+        "prog": {
+          "destroyed": 43,
+          "n_nonexcluded": 77,
+          "excluded": 3
+        },
+        "simple": {
+          "destroyed": 5,
+          "n_nonexcluded": 79,
+          "excluded": 1
+        }
+      }
+    },
+    "anthropic/claude-sonnet-5": {
+      "tier": "frontier-subset",
+      "trace_base": "run-v2-full-frontier-sonnet5-20260826-104357",
+      "label_distribution": {
+        "perf_prog": {},
+        "perf_sim": {}
+      },
+      "e1_detector": "cascade-only (no judged file for this column)",
+      "perf_prog_destroyed_rate": {
+        "destroyed": 0,
+        "n_nonexcluded": 0,
+        "excluded": 0,
+        "rate": null,
+        "ci95": [
+          NaN,
+          NaN
+        ]
+      },
+      "perf_sim_extracted_as_current_rate": {
+        "extracted": 0,
+        "n_nonexcluded": 0,
+        "excluded_by_label": {},
+        "rate": null,
+        "ci95": [
+          NaN,
+          NaN
+        ]
+      },
+      "pairing_collisions_frame_cluster": 0,
+      "cross_tab_prog_destroyed_x_sim_extracted": {
+        "destroyed_and_extracted": 0,
+        "destroyed_and_not_extracted": 0,
+        "not_destroyed_and_extracted": 0,
+        "neither": 0
+      },
+      "cross_tab_pairs_used": 0,
+      "cross_tab_pairs_dropped": 0,
+      "cross_tab_note": "descriptive cross-tab only, NOT a directional McNemar -- perf_prog 'destroyed' and perf_sim 'extracted-as-current' are different error definitions over different source aspect (see tools/score.py score_note()).",
+      "per_frame": {},
+      "e1_primary_same_clusters_comparison": {
+        "prog": {
+          "destroyed": 0,
+          "n_nonexcluded": 0,
+          "excluded": 0
+        },
+        "simple": {
+          "destroyed": 0,
+          "n_nonexcluded": 0,
+          "excluded": 0
+        }
+      }
+    },
+    "local/qwen3-8b": {
+      "tier": "local",
+      "trace_base": "run-v2-full-local-qwen3-8b-20260813-060538",
+      "label_distribution": {
+        "perf_prog": {
+          "COERCED-STATIVE": 48,
+          "MANUFACTURE": 13,
+          "PRESERVED": 19
+        },
+        "perf_sim": {
+          "EXTRACTED-AS-CURRENT": 12,
+          "PRESERVED": 58,
+          "RESIDUAL": 10
+        }
+      },
+      "e1_detector": "cascade-only (judged file exists but has 0 e1 rows)",
+      "perf_prog_destroyed_rate": {
+        "destroyed": 61,
+        "n_nonexcluded": 80,
+        "excluded": 0,
+        "rate": 0.7625,
+        "ci95": [
+          0.654223028859732,
+          0.8505462481433592
+        ]
+      },
+      "perf_sim_extracted_as_current_rate": {
+        "extracted": 12,
+        "n_nonexcluded": 70,
+        "excluded_by_label": {
+          "RESIDUAL": 10
+        },
+        "rate": 0.17142857142857143,
+        "ci95": [
+          0.09184220742768566,
+          0.28030841090506675
+        ]
+      },
+      "pairing_collisions_frame_cluster": 0,
+      "cross_tab_prog_destroyed_x_sim_extracted": {
+        "destroyed_and_extracted": 12,
+        "destroyed_and_not_extracted": 43,
+        "not_destroyed_and_extracted": 0,
+        "neither": 15
+      },
+      "cross_tab_pairs_used": 70,
+      "cross_tab_pairs_dropped": 10,
+      "cross_tab_note": "descriptive cross-tab only, NOT a directional McNemar -- perf_prog 'destroyed' and perf_sim 'extracted-as-current' are different error definitions over different source aspect (see tools/score.py score_note()).",
+      "per_frame": {
+        "affiliate_role": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "class": {
+          "perf_prog_destroyed": 0,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 8
+        },
+        "equipment": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 5
+        },
+        "household": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "lodging": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "project": {
+          "perf_prog_destroyed": 2,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 9
+        },
+        "vehicle": {
+          "perf_prog_destroyed": 9,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 2,
+          "perf_sim_n_nonexcluded": 8
+        },
+        "workplace": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 10,
+          "perf_sim_n_nonexcluded": 10
+        }
+      },
+      "e1_primary_same_clusters_comparison": {
+        "prog": {
+          "destroyed": 44,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        },
+        "simple": {
+          "destroyed": 0,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        }
+      }
+    },
+    "local/mistral-small-3.2-24b-it": {
+      "tier": "local",
+      "trace_base": "run-v2-full-local-mistral-small-3.2-24b-20260813-064704",
+      "label_distribution": {
+        "perf_prog": {
+          "COERCED-STATIVE": 43,
+          "MANUFACTURE": 9,
+          "PRESERVED": 28
+        },
+        "perf_sim": {
+          "EXTRACTED-AS-CURRENT": 36,
+          "PRESERVED": 39,
+          "RESIDUAL": 5
+        }
+      },
+      "e1_detector": "cascade-only (judged file exists but has 0 e1 rows)",
+      "perf_prog_destroyed_rate": {
+        "destroyed": 52,
+        "n_nonexcluded": 80,
+        "excluded": 0,
+        "rate": 0.65,
+        "ci95": [
+          0.5352031145206642,
+          0.753328063527465
+        ]
+      },
+      "perf_sim_extracted_as_current_rate": {
+        "extracted": 36,
+        "n_nonexcluded": 75,
+        "excluded_by_label": {
+          "RESIDUAL": 5
+        },
+        "rate": 0.48,
+        "ci95": [
+          0.3631352542790216,
+          0.5984923776846102
+        ]
+      },
+      "pairing_collisions_frame_cluster": 0,
+      "cross_tab_prog_destroyed_x_sim_extracted": {
+        "destroyed_and_extracted": 29,
+        "destroyed_and_not_extracted": 21,
+        "not_destroyed_and_extracted": 7,
+        "neither": 18
+      },
+      "cross_tab_pairs_used": 75,
+      "cross_tab_pairs_dropped": 5,
+      "cross_tab_note": "descriptive cross-tab only, NOT a directional McNemar -- perf_prog 'destroyed' and perf_sim 'extracted-as-current' are different error definitions over different source aspect (see tools/score.py score_note()).",
+      "per_frame": {
+        "affiliate_role": {
+          "perf_prog_destroyed": 6,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 6,
+          "perf_sim_n_nonexcluded": 7
+        },
+        "class": {
+          "perf_prog_destroyed": 0,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 8
+        },
+        "equipment": {
+          "perf_prog_destroyed": 6,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 10,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "household": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "lodging": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "project": {
+          "perf_prog_destroyed": 0,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "vehicle": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 10,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "workplace": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 10,
+          "perf_sim_n_nonexcluded": 10
+        }
+      },
+      "e1_primary_same_clusters_comparison": {
+        "prog": {
+          "destroyed": 46,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        },
+        "simple": {
+          "destroyed": 0,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        }
+      }
+    },
+    "local/gpt-oss-20b": {
+      "tier": "extension",
+      "trace_base": "run-v2-full-local-gpt-oss-20b-20260826-052612",
+      "label_distribution": {
+        "perf_prog": {
+          "COERCED-STATIVE": 45,
+          "MANUFACTURE": 15,
+          "PRESERVED": 20
+        },
+        "perf_sim": {
+          "EXTRACTED-AS-CURRENT": 45,
+          "PRESERVED": 18,
+          "RESIDUAL": 17
+        }
+      },
+      "e1_detector": "cascade-only (judged file exists but has 0 e1 rows)",
+      "perf_prog_destroyed_rate": {
+        "destroyed": 60,
+        "n_nonexcluded": 80,
+        "excluded": 0,
+        "rate": 0.75,
+        "ci95": [
+          0.64063652409315,
+          0.8401203554931443
+        ]
+      },
+      "perf_sim_extracted_as_current_rate": {
+        "extracted": 45,
+        "n_nonexcluded": 63,
+        "excluded_by_label": {
+          "RESIDUAL": 17
+        },
+        "rate": 0.7142857142857143,
+        "ci95": [
+          0.5865389743313039,
+          0.8210707933611637
+        ]
+      },
+      "pairing_collisions_frame_cluster": 0,
+      "cross_tab_prog_destroyed_x_sim_extracted": {
+        "destroyed_and_extracted": 41,
+        "destroyed_and_not_extracted": 14,
+        "not_destroyed_and_extracted": 4,
+        "neither": 4
+      },
+      "cross_tab_pairs_used": 63,
+      "cross_tab_pairs_dropped": 17,
+      "cross_tab_note": "descriptive cross-tab only, NOT a directional McNemar -- perf_prog 'destroyed' and perf_sim 'extracted-as-current' are different error definitions over different source aspect (see tools/score.py score_note()).",
+      "per_frame": {
+        "affiliate_role": {
+          "perf_prog_destroyed": 0,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 0
+        },
+        "class": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 1,
+          "perf_sim_n_nonexcluded": 8
+        },
+        "equipment": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 7,
+          "perf_sim_n_nonexcluded": 7
+        },
+        "household": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 10,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "lodging": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 3,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "project": {
+          "perf_prog_destroyed": 0,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 4,
+          "perf_sim_n_nonexcluded": 8
+        },
+        "vehicle": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 10,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "workplace": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 10,
+          "perf_sim_n_nonexcluded": 10
+        }
+      },
+      "e1_primary_same_clusters_comparison": {
+        "prog": {
+          "destroyed": 55,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        },
+        "simple": {
+          "destroyed": 0,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        }
+      }
+    },
+    "local/olmo-2-32b-instruct": {
+      "tier": "extension",
+      "trace_base": "run-v2-full-local-olmo-2-32b-instruct-20260826-060733",
+      "label_distribution": {
+        "perf_prog": {
+          "COERCED-STATIVE": 47,
+          "MANUFACTURE": 7,
+          "PRESERVED": 26
+        },
+        "perf_sim": {
+          "EXTRACTED-AS-CURRENT": 34,
+          "PRESERVED": 34,
+          "RESIDUAL": 12
+        }
+      },
+      "e1_detector": "cascade-only (judged file exists but has 0 e1 rows)",
+      "perf_prog_destroyed_rate": {
+        "destroyed": 54,
+        "n_nonexcluded": 80,
+        "excluded": 0,
+        "rate": 0.675,
+        "ci95": [
+          0.5610629543955515,
+          0.7755404148225467
+        ]
+      },
+      "perf_sim_extracted_as_current_rate": {
+        "extracted": 34,
+        "n_nonexcluded": 68,
+        "excluded_by_label": {
+          "RESIDUAL": 12
+        },
+        "rate": 0.5,
+        "ci95": [
+          0.3762035808908743,
+          0.6237964191091258
+        ]
+      },
+      "pairing_collisions_frame_cluster": 0,
+      "cross_tab_prog_destroyed_x_sim_extracted": {
+        "destroyed_and_extracted": 23,
+        "destroyed_and_not_extracted": 19,
+        "not_destroyed_and_extracted": 11,
+        "neither": 15
+      },
+      "cross_tab_pairs_used": 68,
+      "cross_tab_pairs_dropped": 12,
+      "cross_tab_note": "descriptive cross-tab only, NOT a directional McNemar -- perf_prog 'destroyed' and perf_sim 'extracted-as-current' are different error definitions over different source aspect (see tools/score.py score_note()).",
+      "per_frame": {
+        "affiliate_role": {
+          "perf_prog_destroyed": 0,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "class": {
+          "perf_prog_destroyed": 0,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 10,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "equipment": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 10,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "household": {
+          "perf_prog_destroyed": 7,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 6,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "lodging": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 0
+        },
+        "project": {
+          "perf_prog_destroyed": 7,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        },
+        "vehicle": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 8,
+          "perf_sim_n_nonexcluded": 8
+        },
+        "workplace": {
+          "perf_prog_destroyed": 10,
+          "perf_prog_n_nonexcluded": 10,
+          "perf_sim_extracted_as_current": 0,
+          "perf_sim_n_nonexcluded": 10
+        }
+      },
+      "e1_primary_same_clusters_comparison": {
+        "prog": {
+          "destroyed": 48,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        },
+        "simple": {
+          "destroyed": 0,
+          "n_nonexcluded": 80,
+          "excluded": 0
+        }
+      }
+    }
+  },
+  "frontier_subset_perf_check": {
+    "run-v2-full-frontier-gemini31pro-20260827-015332": {
+      "e1_perf_rows_found": 0,
+      "included_in_columns_above": false
+    },
+    "run-v2-full-frontier-grok46-20260827-015925": {
+      "e1_perf_rows_found": 0,
+      "included_in_columns_above": false
+    },
+    "run-v2-full-frontier-qwen38max-20260827-021106": {
+      "e1_perf_rows_found": 0,
+      "included_in_columns_above": false
+    },
+    "run-v2-full-frontier-sonnet5-20260826-104357": {
+      "e1_perf_rows_found": 0,
+      "included_in_columns_above": false
+    }
+  },
+  "deepseek_examples": {
+    "perf_prog|COERCED-STATIVE": [
+      {
+        "case_id": "v2-e1-lodging-00-c0_original-perf_prog-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've been living at the Marbury Residences on Fifth Street. also, any podcast recommendations for my commute?",
+        "response": "- User lives at Marbury Residences on Fifth Street (as of Dec 2025)\n- Enjoys podcasts for commute; liked recommendation for 99% Invisible and Radiolab"
+      },
+      {
+        "case_id": "v2-e1-lodging-01-c0_original-perf_prog-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've been living at the Ashgrove Residences on Fifth Street. also, any podcast recommendations for my commute?",
+        "response": "- Lives at Ashgrove Residences on Fifth Street (as of Dec 2025).\n- Enjoys podcast recommendations for commutes; liked 99% Invisible and Radiolab."
+      }
+    ],
+    "perf_prog|MANUFACTURE": [
+      {
+        "case_id": "v2-e1-class-02-c0_original-perf_prog-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've been taking a ceramics class at Emberline Studio on Tuesdays. also, any podcast recommendations for my commute?",
+        "response": "- Currently taking a ceramics class at Emberline Studio on Tuesdays.\n- Enjoys podcasts for commuting; likes 99% Invisible and Radiolab."
+      },
+      {
+        "case_id": "v2-e1-household-04-c0_original-perf_prog-same-third-stale",
+        "history_line": "User: hey! quick life update \u2014 my cousin Neve has been staying with me. also, any podcast recommendations for my commute?",
+        "response": "- Cousin Neve is staying with the user.\n- User enjoys podcasts for commute; recommended 99% Invisible and Radiolab."
+      }
+    ],
+    "perf_prog|PRESERVED": [
+      {
+        "case_id": "v2-e1-lodging-05-c0_original-perf_prog-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've been living at the Bexley Residences on Fifth Street. also, any podcast recommendations for my commute?",
+        "response": "- User previously lived at Bexley Residences on Fifth Street (as of Dec 2025).\n- User enjoys podcasts for commute; recommended 99% Invisible and Radiolab."
+      },
+      {
+        "case_id": "v2-e1-class-04-c0_original-perf_prog-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've been taking a ceramics class at Wheelhaven Studio on Tuesdays. also, any podcast recommendations for my commute?",
+        "response": "- Tuesdays: ceramics class at Wheelhaven Studio.\n- Enjoys podcast recommendations for commutes (previously liked 99% Invisible, Radiolab)."
+      }
+    ],
+    "perf_sim|EXTRACTED-AS-CURRENT": [
+      {
+        "case_id": "v2-e1-lodging-08-c0_original-perf_sim-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've previously lived at the Ambleside Residences on Fifth Street. also, any podcast recommendations for my commute?",
+        "response": "- Lives at: Ambleside Residences, Fifth Street\n- Interested in: podcasts for commute; previously liked 99% Invisible and Radiolab"
+      },
+      {
+        "case_id": "v2-e1-workplace-05-c0_original-perf_sim-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've worked at Quillon Health. also, any podcast recommendations for my commute?",
+        "response": "- Works at Quillon Health.\n- Enjoys podcasts for commute; liked 99% Invisible and Radiolab."
+      }
+    ],
+    "perf_sim|PRESERVED": [
+      {
+        "case_id": "v2-e1-lodging-00-c0_original-perf_sim-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've previously lived at the Marbury Residences on Fifth Street. also, any podcast recommendations for my commute?",
+        "response": "- User previously lived at Marbury Residences on Fifth Street.\n- Enjoys podcast recommendations for commutes (liked 99% Invisible and Radiolab)."
+      },
+      {
+        "case_id": "v2-e1-lodging-01-c0_original-perf_sim-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've previously lived at the Ashgrove Residences on Fifth Street. also, any podcast recommendations for my commute?",
+        "response": "- Lives/lived at Ashgrove Residences on Fifth Street.\n- Enjoys podcast recommendations for commutes (liked 99% Invisible, Radiolab)."
+      }
+    ],
+    "perf_sim|RESIDUAL": [
+      {
+        "case_id": "v2-e1-workplace-00-c0_original-perf_sim-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've worked at Corvida Analytics. also, any podcast recommendations for my commute?",
+        "response": "- User name: not given\n- Employer: Corvida Analytics (as of 2025-12-23)\n- Interests: podcasts for commute; liked 99% Invisible and Radiolab recommendations"
+      },
+      {
+        "case_id": "v2-e1-class-08-c0_original-perf_sim-same-first-stale",
+        "history_line": "User: hey! quick life update \u2014 I've taken a ceramics class at Rakuview Studio. also, any podcast recommendations for my commute?",
+        "response": "- Enrolled in ceramics class at Rakuview Studio (as of Dec 2025).\n- Enjoys podcast recommendations for commute; liked 99% Invisible and Radiolab."
+      }
+    ]
+  },
+  "implementation_choices": [
+    "History line for part (b) = the line(s) of the case's `history` field (from data/stimuli_v2.jsonl) containing the witness token, case-insensitive; falls back to the full history text if no line matches. Not pinned by the task spec ('example source history line' is singular and the field itself is multi-line).",
+    "Part (d): both RESIDUAL and WITNESS-DROPPED are excluded from the perf_sim denominator (EXCLUDED set), not RESIDUAL alone as literally written in the task -- WITNESS-DROPPED is a possible score_note() output for perf_sim too (checked before the form-specific branch in tools/score.py). Counts of each excluded label are reported separately per column.",
+    "Part (e) cross-tab excludes any (frame,cluster) pair missing one side, or with an EXCLUDED label on either side; both counts are disclosed per column.",
+    "Part (g) restricts the e1_primary comparison to the exact (frame,cluster) key set used in the perf pairs (clusters 0-9 of the 8 frames), not all 16 e1_primary clusters."
+  ]
+}

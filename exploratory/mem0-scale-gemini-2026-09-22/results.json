@@ -1,0 +1,235 @@
+{
+ "errors": 0,
+ "forms": {
+  "prog": {
+   "date_anchor": 127,
+   "examples_flattened": [
+    [
+     "hey! quick life update \u2014 I'm driving a silver Peugeot 508. also, any podcast recommendatio",
+     "User drives a silver Peugeot 508 as of September 23, 2026"
+    ],
+    [
+     "hey! quick life update \u2014 I'm driving a green Skoda Octavia. also, any podcast recommendati",
+     "User drives a green Skoda Octavia as of September 23, 2026"
+    ],
+    [
+     "hey! quick life update \u2014 I'm driving a white Mazda CX-30. also, any podcast recommendation",
+     "User drives a white Mazda CX-30 as of September 23, 2026"
+    ],
+    [
+     "hey! quick life update \u2014 I'm driving a blue Renault Clio. also, any podcast recommendation",
+     "User drives a blue Renault Clio as of September 23, 2026"
+    ],
+    [
+     "hey! quick life update \u2014 I'm driving a red Suzuki Swift. also, any podcast recommendations",
+     "User drives a red Suzuki Swift as of September 23, 2026"
+    ],
+    [
+     "hey! quick life update \u2014 I'm driving a black Kia Ceed. also, any podcast recommendations f",
+     "User drives a black Kia Ceed as of September 23, 2026"
+    ]
+   ],
+   "flattened": 15,
+   "flattened_ci95": [
+    0.06709408188187788,
+    0.18590890169192748
+   ],
+   "flattened_rate": 0.1171875,
+   "n": 128,
+   "per_frame": {
+    "affiliate_role": {
+     "flattened": 0,
+     "n": 16
+    },
+    "class": {
+     "flattened": 0,
+     "n": 16
+    },
+    "equipment": {
+     "flattened": 0,
+     "n": 16
+    },
+    "household": {
+     "flattened": 0,
+     "n": 16
+    },
+    "lodging": {
+     "flattened": 0,
+     "n": 16
+    },
+    "project": {
+     "flattened": 0,
+     "n": 16
+    },
+    "vehicle": {
+     "flattened": 14,
+     "n": 16
+    },
+    "workplace": {
+     "flattened": 1,
+     "n": 16
+    }
+   },
+   "witness_stored": 128
+  },
+  "simple": {
+   "date_anchor": 111,
+   "examples": [
+    "User plays a Ferrandell cello which is currently on loan to them from the conservatory as of September 23, 2026",
+    "User plays a Vostrella cello which is currently on loan to them from the conservatory as of September 23, 2026",
+    "User plays an Aldemira cello which is currently on loan to them from the conservatory as of September 23, 2026",
+    "User plays a Corvessi cello which is currently on loan to them from the conservatory as of September 23, 2026",
+    "User plays a Tornevall cello which is currently on loan to them from the conservatory as of September 23, 2026",
+    "User plays a Quennival cello which is currently on loan to them from the conservatory as of September 23, 2026"
+   ],
+   "manufacture": 16,
+   "manufacture_ci95": [
+    0.0731660781713655,
+    0.1950437818612995
+   ],
+   "n": 128,
+   "per_frame": {},
+   "witness_stored": 128
+  },
+  "simple_atm": {
+   "date_anchor": 126,
+   "examples_kept": [
+    "User currently works as an affiliate lecturer at Vearnholt College as of September 23, 2026",
+    "User currently works as an affiliate lecturer at Aldercroft College as of September 23, 2026",
+    "User currently works as an affiliate lecturer at Wrenfield College as of September 2026",
+    "User currently works as an affiliate lecturer at Halverston College as of September 23, 2026",
+    "User currently works as an affiliate lecturer at Dunmoral College as of September 23, 2026",
+    "User currently works as an affiliate lecturer at Kestenholt College as of September 2026"
+   ],
+   "examples_lost": [
+    "User works at Bellwether Labs as of September 2026"
+   ],
+   "labels": {
+    "DATE-ONLY": 1,
+    "MARKER-KEPT-SAME": 127
+   },
+   "n": 128,
+   "per_frame": {
+    "affiliate_role": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "class": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "equipment": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "household": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "lodging": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "project": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "vehicle": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "workplace": {
+     "n": 16,
+     "qual_lost": 1
+    }
+   },
+   "qual_lost": 1,
+   "qual_lost_ci95": [
+    0.00019777581466179318,
+    0.042759031914220424
+   ],
+   "qual_lost_rate": 0.0078125,
+   "residual": [],
+   "witness_stored": 128
+  },
+  "simple_fornow": {
+   "date_anchor": 125,
+   "examples_kept": [
+    "User currently works as an affiliate lecturer at Vearnholt College as of September 23, 2026",
+    "User currently works as an affiliate lecturer at Aldercroft College as of September 23, 2026",
+    "User currently works as an affiliate lecturer at Wrenfield College as of September 23, 2026",
+    "User currently works as an affiliate lecturer at Halverston College as of September 23, 2026",
+    "User currently works as an affiliate lecturer at Dunmoral College as of September 23, 2026",
+    "User currently works as an affiliate lecturer at Kestenholt College as of September 23, 2026"
+   ],
+   "examples_lost": [
+    "User works as an affiliate lecturer at Fairhollow College as of September 23, 2026",
+    "User works as an affiliate lecturer at Corbindale College as of September 23, 2026",
+    "User works as an affiliate lecturer at Elmsgate College as of September 23, 2026",
+    "User works as an affiliate lecturer at Pellingham College as of September 2026",
+    "User takes a ceramics class at Glazehouse Studio on Tuesdays as of September 2026",
+    "User takes a ceramics class at Emberline Studio on Tuesdays as of September 2026"
+   ],
+   "labels": {
+    "DATE-ONLY": 22,
+    "MARKER-KEPT-CROSS": 106
+   },
+   "n": 128,
+   "per_frame": {
+    "affiliate_role": {
+     "n": 16,
+     "qual_lost": 4
+    },
+    "class": {
+     "n": 16,
+     "qual_lost": 13
+    },
+    "equipment": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "household": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "lodging": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "project": {
+     "n": 16,
+     "qual_lost": 0
+    },
+    "vehicle": {
+     "n": 16,
+     "qual_lost": 1
+    },
+    "workplace": {
+     "n": 16,
+     "qual_lost": 4
+    }
+   },
+   "qual_lost": 22,
+   "qual_lost_ci95": [
+    0.11096028126738139,
+    0.24857637002089367
+   ],
+   "qual_lost_rate": 0.171875,
+   "residual": [],
+   "witness_stored": 128
+  }
+ },
+ "hashes": {
+  "trace_shard0.jsonl": "b331f58df91c83a14bdb9b6d079b0e50605b5534d0cd2ba5bc7c2a5a5ce2f681",
+  "trace_shard1.jsonl": "f0151f9a5038c23cd324579d6863e06a110ab9e904eb7ec011846425610bb5c0",
+  "trace_shard2.jsonl": "4c0c92795e42d416a7c41c8da400fb5c0fdc8d6c5574c32c13b8b62d1b4472d9",
+  "trace_shard3.jsonl": "77e910240d7e43168bb05f941ea3aab3b388c8da16eae4729dda2a8870099c81"
+ },
+ "n_rows": 512,
+ "overlap_with_0827": {
+  "agree": 25,
+  "n": 32,
+  "new_flattened": 4,
+  "old_flattened": 11
+ }
+}

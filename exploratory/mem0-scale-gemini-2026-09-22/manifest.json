@@ -1,0 +1,10 @@
+{
+  "inputs_sha256": "91c4df1fe69cf8355857b7c549888687543ef5b6f6a191553f70f6ba1703b595",
+  "mem0": "2.0.19 OSS, unmodified write path, fastembed bge-small, qdrant on disk, one isolated user per item, no ping phase",
+  "n": 512,
+  "source": "/Users/vein/Documents/research/aspect-persistence/exploratory/qualifier-ablation-2026-09-12/stimuli.jsonl",
+  "source_sha256": "f21d5384fc2b817865502d0abab75ac0dd8b0b60df8d26e7cb26bbb5fd7d20e5",
+  "temperature": 0,
+  "writer": "google/gemini-3-flash-preview via OpenRouter (mem0 openai provider; host not pinnable through mem0 config, as in the 2026-09-12 DeepSeek run and the 2026-09-02 real-specimen arm)",
+  "predecessor": "exploratory/mem0-scale-2026-09-12/ (identical inputs and design, writer deepseek/deepseek-v4-flash)"
+}

@@ -1,0 +1,161 @@
+========================================================================
+LAPSE v2 SECONDARY analysis (SEC/EXP tiers) — descriptive only
+Confirmatory family untouched: see ANALYSIS_V2_2026-08-27.md
+========================================================================
+
+### deepseek/deepseek-v4-flash  [confirmatory]  (run-v2-full-20260825-010312)
+A. EXTRACTION LEVER (e1 vs l2, destruction, stale):
+  prog   e1 destroyed 104/128 (81.2%) -> l2 destroyed 73/127 (57.5%)
+  simple e1 destroyed 0/128 (0.0%) -> l2 destroyed 0/128 (0.0%)
+  paired (both forms): n=255 b(e1-only)=36 c(l2-only)=6 one-sided p=1.414e-06
+  EXTRACTED-AS-CURRENT (not in DESTROYED): e1=0 l2=0
+B. DOWNSTREAM LEVER (e2 vs l2e2, non-commit, stale):
+  prog   e2 non-commit 1/128 (0.8%) -> l2e2 non-commit 4/128 (3.1%)
+  simple e2 non-commit 1/128 (0.8%) -> l2e2 non-commit 2/128 (1.6%)
+  paired (both forms): n=256 b(l2e2-only-noncommit)=6 c(e2-only)=2 one-sided p=1.445e-01
+C. ANCHOR FORCED-CHOICE (CHECK-FIRST rate; UNPARSED excl n=16):
+  fresh  prog 110/157  simple 98/158  bound 104/156
+  stale  prog 109/160  simple 95/158  bound 91/155
+  paired prog-vs-simple @stale: n=158 b(prog-only-CF)=31 c(simple-only-CF)=19 one-sided p=5.946e-02
+D. GAP GRADIENT (behavioral non-commit per gap x form):
+  fresh         bound 0/159  perf_prog 0/40  prog 0/159  simple 0/240
+  near          bound 0/120  perf_prog 0/0  prog 0/120  simple 0/120
+  boundary      bound 0/159  perf_prog 0/0  prog 1/160  simple 0/160
+  expired_soon  bound 0/120  perf_prog 0/0  prog 0/120  simple 0/120
+  stale         bound 0/160  perf_prog 0/40  prog 0/240  simple 0/240
+  stale_long    bound 0/120  perf_prog 0/0  prog 0/120  simple 0/120
+
+### openai/gpt-5.6-luna  [confirmatory]  (run-v2-full-20260825-010323)
+A. EXTRACTION LEVER (e1 vs l2, destruction, stale):
+  prog   e1 destroyed 79/128 (61.7%) -> l2 destroyed 4/128 (3.1%)
+  simple e1 destroyed 0/128 (0.0%) -> l2 destroyed 0/128 (0.0%)
+  paired (both forms): n=256 b(e1-only)=78 c(l2-only)=3 one-sided p=3.666e-20
+  EXTRACTED-AS-CURRENT (not in DESTROYED): e1=0 l2=0
+B. DOWNSTREAM LEVER (e2 vs l2e2, non-commit, stale):
+  prog   e2 non-commit 1/128 (0.8%) -> l2e2 non-commit 2/128 (1.6%)
+  simple e2 non-commit 1/128 (0.8%) -> l2e2 non-commit 0/128 (0.0%)
+  paired (both forms): n=256 b(l2e2-only-noncommit)=2 c(e2-only)=2 one-sided p=6.875e-01
+C. ANCHOR FORCED-CHOICE (CHECK-FIRST rate; UNPARSED excl n=0):
+  fresh  prog 49/160  simple 49/160  bound 50/160
+  stale  prog 55/160  simple 49/160  bound 91/160
+  paired prog-vs-simple @stale: n=160 b(prog-only-CF)=12 c(simple-only-CF)=6 one-sided p=1.189e-01
+D. GAP GRADIENT (behavioral non-commit per gap x form):
+  fresh         bound 0/160  perf_prog 0/40  prog 0/160  simple 0/240
+  near          bound 0/120  perf_prog 0/0  prog 0/120  simple 0/120
+  boundary      bound 1/160  perf_prog 0/0  prog 0/160  simple 0/160
+  expired_soon  bound 2/120  perf_prog 0/0  prog 0/120  simple 0/120
+  stale         bound 4/160  perf_prog 0/40  prog 0/240  simple 0/240
+  stale_long    bound 1/120  perf_prog 0/0  prog 0/120  simple 0/120
+
+### z-ai/glm-5.2  [confirmatory]  (run-v2-full-20260825-234313)
+A. EXTRACTION LEVER (e1 vs l2, destruction, stale):
+  prog   e1 destroyed 69/125 (55.2%) -> l2 destroyed 49/127 (38.6%)
+  simple e1 destroyed 8/127 (6.3%) -> l2 destroyed 0/127 (0.0%)
+  paired (both forms): n=250 b(e1-only)=37 c(l2-only)=9 one-sided p=2.028e-05
+  EXTRACTED-AS-CURRENT (not in DESTROYED): e1=0 l2=0
+B. DOWNSTREAM LEVER (e2 vs l2e2, non-commit, stale):
+  prog   e2 non-commit 1/125 (0.8%) -> l2e2 non-commit 1/128 (0.8%)
+  simple e2 non-commit 0/126 (0.0%) -> l2e2 non-commit 1/128 (0.8%)
+  paired (both forms): n=251 b(l2e2-only-noncommit)=2 c(e2-only)=1 one-sided p=5.000e-01
+C. ANCHOR FORCED-CHOICE (CHECK-FIRST rate; UNPARSED excl n=4):
+  fresh  prog 118/160  simple 125/160  bound 123/159
+  stale  prog 129/157  simple 125/160  bound 150/160
+  paired prog-vs-simple @stale: n=157 b(prog-only-CF)=14 c(simple-only-CF)=7 one-sided p=9.462e-02
+D. GAP GRADIENT (behavioral non-commit per gap x form):
+  fresh         bound 0/160  perf_prog 0/40  prog 0/160  simple 0/240
+  near          bound 0/120  perf_prog 0/0  prog 0/120  simple 0/120
+  boundary      bound 0/160  perf_prog 0/0  prog 0/159  simple 0/160
+  expired_soon  bound 0/120  perf_prog 0/0  prog 0/120  simple 0/120
+  stale         bound 5/160  perf_prog 0/40  prog 0/240  simple 0/239
+  stale_long    bound 4/120  perf_prog 0/0  prog 0/120  simple 0/120
+
+### anthropic/claude-sonnet-5  [frontier-subset]  (run-v2-full-frontier-sonnet5-20260826-104357)
+SEC arms absent (frontier-tier subset) — n/a
+
+### local/qwen3-8b  [local]  (run-v2-full-local-qwen3-8b-20260813-060538)
+A. EXTRACTION LEVER (e1 vs l2, destruction, stale):
+  prog   e1 destroyed 68/128 (53.1%) -> l2 destroyed 0/128 (0.0%)
+  simple e1 destroyed 0/128 (0.0%) -> l2 destroyed 0/128 (0.0%)
+  paired (both forms): n=256 b(e1-only)=68 c(l2-only)=0 one-sided p=3.388e-21
+  EXTRACTED-AS-CURRENT (not in DESTROYED): e1=0 l2=0
+B. DOWNSTREAM LEVER (e2 vs l2e2, non-commit, stale):
+  prog   e2 non-commit 4/128 (3.1%) -> l2e2 non-commit 7/128 (5.5%)
+  simple e2 non-commit 4/128 (3.1%) -> l2e2 non-commit 4/128 (3.1%)
+  paired (both forms): n=256 b(l2e2-only-noncommit)=3 c(e2-only)=0 one-sided p=1.250e-01
+C. ANCHOR FORCED-CHOICE (CHECK-FIRST rate; UNPARSED excl n=0):
+  fresh  prog 80/160  simple 80/160  bound 80/160
+  stale  prog 80/160  simple 80/160  bound 80/160
+  paired prog-vs-simple @stale: n=160 b(prog-only-CF)=0 c(simple-only-CF)=0 one-sided p=1.000e+00
+D. GAP GRADIENT (behavioral non-commit per gap x form):
+  fresh         bound 4/159  perf_prog 1/39  prog 3/159  simple 1/239
+  near          bound 3/119  perf_prog 0/0  prog 3/119  simple 2/119
+  boundary      bound 4/159  perf_prog 0/0  prog 3/157  simple 2/159
+  expired_soon  bound 3/119  perf_prog 0/0  prog 3/119  simple 2/119
+  stale         bound 4/159  perf_prog 1/39  prog 4/239  simple 2/238
+  stale_long    bound 3/119  perf_prog 0/0  prog 1/118  simple 3/119
+
+### local/mistral-small-3.2-24b-it  [local]  (run-v2-full-local-mistral-small-3.2-24b-20260813-064704)
+A. EXTRACTION LEVER (e1 vs l2, destruction, stale):
+  prog   e1 destroyed 72/127 (56.7%) -> l2 destroyed 59/127 (46.5%)
+  simple e1 destroyed 0/127 (0.0%) -> l2 destroyed 0/127 (0.0%)
+  paired (both forms): n=254 b(e1-only)=13 c(l2-only)=0 one-sided p=1.221e-04
+  EXTRACTED-AS-CURRENT (not in DESTROYED): e1=0 l2=0
+B. DOWNSTREAM LEVER (e2 vs l2e2, non-commit, stale):
+  prog   e2 non-commit 0/127 (0.0%) -> l2e2 non-commit 1/127 (0.8%)
+  simple e2 non-commit 4/127 (3.1%) -> l2e2 non-commit 0/127 (0.0%)
+  paired (both forms): n=254 b(l2e2-only-noncommit)=1 c(e2-only)=4 one-sided p=9.688e-01
+C. ANCHOR FORCED-CHOICE (CHECK-FIRST rate; UNPARSED excl n=0):
+  fresh  prog 100/160  simple 96/160  bound 101/160
+  stale  prog 101/160  simple 100/160  bound 115/160
+  paired prog-vs-simple @stale: n=160 b(prog-only-CF)=6 c(simple-only-CF)=5 one-sided p=5.000e-01
+D. GAP GRADIENT (behavioral non-commit per gap x form):
+  fresh         bound 3/160  perf_prog 1/40  prog 5/160  simple 0/239
+  near          bound 3/120  perf_prog 0/0  prog 4/120  simple 3/119
+  boundary      bound 3/159  perf_prog 0/0  prog 3/160  simple 3/159
+  expired_soon  bound 3/120  perf_prog 0/0  prog 3/120  simple 3/119
+  stale         bound 1/160  perf_prog 1/40  prog 3/239  simple 3/239
+  stale_long    bound 2/119  perf_prog 0/0  prog 3/119  simple 3/119
+
+### local/gpt-oss-20b  [extension]  (run-v2-full-local-gpt-oss-20b-20260826-052612)
+A. EXTRACTION LEVER (e1 vs l2, destruction, stale):
+  prog   e1 destroyed 86/128 (67.2%) -> l2 destroyed 96/128 (75.0%)
+  simple e1 destroyed 1/128 (0.8%) -> l2 destroyed 0/128 (0.0%)
+  paired (both forms): n=256 b(e1-only)=14 c(l2-only)=23 one-sided p=9.506e-01
+  EXTRACTED-AS-CURRENT (not in DESTROYED): e1=0 l2=0
+B. DOWNSTREAM LEVER (e2 vs l2e2, non-commit, stale):
+  prog   e2 non-commit 9/126 (7.1%) -> l2e2 non-commit 3/127 (2.4%)
+  simple e2 non-commit 11/125 (8.8%) -> l2e2 non-commit 6/126 (4.8%)
+  paired (both forms): n=250 b(l2e2-only-noncommit)=5 c(e2-only)=17 one-sided p=9.978e-01
+C. ANCHOR FORCED-CHOICE (CHECK-FIRST rate; UNPARSED excl n=3):
+  fresh  prog 89/160  simple 82/160  bound 95/159
+  stale  prog 92/159  simple 99/160  bound 103/159
+  paired prog-vs-simple @stale: n=159 b(prog-only-CF)=12 c(simple-only-CF)=18 one-sided p=8.998e-01
+D. GAP GRADIENT (behavioral non-commit per gap x form):
+  fresh         bound 2/159  perf_prog 0/39  prog 3/159  simple 0/239
+  near          bound 2/118  perf_prog 0/0  prog 1/119  simple 1/119
+  boundary      bound 1/159  perf_prog 0/0  prog 1/159  simple 0/159
+  expired_soon  bound 3/118  perf_prog 0/0  prog 0/119  simple 1/119
+  stale         bound 1/158  perf_prog 0/40  prog 3/239  simple 0/238
+  stale_long    bound 2/119  perf_prog 0/0  prog 3/119  simple 0/119
+
+### local/olmo-2-32b-instruct  [extension]  (run-v2-full-local-olmo-2-32b-instruct-20260826-060733)
+A. EXTRACTION LEVER (e1 vs l2, destruction, stale):
+  prog   e1 destroyed 76/128 (59.4%) -> l2 destroyed 125/125 (100.0%)
+  simple e1 destroyed 0/128 (0.0%) -> l2 destroyed 0/122 (0.0%)
+  paired (both forms): n=247 b(e1-only)=0 c(l2-only)=52 one-sided p=1.000e+00
+  EXTRACTED-AS-CURRENT (not in DESTROYED): e1=0 l2=0
+B. DOWNSTREAM LEVER (e2 vs l2e2, non-commit, stale):
+  prog   e2 non-commit 0/128 (0.0%) -> l2e2 non-commit 1/125 (0.8%)
+  simple e2 non-commit 0/128 (0.0%) -> l2e2 non-commit 1/122 (0.8%)
+  paired (both forms): n=247 b(l2e2-only-noncommit)=2 c(e2-only)=0 one-sided p=2.500e-01
+C. ANCHOR FORCED-CHOICE (CHECK-FIRST rate; UNPARSED excl n=0):
+  fresh  prog 86/160  simple 82/160  bound 92/160
+  stale  prog 92/160  simple 92/160  bound 94/160
+  paired prog-vs-simple @stale: n=160 b(prog-only-CF)=2 c(simple-only-CF)=2 one-sided p=6.875e-01
+D. GAP GRADIENT (behavioral non-commit per gap x form):
+  fresh         bound 0/160  perf_prog 0/40  prog 0/160  simple 0/240
+  near          bound 0/120  perf_prog 0/0  prog 0/120  simple 0/120
+  boundary      bound 0/160  perf_prog 0/0  prog 0/160  simple 0/160
+  expired_soon  bound 0/120  perf_prog 0/0  prog 0/120  simple 0/120
+  stale         bound 0/160  perf_prog 0/40  prog 0/240  simple 0/240
+  stale_long    bound 0/120  perf_prog 0/0  prog 0/120  simple 0/120

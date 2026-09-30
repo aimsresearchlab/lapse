@@ -1,0 +1,128 @@
+=== WRITER SIDE ===
+Graphiti: rows 288 errors 0
+  PROG   n=96 witness-edge=95 PRESERVED=48 FLATTENED=47 date-in-text=0 (flattened&stamped=0) valid_at=write-time 95/95 invalid_at set 0 'until' in text 0
+  SIMPLE n=96 witness-edge=96 PRESERVED=0 FLATTENED=96 date-in-text=0 (flattened&stamped=0) valid_at=write-time 96/96 invalid_at set 0 'until' in text 0
+  BOUND  n=96 witness-edge=96 PRESERVED=54 FLATTENED=42 date-in-text=90 (flattened&stamped=36) valid_at=write-time 96/96 invalid_at set 91 'until' in text 90
+  G1: flattened PROG facts with a date anchor in text (prediction <= 3/n): see above
+Letta: rows 288 errors 0
+  PROG   n=96 stored=90 not-stored=6 label-line=49 progressive-verb=2 PRESERVED(verb|marker)=28 date-in-line=2 bare(no verb,no date)=86
+  SIMPLE n=96 stored=93 not-stored=3 label-line=54 progressive-verb=0 PRESERVED(verb|marker)=1 date-in-line=0 bare(no verb,no date)=93
+  BOUND  n=96 stored=95 not-stored=1 label-line=26 progressive-verb=0 PRESERVED(verb|marker)=18 date-in-line=94 bare(no verb,no date)=1
+  L1: PROG label line w/o verb & date >= 50%; not stored >= 20%: see above
+
+=== deepseek/deepseek-v4-flash: 1704 rows, 0 errors, 3 UNPARSED/MIXED
+arm              A1 mean  commit abstain    n
+G-TEXT-SIMPLE       84.9      44      52   96
+G-TEXT-PROG         68.6      22      73   95
+G-TEXT-BOUND         6.1       2      94   96
+G-FIELDS-SIMPLE     86.9      96       0   96
+G-FIELDS-PROG       75.3      77      16   95
+G-FIELDS-BOUND       3.1       0      96   96
+L-TEXT-SIMPLE       85.6      30      62   93
+L-TEXT-PROG         67.4      16      74   90
+L-TEXT-BOUND         0.2       0      95   95
+G2 G-TEXT FLATTENED subset (prediction: null):
+  G-TEXT-PROG vs G-TEXT-SIMPLE: n=47 commit G-TEXT-PROG 18 vs paired G-TEXT-SIMPLE 25 | A-abstain/B-commit=13, reverse=6, McNemar p=0.167 | A1 diff +1.3 p=0.65
+G3 G-TEXT PRESERVED subset (prediction: PROG commit < SIMPLE):
+  G-TEXT-PROG vs G-TEXT-SIMPLE: n=48 commit G-TEXT-PROG 4 vs paired G-TEXT-SIMPLE 19 | A-abstain/B-commit=18, reverse=3, McNemar p=0.00149 | A1 diff -33.6 p=1.6e-07
+G4 G-FIELDS FLATTENED subset (prediction: still null):
+  G-FIELDS-PROG vs G-FIELDS-SIMPLE: n=47 commit G-FIELDS-PROG 43 vs paired G-FIELDS-SIMPLE 47 | A-abstain/B-commit=3, reverse=0, McNemar p=0.25 | A1 diff +2.2 p=0.49
+   G-FIELDS PRESERVED subset:
+  G-FIELDS-PROG vs G-FIELDS-SIMPLE: n=48 commit G-FIELDS-PROG 34 vs paired G-FIELDS-SIMPLE 48 | A-abstain/B-commit=13, reverse=0, McNemar p=0.000244 | A1 diff -25.1 p=0.00028
+   G-TEXT all PROG vs SIMPLE:
+  all: n=95 commit G-TEXT-PROG 22 vs paired G-TEXT-SIMPLE 44 | A-abstain/B-commit=31, reverse=9, McNemar p=0.00068 | A1 diff -16.3 p=6.8e-06
+   G-TEXT-BOUND: abstain 94/96; where text keeps 'until': abstain 90/90 (prediction >= 80%)
+   G-FIELDS-BOUND: abstain 96/96; where text keeps 'until': abstain 90/90 (prediction >= 80%)
+   L-TEXT-BOUND: abstain 95/95; where text keeps 'until': abstain 92/92 (prediction >= 80%)
+L2 L-TEXT stored items, all (prediction: null):
+  L-TEXT-PROG vs L-TEXT-SIMPLE: n=90 commit L-TEXT-PROG 16 vs paired L-TEXT-SIMPLE 28 | A-abstain/B-commit=19, reverse=7, McNemar p=0.029 | A1 diff -17.7 p=0.00024
+   L-TEXT by writer label:
+  FLATTENED: n=62 commit L-TEXT-PROG 16 vs paired L-TEXT-SIMPLE 22 | A-abstain/B-commit=13, reverse=7, McNemar p=0.263 | A1 diff -2.8 p=0.72
+  PRESERVED: n=28 commit L-TEXT-PROG 0 vs paired L-TEXT-SIMPLE 6 | A-abstain/B-commit=6, reverse=0, McNemar p=0.0312 | A1 diff -52.5 p=2.3e-05
+per-frame commit (A2) PROG vs SIMPLE, G-TEXT | L-TEXT:
+  affiliate_role  G  8/12 vs  7/12 | L  4/10 vs  8/12
+  class           G  1/12 vs  1/12 | L  0/12 vs  0/11
+  equipment       G  2/12 vs  5/12 | L  0/12 vs  3/10
+  household       G  0/12 vs  6/12 | L  0/11 vs  2/12
+  lodging         G  0/12 vs  9/12 | L  3/12 vs  6/12
+  project         G  0/11 vs  1/12 | L   0/9 vs  0/12
+  vehicle         G  6/12 vs  8/12 | L  4/12 vs  5/12
+  workplace       G  5/12 vs  7/12 | L  5/12 vs  6/12
+
+=== openai/gpt-5.6-luna: 1704 rows, 0 errors, 0 UNPARSED/MIXED
+arm              A1 mean  commit abstain    n
+G-TEXT-SIMPLE       75.3      57      39   96
+G-TEXT-PROG         64.7      38      57   95
+G-TEXT-BOUND         8.6       2      94   96
+G-FIELDS-SIMPLE     82.4      90       6   96
+G-FIELDS-PROG       73.7      77      18   95
+G-FIELDS-BOUND       3.9       1      95   96
+L-TEXT-SIMPLE       73.7      59      34   93
+L-TEXT-PROG         60.8      50      40   90
+L-TEXT-BOUND         3.5       2      93   95
+G2 G-TEXT FLATTENED subset (prediction: null):
+  G-TEXT-PROG vs G-TEXT-SIMPLE: n=47 commit G-TEXT-PROG 22 vs paired G-TEXT-SIMPLE 28 | A-abstain/B-commit=9, reverse=3, McNemar p=0.146 | A1 diff +4.1 p=0.011
+G3 G-TEXT PRESERVED subset (prediction: PROG commit < SIMPLE):
+  G-TEXT-PROG vs G-TEXT-SIMPLE: n=48 commit G-TEXT-PROG 16 vs paired G-TEXT-SIMPLE 29 | A-abstain/B-commit=15, reverse=2, McNemar p=0.00235 | A1 diff -25.0 p=2.9e-06
+G4 G-FIELDS FLATTENED subset (prediction: still null):
+  G-FIELDS-PROG vs G-FIELDS-SIMPLE: n=47 commit G-FIELDS-PROG 42 vs paired G-FIELDS-SIMPLE 44 | A-abstain/B-commit=5, reverse=3, McNemar p=0.727 | A1 diff +1.2 p=0.43
+   G-FIELDS PRESERVED subset:
+  G-FIELDS-PROG vs G-FIELDS-SIMPLE: n=48 commit G-FIELDS-PROG 35 vs paired G-FIELDS-SIMPLE 45 | A-abstain/B-commit=12, reverse=2, McNemar p=0.0129 | A1 diff -18.3 p=3.2e-05
+   G-TEXT all PROG vs SIMPLE:
+  all: n=95 commit G-TEXT-PROG 38 vs paired G-TEXT-SIMPLE 57 | A-abstain/B-commit=24, reverse=5, McNemar p=0.000546 | A1 diff -10.6 p=0.0064
+   G-TEXT-BOUND: abstain 94/96; where text keeps 'until': abstain 89/90 (prediction >= 80%)
+   G-FIELDS-BOUND: abstain 95/96; where text keeps 'until': abstain 89/90 (prediction >= 80%)
+   L-TEXT-BOUND: abstain 93/95; where text keeps 'until': abstain 90/92 (prediction >= 80%)
+L2 L-TEXT stored items, all (prediction: null):
+  L-TEXT-PROG vs L-TEXT-SIMPLE: n=90 commit L-TEXT-PROG 50 vs paired L-TEXT-SIMPLE 54 | A-abstain/B-commit=19, reverse=13, McNemar p=0.377 | A1 diff -13.5 p=1.6e-05
+   L-TEXT by writer label:
+  FLATTENED: n=62 commit L-TEXT-PROG 40 vs paired L-TEXT-SIMPLE 42 | A-abstain/B-commit=12, reverse=9, McNemar p=0.664 | A1 diff -4.6 p=0.18
+  PRESERVED: n=28 commit L-TEXT-PROG 10 vs paired L-TEXT-SIMPLE 12 | A-abstain/B-commit=7, reverse=4, McNemar p=0.549 | A1 diff -34.2 p=3.2e-05
+per-frame commit (A2) PROG vs SIMPLE, G-TEXT | L-TEXT:
+  affiliate_role  G  5/12 vs  9/12 | L  7/10 vs  9/12
+  class           G  9/12 vs 10/12 | L 11/12 vs 11/11
+  equipment       G  1/12 vs  4/12 | L  6/12 vs  3/10
+  household       G  1/12 vs 12/12 | L  1/11 vs 10/12
+  lodging         G  0/12 vs  0/12 | L  1/12 vs  1/12
+  project         G 11/11 vs 10/12 | L   7/9 vs  8/12
+  vehicle         G  0/12 vs  1/12 | L  5/12 vs  6/12
+  workplace       G 11/12 vs 11/12 | L 12/12 vs 11/12
+
+=== z-ai/glm-5.2: 1704 rows, 0 errors, 1 UNPARSED/MIXED
+arm              A1 mean  commit abstain    n
+G-TEXT-SIMPLE       74.1      41      55   96
+G-TEXT-PROG         63.8      23      72   95
+G-TEXT-BOUND         7.7       3      93   96
+G-FIELDS-SIMPLE     77.7      92       4   96
+G-FIELDS-PROG       67.3      72      23   95
+G-FIELDS-BOUND       4.0       0      96   96
+L-TEXT-SIMPLE       74.1      41      51   93
+L-TEXT-PROG         59.9      23      67   90
+L-TEXT-BOUND         2.6       0      95   95
+G2 G-TEXT FLATTENED subset (prediction: null):
+  G-TEXT-PROG vs G-TEXT-SIMPLE: n=47 commit G-TEXT-PROG 22 vs paired G-TEXT-SIMPLE 28 | A-abstain/B-commit=12, reverse=6, McNemar p=0.238 | A1 diff +1.7 p=0.24
+G3 G-TEXT PRESERVED subset (prediction: PROG commit < SIMPLE):
+  G-TEXT-PROG vs G-TEXT-SIMPLE: n=48 commit G-TEXT-PROG 1 vs paired G-TEXT-SIMPLE 13 | A-abstain/B-commit=13, reverse=1, McNemar p=0.00183 | A1 diff -22.2 p=2.2e-08
+G4 G-FIELDS FLATTENED subset (prediction: still null):
+  G-FIELDS-PROG vs G-FIELDS-SIMPLE: n=47 commit G-FIELDS-PROG 42 vs paired G-FIELDS-SIMPLE 47 | A-abstain/B-commit=5, reverse=0, McNemar p=0.0625 | A1 diff +2.0 p=0.027
+   G-FIELDS PRESERVED subset:
+  G-FIELDS-PROG vs G-FIELDS-SIMPLE: n=48 commit G-FIELDS-PROG 30 vs paired G-FIELDS-SIMPLE 44 | A-abstain/B-commit=17, reverse=3, McNemar p=0.00258 | A1 diff -22.6 p=8e-09
+   G-TEXT all PROG vs SIMPLE:
+  all: n=95 commit G-TEXT-PROG 23 vs paired G-TEXT-SIMPLE 41 | A-abstain/B-commit=25, reverse=7, McNemar p=0.0021 | A1 diff -10.4 p=6.8e-07
+   G-TEXT-BOUND: abstain 93/96; where text keeps 'until': abstain 90/90 (prediction >= 80%)
+   G-FIELDS-BOUND: abstain 96/96; where text keeps 'until': abstain 90/90 (prediction >= 80%)
+   L-TEXT-BOUND: abstain 95/95; where text keeps 'until': abstain 92/92 (prediction >= 80%)
+L2 L-TEXT stored items, all (prediction: null):
+  L-TEXT-PROG vs L-TEXT-SIMPLE: n=90 commit L-TEXT-PROG 23 vs paired L-TEXT-SIMPLE 40 | A-abstain/B-commit=24, reverse=7, McNemar p=0.00333 | A1 diff -14.4 p=7.1e-09
+   L-TEXT by writer label:
+  FLATTENED: n=62 commit L-TEXT-PROG 23 vs paired L-TEXT-SIMPLE 32 | A-abstain/B-commit=16, reverse=7, McNemar p=0.0931 | A1 diff -5.9 p=0.00066
+  PRESERVED: n=28 commit L-TEXT-PROG 0 vs paired L-TEXT-SIMPLE 8 | A-abstain/B-commit=8, reverse=0, McNemar p=0.00781 | A1 diff -34.5 p=1.1e-05
+per-frame commit (A2) PROG vs SIMPLE, G-TEXT | L-TEXT:
+  affiliate_role  G  7/12 vs  7/12 | L  5/10 vs  7/12
+  class           G  0/12 vs  2/12 | L  0/12 vs  3/11
+  equipment       G  0/12 vs  0/12 | L  1/12 vs  1/10
+  household       G  0/12 vs  3/12 | L  0/11 vs  4/12
+  lodging         G  0/12 vs 11/12 | L  3/12 vs  9/12
+  project         G  0/11 vs  0/12 | L   0/9 vs  1/12
+  vehicle         G  8/12 vs 12/12 | L  9/12 vs 11/12
+  workplace       G  8/12 vs  6/12 | L  5/12 vs  5/12

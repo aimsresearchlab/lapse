@@ -1,0 +1,221 @@
+========================================================================
+LAPSE v2 analysis (spec §4) — deterministic over committed files
+========================================================================
+
+### deepseek/deepseek-v4-flash  [confirmatory]  (run-v2-full-20260825-010312)
+McNemar e1_primary c0 stale prog-vs-simple: pairs=128 discordant b(prog-only)=104 c(simple-only)=0 one-sided p=4.930e-32
+Carrier sign test (c1..c5): diffs=['+0.725', '+0.700', '+0.725', '+0.600', '+0.575'] positive=5/5 one-sided p=0.0312
+R1 same-lexeme McNemar: pairs=32 b=27 c=0 one-sided p=7.451e-09
+  R1 equipment prog: destroyed 11/16
+  R1 equipment simple: destroyed 0/16
+  R1 household prog: destroyed 25/32
+  R1 lodging prog: destroyed 15/16
+  R1 vehicle prog: destroyed 16/16
+  R1 vehicle simple: destroyed 0/16
+Per-frame destruction (e1_primary c0 stale) prog | simple:
+  affiliate_role     13/16 |    0/16
+  class              13/16 |    0/16
+  equipment          16/16 |    0/16
+  household           7/16 |    0/16
+  lodging            16/16 |    0/16
+  project             7/16 |    0/16
+  vehicle            16/16 |    0/16
+  workplace          16/16 |    0/16
+e1 stale excluded (RESIDUAL/WITNESS-DROPPED): 0
+Behavioral non-commit per gap (0/n -> 95% CP upper bound):
+  fresh         0/584 (UB 0.0051)
+  near          0/344 (UB 0.0087)
+  boundary      1/465
+  expired_soon  0/342 (UB 0.0087)
+  stale         0/652 (UB 0.0046)
+  stale_long    0/347 (UB 0.0086)
+
+### openai/gpt-5.6-luna  [confirmatory]  (run-v2-full-20260825-010323)
+McNemar e1_primary c0 stale prog-vs-simple: pairs=128 discordant b(prog-only)=79 c(simple-only)=0 one-sided p=1.654e-24
+Carrier sign test (c1..c5): diffs=['+0.844', '+0.700', '+0.711', '+0.641', '+0.564'] positive=5/5 one-sided p=0.0312
+R1 same-lexeme McNemar: pairs=32 b=32 c=0 one-sided p=2.328e-10
+  R1 equipment prog: destroyed 16/16
+  R1 equipment simple: destroyed 0/16
+  R1 household prog: destroyed 31/32
+  R1 lodging prog: destroyed 16/16
+  R1 vehicle prog: destroyed 16/16
+  R1 vehicle simple: destroyed 0/16
+Per-frame destruction (e1_primary c0 stale) prog | simple:
+  affiliate_role     16/16 |    0/16
+  class               3/16 |    0/16
+  equipment          16/16 |    0/16
+  household           4/16 |    0/16
+  lodging             8/16 |    0/16
+  project             0/16 |    0/16
+  vehicle            16/16 |    0/16
+  workplace          16/16 |    0/16
+e1 stale excluded (RESIDUAL/WITNESS-DROPPED): 20
+Behavioral non-commit per gap (0/n -> 95% CP upper bound):
+  fresh         0/596 (UB 0.0050)
+  near          0/356 (UB 0.0084)
+  boundary      1/478
+  expired_soon  2/359
+  stale         4/676
+  stale_long    1/357
+
+### z-ai/glm-5.2  [confirmatory]  (run-v2-full-20260825-234313)
+McNemar e1_primary c0 stale prog-vs-simple: pairs=125 discordant b(prog-only)=61 c(simple-only)=0 one-sided p=4.337e-19
+Carrier sign test (c1..c5): diffs=['+0.525', '+0.550', '+0.517', '+0.475', '+0.525'] positive=5/5 one-sided p=0.0312
+R1 same-lexeme McNemar: pairs=32 b=30 c=0 one-sided p=9.313e-10
+  R1 equipment prog: destroyed 15/16
+  R1 equipment simple: destroyed 1/16
+  R1 household prog: destroyed 26/32
+  R1 lodging prog: destroyed 14/16
+  R1 vehicle prog: destroyed 16/16
+  R1 vehicle simple: destroyed 0/16
+Per-frame destruction (e1_primary c0 stale) prog | simple:
+  affiliate_role      7/15 |    0/16
+  class              15/15 |    0/16
+  equipment          16/16 |    8/16
+  household           1/16 |    0/16
+  lodging             3/16 |    0/16
+  project             3/16 |    0/16
+  vehicle            13/16 |    0/16
+  workplace          11/15 |    0/15
+e1 stale excluded (RESIDUAL/WITNESS-DROPPED): 20
+Behavioral non-commit per gap (0/n -> 95% CP upper bound):
+  fresh         0/584 (UB 0.0051)
+  near          0/345 (UB 0.0086)
+  boundary      0/460 (UB 0.0065)
+  expired_soon  0/325 (UB 0.0092)
+  stale         5/617
+  stale_long    4/326
+
+### anthropic/claude-sonnet-5  [frontier-subset]  (run-v2-full-frontier-sonnet5-20260826-104357)
+McNemar e1_primary c0 stale prog-vs-simple: pairs=128 discordant b(prog-only)=64 c(simple-only)=2 one-sided p=2.998e-17
+Carrier sign test: no carrier cells in this column (subset)
+R1: no paired data
+Per-frame destruction (e1_primary c0 stale) prog | simple:
+  affiliate_role      9/16 |    0/16
+  class              16/16 |    0/16
+  equipment          15/16 |   16/16
+  household           0/16 |    0/16
+  lodging             6/16 |    0/16
+  project             2/16 |    1/16
+  vehicle            16/16 |    0/16
+  workplace          15/16 |    0/16
+e1 stale excluded (RESIDUAL/WITNESS-DROPPED): 0
+
+### local/qwen3-8b  [local]  (run-v2-full-local-qwen3-8b-20260813-060538)
+McNemar e1_primary c0 stale prog-vs-simple: pairs=128 discordant b(prog-only)=68 c(simple-only)=0 one-sided p=3.388e-21
+Carrier sign test (c1..c5): diffs=['+0.475', '+0.600', '+0.550', '+0.500', '+0.775'] positive=5/5 one-sided p=0.0312
+R1 same-lexeme McNemar: pairs=32 b=32 c=0 one-sided p=2.328e-10
+  R1 equipment prog: destroyed 16/16
+  R1 equipment simple: destroyed 0/16
+  R1 household prog: destroyed 31/32
+  R1 lodging prog: destroyed 16/16
+  R1 vehicle prog: destroyed 16/16
+  R1 vehicle simple: destroyed 0/16
+Per-frame destruction (e1_primary c0 stale) prog | simple:
+  affiliate_role      4/16 |    0/16
+  class               0/16 |    0/16
+  equipment          16/16 |    0/16
+  household          16/16 |    0/16
+  lodging             1/16 |    0/16
+  project             0/16 |    0/16
+  vehicle            15/16 |    0/16
+  workplace          16/16 |    0/16
+e1 stale excluded (RESIDUAL/WITNESS-DROPPED): 0
+Behavioral non-commit per gap (0/n -> 95% CP upper bound):
+  fresh         9/596
+  near          8/357
+  boundary      9/475
+  expired_soon  8/357
+  stale         11/675
+  stale_long    7/356
+
+### local/mistral-small-3.2-24b-it  [local]  (run-v2-full-local-mistral-small-3.2-24b-20260813-064704)
+McNemar e1_primary c0 stale prog-vs-simple: pairs=127 discordant b(prog-only)=72 c(simple-only)=0 one-sided p=2.118e-22
+Carrier sign test (c1..c5): diffs=['+0.600', '+0.375', '+0.625', '+0.650', '+0.550'] positive=5/5 one-sided p=0.0312
+R1 same-lexeme McNemar: pairs=32 b=32 c=0 one-sided p=2.328e-10
+  R1 equipment prog: destroyed 16/16
+  R1 equipment simple: destroyed 0/16
+  R1 household prog: destroyed 16/32
+  R1 lodging prog: destroyed 16/16
+  R1 vehicle prog: destroyed 16/16
+  R1 vehicle simple: destroyed 0/16
+Per-frame destruction (e1_primary c0 stale) prog | simple:
+  affiliate_role      2/16 |    0/16
+  class               0/16 |    0/16
+  equipment           7/16 |    0/16
+  household          16/16 |    0/16
+  lodging            15/16 |    0/16
+  project             0/15 |    0/15
+  vehicle            16/16 |    0/16
+  workplace          16/16 |    0/16
+e1 stale excluded (RESIDUAL/WITNESS-DROPPED): 2
+Behavioral non-commit per gap (0/n -> 95% CP upper bound):
+  fresh         9/589
+  near          10/356
+  boundary      9/470
+  expired_soon  9/353
+  stale         8/667
+  stale_long    8/352
+
+### local/gpt-oss-20b  [extension]  (run-v2-full-local-gpt-oss-20b-20260826-052612)
+McNemar e1_primary c0 stale prog-vs-simple: pairs=128 discordant b(prog-only)=85 c(simple-only)=0 one-sided p=2.585e-26
+Carrier sign test (c1..c5): diffs=['+0.650', '+0.775', '+0.900', '+0.675', '+0.425'] positive=5/5 one-sided p=0.0312
+R1 same-lexeme McNemar: pairs=32 b=32 c=0 one-sided p=2.328e-10
+  R1 equipment prog: destroyed 16/16
+  R1 equipment simple: destroyed 0/16
+  R1 household prog: destroyed 32/32
+  R1 lodging prog: destroyed 16/16
+  R1 vehicle prog: destroyed 16/16
+  R1 vehicle simple: destroyed 0/16
+Per-frame destruction (e1_primary c0 stale) prog | simple:
+  affiliate_role      0/16 |    0/16
+  class              12/16 |    0/16
+  equipment          12/16 |    1/16
+  household          14/16 |    0/16
+  lodging            16/16 |    0/16
+  project             0/16 |    0/16
+  vehicle            16/16 |    0/16
+  workplace          16/16 |    0/16
+e1 stale excluded (RESIDUAL/WITNESS-DROPPED): 0
+Behavioral non-commit per gap (0/n -> 95% CP upper bound):
+  fresh         5/576
+  near          4/338
+  boundary      2/459
+  expired_soon  4/337
+  stale         4/639
+  stale_long    5/341
+
+### local/olmo-2-32b-instruct  [extension]  (run-v2-full-local-olmo-2-32b-instruct-20260826-060733)
+McNemar e1_primary c0 stale prog-vs-simple: pairs=128 discordant b(prog-only)=76 c(simple-only)=0 one-sided p=1.323e-23
+Carrier sign test (c1..c5): diffs=['+0.675', '+0.750', '+0.775', '+0.575', '+0.300'] positive=5/5 one-sided p=0.0312
+R1 same-lexeme McNemar: pairs=32 b=32 c=0 one-sided p=2.328e-10
+  R1 equipment prog: destroyed 16/16
+  R1 equipment simple: destroyed 0/16
+  R1 household prog: destroyed 16/32
+  R1 lodging prog: destroyed 9/16
+  R1 vehicle prog: destroyed 16/16
+  R1 vehicle simple: destroyed 0/16
+Per-frame destruction (e1_primary c0 stale) prog | simple:
+  affiliate_role      0/16 |    0/16
+  class               0/16 |    0/16
+  equipment          16/16 |    0/16
+  household          16/16 |    0/16
+  lodging            14/16 |    0/16
+  project             0/16 |    0/16
+  vehicle            16/16 |    0/16
+  workplace          14/16 |    0/16
+e1 stale excluded (RESIDUAL/WITNESS-DROPPED): 0
+Behavioral non-commit per gap (0/n -> 95% CP upper bound):
+  fresh         0/593 (UB 0.0050)
+  near          0/353 (UB 0.0085)
+  boundary      0/474 (UB 0.0063)
+  expired_soon  0/356 (UB 0.0084)
+  stale         0/670 (UB 0.0045)
+  stale_long    0/353 (UB 0.0085)
+
+========================================================================
+CONFIRMATORY FAMILY (3 API models, McNemar, Holm-adjusted):
+  deepseek/deepseek-v4-flash   pairs=128 b=104 c= 0 p=4.930e-32 holm=1.479e-31 direction=+ PASS
+  openai/gpt-5.6-luna          pairs=128 b= 79 c= 0 p=1.654e-24 holm=3.309e-24 direction=+ PASS
+  z-ai/glm-5.2                 pairs=125 b= 61 c= 0 p=4.337e-19 holm=4.337e-19 direction=+ PASS
+  >=2/3 required: 3/3 -> CONFIRMED

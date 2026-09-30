@@ -1,0 +1,456 @@
+{
+  "analysis": "verification-tool-calibration-gate",
+  "binding": {
+    "configuration_ids": [
+      "deepseek-v41-firstparty-nonthinking",
+      "luna-firstparty",
+      "glm52-baidu-fp8"
+    ],
+    "freeze_manifest_sha256": "406417d24e64cb6341ad8ee386105fb4b778a38fccdae406e06ec1887d7e34a1",
+    "input_sha256": "5f28474520cb381a28396dba7046189a3119abf62772396b3e13e3d3e9fd33ef",
+    "trace_sha256": "a2377a9ca63d2ae80e264ef546b6f6689458df8ac9f7ffad4238b43daa2ac21f"
+  },
+  "calibration_trace_hash": "a2377a9ca63d2ae80e264ef546b6f6689458df8ac9f7ffad4238b43daa2ac21f",
+  "failures": [],
+  "freeze_manifest_hash": "406417d24e64cb6341ad8ee386105fb4b778a38fccdae406e06ec1887d7e34a1",
+  "passed": true,
+  "reader_results": {
+    "deepseek-v41-firstparty-nonthinking": {
+      "all_three_pass": true,
+      "controls": {
+        "expired_bounded": {
+          "correct": 30,
+          "expected": "VERIFY",
+          "n": 30,
+          "passed": true,
+          "threshold": 24
+        },
+        "fresh": {
+          "correct": 30,
+          "expected": "EXECUTE",
+          "n": 30,
+          "passed": true,
+          "threshold": 22
+        },
+        "no_memory": {
+          "correct": 30,
+          "expected": "VERIFY",
+          "n": 30,
+          "passed": true,
+          "threshold": 24
+        }
+      },
+      "expired_bound_verify_pass": true,
+      "failures": [],
+      "frame_control_cells": {
+        "affiliate_role/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "affiliate_role/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "affiliate_role/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "class/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "class/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "class/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "equipment/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "equipment/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "equipment/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "project/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "project/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "project/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "vehicle/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "vehicle/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "vehicle/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "workplace/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "workplace/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "workplace/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        }
+      },
+      "fresh_execute_pass": true,
+      "n": 90,
+      "no_memory_verify_pass": true,
+      "passed": true,
+      "tool_parse_pass": true,
+      "valid_parsed": 90,
+      "valid_parsed_threshold": 86
+    },
+    "glm52-baidu-fp8": {
+      "all_three_pass": true,
+      "controls": {
+        "expired_bounded": {
+          "correct": 30,
+          "expected": "VERIFY",
+          "n": 30,
+          "passed": true,
+          "threshold": 24
+        },
+        "fresh": {
+          "correct": 30,
+          "expected": "EXECUTE",
+          "n": 30,
+          "passed": true,
+          "threshold": 22
+        },
+        "no_memory": {
+          "correct": 30,
+          "expected": "VERIFY",
+          "n": 30,
+          "passed": true,
+          "threshold": 24
+        }
+      },
+      "expired_bound_verify_pass": true,
+      "failures": [],
+      "frame_control_cells": {
+        "affiliate_role/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "affiliate_role/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "affiliate_role/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "class/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "class/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "class/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "equipment/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "equipment/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "equipment/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "project/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "project/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "project/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "vehicle/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "vehicle/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "vehicle/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "workplace/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "workplace/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "workplace/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        }
+      },
+      "fresh_execute_pass": true,
+      "n": 90,
+      "no_memory_verify_pass": true,
+      "passed": true,
+      "tool_parse_pass": true,
+      "valid_parsed": 90,
+      "valid_parsed_threshold": 86
+    },
+    "luna-firstparty": {
+      "all_three_pass": true,
+      "controls": {
+        "expired_bounded": {
+          "correct": 30,
+          "expected": "VERIFY",
+          "n": 30,
+          "passed": true,
+          "threshold": 24
+        },
+        "fresh": {
+          "correct": 30,
+          "expected": "EXECUTE",
+          "n": 30,
+          "passed": true,
+          "threshold": 22
+        },
+        "no_memory": {
+          "correct": 30,
+          "expected": "VERIFY",
+          "n": 30,
+          "passed": true,
+          "threshold": 24
+        }
+      },
+      "expired_bound_verify_pass": true,
+      "failures": [],
+      "frame_control_cells": {
+        "affiliate_role/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "affiliate_role/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "affiliate_role/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "class/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "class/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "class/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "equipment/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "equipment/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "equipment/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "project/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "project/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "project/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "vehicle/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "vehicle/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "vehicle/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "workplace/expired_bounded": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "workplace/fresh": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        },
+        "workplace/no_memory": {
+          "correct": 5,
+          "n": 5,
+          "passed": true,
+          "threshold": 3
+        }
+      },
+      "fresh_execute_pass": true,
+      "n": 90,
+      "no_memory_verify_pass": true,
+      "passed": true,
+      "tool_parse_pass": true,
+      "valid_parsed": 90,
+      "valid_parsed_threshold": 86
+    }
+  },
+  "schema_version": 1,
+  "stage": "control"
+}

@@ -1,0 +1,160 @@
+{
+  "analysis": "verification-tool-target-analysis",
+  "binding": {
+    "calibration_gate_sha256": "f2f2308970cbc7bc75c8fa6d3c74413df881de3cf1cbd14b5469af4d8c9972f6",
+    "calibration_trace_sha256": "a2377a9ca63d2ae80e264ef546b6f6689458df8ac9f7ffad4238b43daa2ac21f",
+    "configuration_ids": [
+      "deepseek-v41-firstparty-nonthinking",
+      "luna-firstparty",
+      "glm52-baidu-fp8"
+    ],
+    "freeze_manifest_sha256": "406417d24e64cb6341ad8ee386105fb4b778a38fccdae406e06ec1887d7e34a1",
+    "input_sha256": "e2b09410a4f77c318c6ec23d37c9075d8425bbea6a11ed10d82aefefff4a7fb0",
+    "trace_sha256": "3f8b1068827615e42b1605ccbea5a766d2807c4728dea41069c3d337ca79404d"
+  },
+  "note": "No pooled p-value is calculated; the three fixed reader configurations are the multiplicity family.",
+  "positive_holm_significant_readers": 0,
+  "reader_results": {
+    "deepseek-v41-firstparty-nonthinking": {
+      "arms": {
+        "flat": {
+          "errors": 0,
+          "execute": 5,
+          "execute_missing_or_invented_witness": 0,
+          "execute_rate_all_final": 0.07246376811594203,
+          "execute_rate_valid_parsed": 0.07246376811594203,
+          "n": 69,
+          "saturation_flag": true,
+          "unparsed": 0,
+          "valid_parsed": 69,
+          "verify": 64
+        },
+        "progressive": {
+          "errors": 0,
+          "execute": 2,
+          "execute_missing_or_invented_witness": 0,
+          "execute_rate_all_final": 0.028985507246376812,
+          "execute_rate_valid_parsed": 0.028985507246376812,
+          "n": 69,
+          "saturation_flag": true,
+          "unparsed": 0,
+          "valid_parsed": 69,
+          "verify": 67
+        }
+      },
+      "complete_pair_count": 69,
+      "configuration_id": "deepseek-v41-firstparty-nonthinking",
+      "conservative_missingness_risk_difference": {
+        "lower": 0.043478260869565216,
+        "upper": 0.043478260869565216
+      },
+      "discordant_flat_execute_progressive_not": 5,
+      "discordant_flat_not_progressive_execute": 2,
+      "discordant_total": 7,
+      "flat_minus_progressive_execute_risk_difference": 0.043478260869565216,
+      "holm_adjusted_p": 0.90625,
+      "holm_significant": false,
+      "mcnemar_two_sided_p": 0.453125,
+      "pair_count": 69,
+      "positive_holm_significant": false,
+      "reverse_holm_significant": false
+    },
+    "glm52-baidu-fp8": {
+      "arms": {
+        "flat": {
+          "errors": 0,
+          "execute": 38,
+          "execute_missing_or_invented_witness": 2,
+          "execute_rate_all_final": 0.5507246376811594,
+          "execute_rate_valid_parsed": 0.5671641791044776,
+          "n": 69,
+          "saturation_flag": false,
+          "unparsed": 2,
+          "valid_parsed": 67,
+          "verify": 29
+        },
+        "progressive": {
+          "errors": 0,
+          "execute": 28,
+          "execute_missing_or_invented_witness": 0,
+          "execute_rate_all_final": 0.4057971014492754,
+          "execute_rate_valid_parsed": 0.4057971014492754,
+          "n": 69,
+          "saturation_flag": false,
+          "unparsed": 0,
+          "valid_parsed": 69,
+          "verify": 41
+        }
+      },
+      "complete_pair_count": 67,
+      "configuration_id": "glm52-baidu-fp8",
+      "conservative_missingness_risk_difference": {
+        "lower": 0.14492753623188406,
+        "upper": 0.17391304347826086
+      },
+      "discordant_flat_execute_progressive_not": 17,
+      "discordant_flat_not_progressive_execute": 5,
+      "discordant_total": 22,
+      "flat_minus_progressive_execute_risk_difference": 0.1791044776119403,
+      "holm_adjusted_p": 0.05070161819458008,
+      "holm_significant": false,
+      "mcnemar_two_sided_p": 0.01690053939819336,
+      "pair_count": 69,
+      "positive_holm_significant": false,
+      "reverse_holm_significant": false
+    },
+    "luna-firstparty": {
+      "arms": {
+        "flat": {
+          "errors": 0,
+          "execute": 0,
+          "execute_missing_or_invented_witness": 0,
+          "execute_rate_all_final": 0.0,
+          "execute_rate_valid_parsed": 0.0,
+          "n": 69,
+          "saturation_flag": true,
+          "unparsed": 0,
+          "valid_parsed": 69,
+          "verify": 69
+        },
+        "progressive": {
+          "errors": 0,
+          "execute": 0,
+          "execute_missing_or_invented_witness": 0,
+          "execute_rate_all_final": 0.0,
+          "execute_rate_valid_parsed": 0.0,
+          "n": 69,
+          "saturation_flag": true,
+          "unparsed": 0,
+          "valid_parsed": 69,
+          "verify": 69
+        }
+      },
+      "complete_pair_count": 69,
+      "configuration_id": "luna-firstparty",
+      "conservative_missingness_risk_difference": {
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "discordant_flat_execute_progressive_not": 0,
+      "discordant_flat_not_progressive_execute": 0,
+      "discordant_total": 0,
+      "flat_minus_progressive_execute_risk_difference": 0.0,
+      "holm_adjusted_p": 1.0,
+      "holm_significant": false,
+      "mcnemar_two_sided_p": 1.0,
+      "pair_count": 69,
+      "positive_holm_significant": false,
+      "reverse_holm_significant": false
+    }
+  },
+  "schema_version": 1,
+  "significant_reverse_readers": 0,
+  "success": false,
+  "target_saturation_flags": [
+    "deepseek-v41-firstparty-nonthinking/flat",
+    "deepseek-v41-firstparty-nonthinking/progressive",
+    "luna-firstparty/flat",
+    "luna-firstparty/progressive"
+  ]
+}

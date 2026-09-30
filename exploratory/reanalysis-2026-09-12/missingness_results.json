@@ -1,0 +1,4737 @@
+{
+  "columns": [
+    {
+      "tier": "confirmatory",
+      "trace": "run-v2-full-20260825-010312",
+      "model": "deepseek/deepseek-v4-flash",
+      "confirmatory_label_counts_by_form_frame": {
+        "prog|affiliate_role": {
+          "COERCED-STATIVE": 13,
+          "PRESERVED": 3
+        },
+        "prog|class": {
+          "COERCED-STATIVE": 12,
+          "PRESERVED": 3,
+          "MANUFACTURE": 1
+        },
+        "prog|equipment": {
+          "COERCED-STATIVE": 10,
+          "MANUFACTURE": 6
+        },
+        "prog|household": {
+          "COERCED-STATIVE": 3,
+          "PRESERVED": 9,
+          "MANUFACTURE": 4
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|project": {
+          "PRESERVED": 9,
+          "MANUFACTURE": 6,
+          "COERCED-STATIVE": 1
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|workplace": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|affiliate_role": {
+          "PRESERVED": 16
+        },
+        "simple|class": {
+          "PRESERVED": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|household": {
+          "PRESERVED": 16
+        },
+        "simple|lodging": {
+          "PRESERVED": 16
+        },
+        "simple|project": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        },
+        "simple|workplace": {
+          "PRESERVED": 16
+        }
+      },
+      "confirmatory_pairs_dropped": [],
+      "confirmatory_baseline": {
+        "n": 128,
+        "b": 104,
+        "c": 0,
+        "p_one_sided": 4.930380657631324e-32
+      },
+      "confirmatory_worst_case_i": {
+        "n": 128,
+        "b": 104,
+        "c": 0,
+        "p_one_sided": 4.930380657631324e-32
+      },
+      "confirmatory_worst_case_ii": {
+        "n": 128,
+        "b": 104,
+        "c": 0,
+        "p_one_sided": 4.930380657631324e-32
+      },
+      "r1_label_counts_by_form_frame": {
+        "prog|equipment": {
+          "PRESERVED": 5,
+          "MANUFACTURE": 4,
+          "COERCED-STATIVE": 7
+        },
+        "prog|household": {
+          "COERCED-STATIVE": 23,
+          "PRESERVED": 7,
+          "MANUFACTURE": 2
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 15,
+          "PRESERVED": 1
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        }
+      },
+      "r1_pairs_dropped": [
+        {
+          "key": [
+            "household",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        }
+      ],
+      "r1_baseline": {
+        "n": 32,
+        "b": 27,
+        "c": 0,
+        "p_one_sided": 7.450580596923828e-09
+      },
+      "r1_worst_case_i": {
+        "n": 32,
+        "b": 27,
+        "c": 0,
+        "p_one_sided": 7.450580596923828e-09
+      },
+      "r1_worst_case_ii": {
+        "n": 32,
+        "b": 27,
+        "c": 0,
+        "p_one_sided": 7.450580596923828e-09
+      }
+    },
+    {
+      "tier": "confirmatory",
+      "trace": "run-v2-full-20260825-010323",
+      "model": "openai/gpt-5.6-luna",
+      "confirmatory_label_counts_by_form_frame": {
+        "prog|affiliate_role": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|class": {
+          "PRESERVED": 13,
+          "COERCED-STATIVE": 3
+        },
+        "prog|equipment": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|household": {
+          "PRESERVED": 12,
+          "COERCED-STATIVE": 4
+        },
+        "prog|lodging": {
+          "MANUFACTURE": 8,
+          "PRESERVED": 8
+        },
+        "prog|project": {
+          "PRESERVED": 16
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|workplace": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|affiliate_role": {
+          "PRESERVED": 16
+        },
+        "simple|class": {
+          "PRESERVED": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|household": {
+          "PRESERVED": 16
+        },
+        "simple|lodging": {
+          "PRESERVED": 16
+        },
+        "simple|project": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        },
+        "simple|workplace": {
+          "PRESERVED": 16
+        }
+      },
+      "confirmatory_pairs_dropped": [],
+      "confirmatory_baseline": {
+        "n": 128,
+        "b": 79,
+        "c": 0,
+        "p_one_sided": 1.6543612251060553e-24
+      },
+      "confirmatory_worst_case_i": {
+        "n": 128,
+        "b": 79,
+        "c": 0,
+        "p_one_sided": 1.6543612251060553e-24
+      },
+      "confirmatory_worst_case_ii": {
+        "n": 128,
+        "b": 79,
+        "c": 0,
+        "p_one_sided": 1.6543612251060553e-24
+      },
+      "r1_label_counts_by_form_frame": {
+        "prog|equipment": {
+          "COERCED-STATIVE": 13,
+          "MANUFACTURE": 3
+        },
+        "prog|household": {
+          "MANUFACTURE": 16,
+          "COERCED-STATIVE": 15,
+          "PRESERVED": 1
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        }
+      },
+      "r1_pairs_dropped": [
+        {
+          "key": [
+            "household",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        }
+      ],
+      "r1_baseline": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      },
+      "r1_worst_case_i": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      },
+      "r1_worst_case_ii": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      }
+    },
+    {
+      "tier": "confirmatory",
+      "trace": "run-v2-full-20260825-234313",
+      "model": "z-ai/glm-5.2",
+      "confirmatory_label_counts_by_form_frame": {
+        "prog|affiliate_role": {
+          "COERCED-STATIVE": 7,
+          "PRESERVED": 8,
+          "WITNESS-DROPPED": 1
+        },
+        "prog|class": {
+          "COERCED-STATIVE": 15,
+          "WITNESS-DROPPED": 1
+        },
+        "prog|equipment": {
+          "MANUFACTURE": 14,
+          "COERCED-STATIVE": 2
+        },
+        "prog|household": {
+          "PRESERVED": 15,
+          "COERCED-STATIVE": 1
+        },
+        "prog|lodging": {
+          "PRESERVED": 13,
+          "COERCED-STATIVE": 3
+        },
+        "prog|project": {
+          "MANUFACTURE": 3,
+          "PRESERVED": 13
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 13,
+          "PRESERVED": 3
+        },
+        "prog|workplace": {
+          "PRESERVED": 4,
+          "COERCED-STATIVE": 11,
+          "WITNESS-DROPPED": 1
+        },
+        "simple|affiliate_role": {
+          "PRESERVED": 16
+        },
+        "simple|class": {
+          "PRESERVED": 16
+        },
+        "simple|equipment": {
+          "MANUFACTURE": 8,
+          "PRESERVED": 8
+        },
+        "simple|household": {
+          "PRESERVED": 16
+        },
+        "simple|lodging": {
+          "PRESERVED": 16
+        },
+        "simple|project": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        },
+        "simple|workplace": {
+          "PRESERVED": 15,
+          "WITNESS-DROPPED": 1
+        }
+      },
+      "confirmatory_pairs_dropped": [
+        {
+          "key": [
+            "workplace",
+            8
+          ],
+          "reason": "excluded label",
+          "excluded": {
+            "prog": "WITNESS-DROPPED",
+            "simple": "WITNESS-DROPPED"
+          }
+        },
+        {
+          "key": [
+            "class",
+            9
+          ],
+          "reason": "excluded label",
+          "excluded": {
+            "prog": "WITNESS-DROPPED"
+          }
+        },
+        {
+          "key": [
+            "affiliate_role",
+            9
+          ],
+          "reason": "excluded label",
+          "excluded": {
+            "prog": "WITNESS-DROPPED"
+          }
+        }
+      ],
+      "confirmatory_baseline": {
+        "n": 125,
+        "b": 61,
+        "c": 0,
+        "p_one_sided": 4.336808689942018e-19
+      },
+      "confirmatory_worst_case_i": {
+        "n": 128,
+        "b": 61,
+        "c": 1,
+        "p_one_sided": 1.3660947373317356e-17
+      },
+      "confirmatory_worst_case_ii": {
+        "n": 128,
+        "b": 64,
+        "c": 0,
+        "p_one_sided": 5.421010862427522e-20
+      },
+      "r1_label_counts_by_form_frame": {
+        "prog|equipment": {
+          "MANUFACTURE": 9,
+          "COERCED-STATIVE": 6,
+          "PRESERVED": 1
+        },
+        "prog|household": {
+          "PRESERVED": 6,
+          "COERCED-STATIVE": 26
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 14,
+          "PRESERVED": 2
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 15,
+          "MANUFACTURE": 1
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        }
+      },
+      "r1_pairs_dropped": [
+        {
+          "key": [
+            "household",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        }
+      ],
+      "r1_baseline": {
+        "n": 32,
+        "b": 30,
+        "c": 0,
+        "p_one_sided": 9.313225746154785e-10
+      },
+      "r1_worst_case_i": {
+        "n": 32,
+        "b": 30,
+        "c": 0,
+        "p_one_sided": 9.313225746154785e-10
+      },
+      "r1_worst_case_ii": {
+        "n": 32,
+        "b": 30,
+        "c": 0,
+        "p_one_sided": 9.313225746154785e-10
+      }
+    },
+    {
+      "tier": "frontier-subset",
+      "trace": "run-v2-full-frontier-sonnet5-20260826-104357",
+      "model": "anthropic/claude-sonnet-5",
+      "confirmatory_label_counts_by_form_frame": {
+        "prog|affiliate_role": {
+          "PRESERVED": 7,
+          "COERCED-STATIVE": 9
+        },
+        "prog|class": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|equipment": {
+          "MANUFACTURE": 11,
+          "COERCED-STATIVE": 4,
+          "PRESERVED": 1
+        },
+        "prog|household": {
+          "PRESERVED": 16
+        },
+        "prog|lodging": {
+          "PRESERVED": 10,
+          "COERCED-STATIVE": 6
+        },
+        "prog|project": {
+          "MANUFACTURE": 2,
+          "PRESERVED": 14
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|workplace": {
+          "COERCED-STATIVE": 15,
+          "PRESERVED": 1
+        },
+        "simple|affiliate_role": {
+          "PRESERVED": 16
+        },
+        "simple|class": {
+          "PRESERVED": 16
+        },
+        "simple|equipment": {
+          "MANUFACTURE": 16
+        },
+        "simple|household": {
+          "PRESERVED": 16
+        },
+        "simple|lodging": {
+          "PRESERVED": 16
+        },
+        "simple|project": {
+          "PRESERVED": 15,
+          "MANUFACTURE": 1
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        },
+        "simple|workplace": {
+          "PRESERVED": 16
+        }
+      },
+      "confirmatory_pairs_dropped": [],
+      "confirmatory_baseline": {
+        "n": 128,
+        "b": 64,
+        "c": 2,
+        "p_one_sided": 2.99781900692242e-17
+      },
+      "confirmatory_worst_case_i": {
+        "n": 128,
+        "b": 64,
+        "c": 2,
+        "p_one_sided": 2.99781900692242e-17
+      },
+      "confirmatory_worst_case_ii": {
+        "n": 128,
+        "b": 64,
+        "c": 2,
+        "p_one_sided": 2.99781900692242e-17
+      },
+      "r1_label_counts_by_form_frame": {},
+      "r1_pairs_dropped": [],
+      "r1_baseline": {
+        "n": 0,
+        "b": 0,
+        "c": 0,
+        "p_one_sided": 1.0
+      },
+      "r1_worst_case_i": {
+        "n": 0,
+        "b": 0,
+        "c": 0,
+        "p_one_sided": 1.0
+      },
+      "r1_worst_case_ii": {
+        "n": 0,
+        "b": 0,
+        "c": 0,
+        "p_one_sided": 1.0
+      }
+    },
+    {
+      "tier": "local",
+      "trace": "run-v2-full-local-qwen3-8b-20260813-060538",
+      "model": "local/qwen3-8b",
+      "confirmatory_label_counts_by_form_frame": {
+        "prog|affiliate_role": {
+          "PRESERVED": 12,
+          "COERCED-STATIVE": 4
+        },
+        "prog|class": {
+          "PRESERVED": 16
+        },
+        "prog|equipment": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|household": {
+          "COERCED-STATIVE": 8,
+          "MANUFACTURE": 8
+        },
+        "prog|lodging": {
+          "PRESERVED": 15,
+          "COERCED-STATIVE": 1
+        },
+        "prog|project": {
+          "PRESERVED": 16
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 15,
+          "PRESERVED": 1
+        },
+        "prog|workplace": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|affiliate_role": {
+          "PRESERVED": 16
+        },
+        "simple|class": {
+          "PRESERVED": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|household": {
+          "PRESERVED": 16
+        },
+        "simple|lodging": {
+          "PRESERVED": 16
+        },
+        "simple|project": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        },
+        "simple|workplace": {
+          "PRESERVED": 16
+        }
+      },
+      "confirmatory_pairs_dropped": [],
+      "confirmatory_baseline": {
+        "n": 128,
+        "b": 68,
+        "c": 0,
+        "p_one_sided": 3.3881317890172014e-21
+      },
+      "confirmatory_worst_case_i": {
+        "n": 128,
+        "b": 68,
+        "c": 0,
+        "p_one_sided": 3.3881317890172014e-21
+      },
+      "confirmatory_worst_case_ii": {
+        "n": 128,
+        "b": 68,
+        "c": 0,
+        "p_one_sided": 3.3881317890172014e-21
+      },
+      "r1_label_counts_by_form_frame": {
+        "prog|equipment": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|household": {
+          "COERCED-STATIVE": 12,
+          "PRESERVED": 1,
+          "MANUFACTURE": 19
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        }
+      },
+      "r1_pairs_dropped": [
+        {
+          "key": [
+            "household",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        }
+      ],
+      "r1_baseline": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      },
+      "r1_worst_case_i": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      },
+      "r1_worst_case_ii": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      }
+    },
+    {
+      "tier": "local",
+      "trace": "run-v2-full-local-mistral-small-3.2-24b-20260813-064704",
+      "model": "local/mistral-small-3.2-24b-it",
+      "confirmatory_label_counts_by_form_frame": {
+        "prog|affiliate_role": {
+          "COERCED-STATIVE": 2,
+          "PRESERVED": 14
+        },
+        "prog|class": {
+          "PRESERVED": 16
+        },
+        "prog|equipment": {
+          "COERCED-STATIVE": 7,
+          "PRESERVED": 9
+        },
+        "prog|household": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 15,
+          "PRESERVED": 1
+        },
+        "prog|project": {
+          "PRESERVED": 15,
+          "WITNESS-DROPPED": 1
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|workplace": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|affiliate_role": {
+          "PRESERVED": 16
+        },
+        "simple|class": {
+          "PRESERVED": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|household": {
+          "PRESERVED": 16
+        },
+        "simple|lodging": {
+          "PRESERVED": 16
+        },
+        "simple|project": {
+          "PRESERVED": 15,
+          "WITNESS-DROPPED": 1
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        },
+        "simple|workplace": {
+          "PRESERVED": 16
+        }
+      },
+      "confirmatory_pairs_dropped": [
+        {
+          "key": [
+            "project",
+            12
+          ],
+          "reason": "excluded label",
+          "excluded": {
+            "prog": "WITNESS-DROPPED",
+            "simple": "WITNESS-DROPPED"
+          }
+        }
+      ],
+      "confirmatory_baseline": {
+        "n": 127,
+        "b": 72,
+        "c": 0,
+        "p_one_sided": 2.117582368135751e-22
+      },
+      "confirmatory_worst_case_i": {
+        "n": 128,
+        "b": 72,
+        "c": 1,
+        "p_one_sided": 7.835054762102278e-21
+      },
+      "confirmatory_worst_case_ii": {
+        "n": 128,
+        "b": 73,
+        "c": 0,
+        "p_one_sided": 1.0587911840678754e-22
+      },
+      "r1_label_counts_by_form_frame": {
+        "prog|equipment": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|household": {
+          "PRESERVED": 16,
+          "COERCED-STATIVE": 16
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        }
+      },
+      "r1_pairs_dropped": [
+        {
+          "key": [
+            "household",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        }
+      ],
+      "r1_baseline": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      },
+      "r1_worst_case_i": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      },
+      "r1_worst_case_ii": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      }
+    },
+    {
+      "tier": "extension",
+      "trace": "run-v2-full-local-gpt-oss-20b-20260826-052612",
+      "model": "local/gpt-oss-20b",
+      "confirmatory_label_counts_by_form_frame": {
+        "prog|affiliate_role": {
+          "PRESERVED": 16
+        },
+        "prog|class": {
+          "MANUFACTURE": 12,
+          "PRESERVED": 4
+        },
+        "prog|equipment": {
+          "MANUFACTURE": 10,
+          "COERCED-STATIVE": 2,
+          "PRESERVED": 4
+        },
+        "prog|household": {
+          "MANUFACTURE": 14,
+          "PRESERVED": 2
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|project": {
+          "PRESERVED": 16
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|workplace": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|affiliate_role": {
+          "PRESERVED": 16
+        },
+        "simple|class": {
+          "PRESERVED": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 15,
+          "MANUFACTURE": 1
+        },
+        "simple|household": {
+          "PRESERVED": 16
+        },
+        "simple|lodging": {
+          "PRESERVED": 16
+        },
+        "simple|project": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        },
+        "simple|workplace": {
+          "PRESERVED": 16
+        }
+      },
+      "confirmatory_pairs_dropped": [],
+      "confirmatory_baseline": {
+        "n": 128,
+        "b": 85,
+        "c": 0,
+        "p_one_sided": 2.5849394142282115e-26
+      },
+      "confirmatory_worst_case_i": {
+        "n": 128,
+        "b": 85,
+        "c": 0,
+        "p_one_sided": 2.5849394142282115e-26
+      },
+      "confirmatory_worst_case_ii": {
+        "n": 128,
+        "b": 85,
+        "c": 0,
+        "p_one_sided": 2.5849394142282115e-26
+      },
+      "r1_label_counts_by_form_frame": {
+        "prog|equipment": {
+          "COERCED-STATIVE": 14,
+          "MANUFACTURE": 2
+        },
+        "prog|household": {
+          "COERCED-STATIVE": 31,
+          "MANUFACTURE": 1
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        }
+      },
+      "r1_pairs_dropped": [
+        {
+          "key": [
+            "household",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "MANUFACTURE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        }
+      ],
+      "r1_baseline": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      },
+      "r1_worst_case_i": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      },
+      "r1_worst_case_ii": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      }
+    },
+    {
+      "tier": "extension",
+      "trace": "run-v2-full-local-olmo-2-32b-instruct-20260826-060733",
+      "model": "local/olmo-2-32b-instruct",
+      "confirmatory_label_counts_by_form_frame": {
+        "prog|affiliate_role": {
+          "PRESERVED": 16
+        },
+        "prog|class": {
+          "PRESERVED": 16
+        },
+        "prog|equipment": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|household": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 14,
+          "PRESERVED": 2
+        },
+        "prog|project": {
+          "PRESERVED": 16
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "prog|workplace": {
+          "COERCED-STATIVE": 14,
+          "PRESERVED": 2
+        },
+        "simple|affiliate_role": {
+          "PRESERVED": 16
+        },
+        "simple|class": {
+          "PRESERVED": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|household": {
+          "PRESERVED": 16
+        },
+        "simple|lodging": {
+          "PRESERVED": 16
+        },
+        "simple|project": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        },
+        "simple|workplace": {
+          "PRESERVED": 16
+        }
+      },
+      "confirmatory_pairs_dropped": [],
+      "confirmatory_baseline": {
+        "n": 128,
+        "b": 76,
+        "c": 0,
+        "p_one_sided": 1.3234889800848443e-23
+      },
+      "confirmatory_worst_case_i": {
+        "n": 128,
+        "b": 76,
+        "c": 0,
+        "p_one_sided": 1.3234889800848443e-23
+      },
+      "confirmatory_worst_case_ii": {
+        "n": 128,
+        "b": 76,
+        "c": 0,
+        "p_one_sided": 1.3234889800848443e-23
+      },
+      "r1_label_counts_by_form_frame": {
+        "prog|equipment": {
+          "COERCED-STATIVE": 10,
+          "MANUFACTURE": 6
+        },
+        "prog|household": {
+          "PRESERVED": 16,
+          "COERCED-STATIVE": 16
+        },
+        "prog|lodging": {
+          "COERCED-STATIVE": 9,
+          "PRESERVED": 7
+        },
+        "prog|vehicle": {
+          "COERCED-STATIVE": 16
+        },
+        "simple|equipment": {
+          "PRESERVED": 16
+        },
+        "simple|vehicle": {
+          "PRESERVED": 16
+        }
+      },
+      "r1_pairs_dropped": [
+        {
+          "key": [
+            "household",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "household",
+            0,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            1,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            4,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            2,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            6,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            9,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            13,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            14,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            11,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            3,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            15,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            12,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            5,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            7,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            8,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "household",
+            10,
+            "third"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            1,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            2,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            3,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            4,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            0,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            5,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            9,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            12,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            7,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            6,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            10,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            8,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            11,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            14,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            15,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "COERCED-STATIVE"
+          }
+        },
+        {
+          "key": [
+            "lodging",
+            13,
+            "first"
+          ],
+          "reason": "missing form",
+          "forms": {
+            "prog": "PRESERVED"
+          }
+        }
+      ],
+      "r1_baseline": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      },
+      "r1_worst_case_i": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      },
+      "r1_worst_case_ii": {
+        "n": 32,
+        "b": 32,
+        "c": 0,
+        "p_one_sided": 2.3283064365386963e-10
+      }
+    }
+  ],
+  "input_hashes": {
+    "data/stimuli_v2.jsonl": "87561af0713a9fff6bb36cfb993fc6b51c8b9939d96f7f98562d2b90d534fe32",
+    "traces/run-v2-full-20260825-010312.scored.jsonl": "06966014cc4590ea0babe5f6a6dfa57ab99ccc6aa72773778ae0cfcb13d6c412",
+    "traces/run-v2-full-20260825-010323.scored.jsonl": "b7bb45fdee42c329729ed4bb2491764634cf582ee8c5cc0836ce649174500d21",
+    "traces/run-v2-full-20260825-234313.scored.jsonl": "8b243eae69d7587ad3e612c63830c8778aa611282fcdd285ccc647c24f46e4a3",
+    "traces/run-v2-full-frontier-sonnet5-20260826-104357.scored.jsonl": "afa4fec5cb51007820c29cec69a62892d3fc7d1a7b58a73d74152b81af591716",
+    "traces/run-v2-full-local-qwen3-8b-20260813-060538.scored.jsonl": "9f533cf2ac7ef96492e1e87154fd4fd870407909276a0cc31cd620cfdc6a51e2",
+    "traces/run-v2-full-local-mistral-small-3.2-24b-20260813-064704.scored.jsonl": "06369cdc25e2511d915fcd00d7fbbcade8cf95f95d2cbd0fc6d993715b1b748a",
+    "traces/run-v2-full-local-gpt-oss-20b-20260826-052612.scored.jsonl": "08444de4676ff54e3acacce4811c0ab7aceb082007ab0b4a5e03fb764117068f",
+    "traces/run-v2-full-local-olmo-2-32b-instruct-20260826-060733.scored.jsonl": "8389d7feddb481bcd3b2483dcec59e550995f5c24a624e620da2ecd2e80f8062"
+  },
+  "confirmatory_worst_case_i_summary": [
+    {
+      "model": "deepseek/deepseek-v4-flash",
+      "confirmatory_p_worst_case_i": 4.930380657631324e-32,
+      "below_0.05_over_3": true,
+      "r1_p_worst_case_i": 7.450580596923828e-09,
+      "r1_below_0.05_over_3": true
+    },
+    {
+      "model": "openai/gpt-5.6-luna",
+      "confirmatory_p_worst_case_i": 1.6543612251060553e-24,
+      "below_0.05_over_3": true,
+      "r1_p_worst_case_i": 2.3283064365386963e-10,
+      "r1_below_0.05_over_3": true
+    },
+    {
+      "model": "z-ai/glm-5.2",
+      "confirmatory_p_worst_case_i": 1.3660947373317356e-17,
+      "below_0.05_over_3": true,
+      "r1_p_worst_case_i": 9.313225746154785e-10,
+      "r1_below_0.05_over_3": true
+    }
+  ]
+}

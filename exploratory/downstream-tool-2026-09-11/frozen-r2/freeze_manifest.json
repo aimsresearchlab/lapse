@@ -1,0 +1,115 @@
+{
+  "api_settings": {
+    "allow_fallbacks": false,
+    "base_url": "https://openrouter.ai/api/v1",
+    "calibration_revision": "R2",
+    "tool_choice": "required",
+    "workers": 6
+  },
+  "counts": {
+    "control": 270,
+    "target": 414
+  },
+  "estimated_cost_usd": 0.7235790126,
+  "freeze_compiler_version": 1,
+  "generated_inputs": "generated/inputs.jsonl",
+  "generated_manifest": "generated/manifest.json",
+  "hard_cost_cap_usd": 2.0,
+  "hashes": {
+    "frozen_control": "5f28474520cb381a28396dba7046189a3119abf62772396b3e13e3d3e9fd33ef",
+    "frozen_target": "e2b09410a4f77c318c6ec23d37c9075d8425bbea6a11ed10d82aefefff4a7fb0",
+    "generated_inputs": "e99f8ad47d77a31f4bac8159e3df1e55a697b8da38a5404c3aa07aa102c51f04",
+    "generated_manifest": "3adbbc0b9dc64f5c564fc669647666c5c2fcac53411d8c8a6dff9740fd3f0aac",
+    "run_config": "da46e347f03979d1efcfc101b7c5900ff71ae7c623f5bb56dcaa9483ab1a38cc",
+    "runner_prices": "1c37bfb6d39c3b29b870dc09c4b662847cae816a8f7c93d3c182949c0f99a409",
+    "source_inputs": "0574d3b30b6a269e0d33bfd5061bf9b881754c78802736ea330fcbc5860792e0"
+  },
+  "no_target_before_gate": true,
+  "price_snapshot": {
+    "catalog_timestamp": "2026-09-12T05:07:55Z",
+    "prices": {
+      "deepseek/deepseek-v4.1-flash": {
+        "endpoint": "DeepSeek | deepseek/deepseek-v4.1-flash-20260910",
+        "input_per_million": 0.15,
+        "output_per_million": 0.6,
+        "precision": "official first-party; catalog quantization unspecified"
+      },
+      "openai/gpt-5.6-luna": {
+        "endpoint": "OpenAI | openai/gpt-5.6-luna-20260709",
+        "input_per_million": 0.1,
+        "output_per_million": 0.6,
+        "precision": "official first-party"
+      },
+      "z-ai/glm-5.2": {
+        "endpoint": "Baidu | z-ai/glm-5.2-20260616",
+        "input_per_million": 0.4802,
+        "output_per_million": 1.5092,
+        "precision": "fp8"
+      }
+    }
+  },
+  "reader_configs": [
+    {
+      "max_output_tokens": 1024,
+      "model": "deepseek/deepseek-v4.1-flash",
+      "provider": "DeepSeek",
+      "reader_config_id": "deepseek-v41-firstparty-nonthinking",
+      "reasoning": {
+        "enabled": false
+      },
+      "served_model_expectation": "deepseek/deepseek-v4.1-flash-20260910",
+      "temperature": 0
+    },
+    {
+      "max_output_tokens": 1024,
+      "model": "openai/gpt-5.6-luna",
+      "provider": "OpenAI",
+      "reader_config_id": "luna-firstparty",
+      "served_model_expectation": "openai/gpt-5.6-luna-20260709",
+      "temperature": 0
+    },
+    {
+      "max_output_tokens": 1024,
+      "model": "z-ai/glm-5.2",
+      "provider": "Baidu",
+      "reader_config_id": "glm52-baidu-fp8",
+      "served_model_expectation": "z-ai/glm-5.2-20260616",
+      "temperature": 0
+    }
+  ],
+  "retry_rule": {
+    "maximum_retries_per_item": 1,
+    "permitted_only_when": "The recorded attempt has a non-null transport or provider error; UNPARSED and valid model outputs are never retried.",
+    "provenance": "Every attempt remains append-only. Any retry used in analysis requires an amended, hashed manifest selecting the exact attempt ID before target execution."
+  },
+  "saturation_rule": {
+    "boundary": "For each reader, if either target arm executes below 10% or above 90%, label that reader result instrument-boundary evidence.",
+    "claim_effect": "Saturation does not convert a null or significant contrast into evidence for the causal claim."
+  },
+  "source_inputs": "/Users/vein/Documents/research/aspect-persistence/exploratory/unrecoverability-2026-09-08/reader_g_inputs.jsonl",
+  "success_rule": {
+    "direction": "simple-present minus progressive EXECUTE risk difference is positive",
+    "multiplicity": "Two-sided exact McNemar tests with Holm-Bonferroni correction across exactly three reader configurations.",
+    "required": "Positive Holm-adjusted p < 0.05 in at least two of three readers, with no Holm-adjusted p < 0.05 reversal in the third.",
+    "summary": "No pooled significance test. Report the finite-item paired estimand, discordances, intervals or sensitivity bounds, all errors, and descriptive frame/source-form splits."
+  },
+  "thresholds": {
+    "all_readers_must_pass": true,
+    "expired_bounded_verify_min": "24/30",
+    "fresh_execute_min": "22/30",
+    "no_memory_verify_min": "24/30",
+    "per_frame_control_cell_correct_min": "3/5",
+    "valid_first_tool_parse_min": "86/90"
+  },
+  "user_authorization": {
+    "authorized": true,
+    "date_local": "2026-09-11",
+    "recorded_spend_before_r2_usd": {
+      "R0": 0.0385,
+      "R1": 0.0415
+    },
+    "scope": "After writing, implement and run the downstream design precisely, using faster Terra coding agents under primary-agent oversight, and update the documentation.",
+    "scope_2026_09_12": "User, 2026-09-12: 'Shoot. Just make sure that it does the job of the downstream test.' Authorizes R2 calibration and, if the gate passes, the 414 target calls within the unchanged USD 2.00 aggregate cap.",
+    "spend_scope": "Cheap non-Opus models only; the combined R0+R1+target hard cap remains USD 2.00."
+  }
+}

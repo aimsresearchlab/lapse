@@ -1,0 +1,265 @@
+{
+  "generated_by": "exploratory/reanalysis-2026-09-12/replicate_agreement.py",
+  "readers": {
+    "deepseek-v4-flash (official)": {
+      "canonical": true,
+      "main_trace": "trace_deepseek-deepseek-v4-flash-official.jsonl",
+      "rep2_trace": "trace_rep2_deepseek-deepseek-v4-flash-official.jsonl",
+      "n_common_items": 576,
+      "n_only_in_main": 0,
+      "n_only_in_rep2": 0,
+      "parse_field_agreement": {
+        "percent_agreement": 1.0,
+        "cohens_kappa": null,
+        "observed_agreement_po": 1.0,
+        "expected_agreement_pe": 1.0,
+        "note": "near-degenerate: parse is OK on almost every row project-wide, so pe is close to 1 and kappa is either undefined or uninformative; see numeric diagnostics below for the substantive comparison."
+      },
+      "numeric_p_agreement": {
+        "n_both_parsed_ok": 576,
+        "identical": 320,
+        "identical_pct": 0.5555555555555556,
+        "within_5_points": 495,
+        "within_5_pct": 0.859375,
+        "within_10_points": 523,
+        "within_10_pct": 0.9079861111111112,
+        "mean_abs_diff": 4.914930555555555,
+        "max_abs_diff": 100,
+        "n_items_changed_run1_vs_rep2": 256
+      },
+      "prog_vs_flat_contrast_by_gap": {
+        "stale": {
+          "run1": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -31.510416666666668,
+            "prog_lt_flat": 78,
+            "prog_gt_flat": 8,
+            "tied": 10,
+            "sign_test_two_sided_p": 1.5235832099273424e-15
+          },
+          "run2_replicate": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -29.322916666666668,
+            "prog_lt_flat": 66,
+            "prog_gt_flat": 12,
+            "tied": 18,
+            "sign_test_two_sided_p": 3.485851300097458e-10
+          }
+        },
+        "fresh": {
+          "run1": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -1.8333333333333333,
+            "prog_lt_flat": 46,
+            "prog_gt_flat": 8,
+            "tied": 42,
+            "sign_test_two_sided_p": 1.3843354973452904e-07
+          },
+          "run2_replicate": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -1.6979166666666667,
+            "prog_lt_flat": 48,
+            "prog_gt_flat": 13,
+            "tied": 35,
+            "sign_test_two_sided_p": 7.665168380445453e-06
+          }
+        }
+      }
+    },
+    "gpt-5.6-luna": {
+      "canonical": true,
+      "main_trace": "trace_openai-gpt-5-6-luna.jsonl",
+      "rep2_trace": "trace_rep2_openai-gpt-5-6-luna.jsonl",
+      "n_common_items": 576,
+      "n_only_in_main": 0,
+      "n_only_in_rep2": 0,
+      "parse_field_agreement": {
+        "percent_agreement": 1.0,
+        "cohens_kappa": null,
+        "observed_agreement_po": 1.0,
+        "expected_agreement_pe": 1.0,
+        "note": "near-degenerate: parse is OK on almost every row project-wide, so pe is close to 1 and kappa is either undefined or uninformative; see numeric diagnostics below for the substantive comparison."
+      },
+      "numeric_p_agreement": {
+        "n_both_parsed_ok": 576,
+        "identical": 188,
+        "identical_pct": 0.3263888888888889,
+        "within_5_points": 430,
+        "within_5_pct": 0.7465277777777778,
+        "within_10_points": 518,
+        "within_10_pct": 0.8993055555555556,
+        "mean_abs_diff": 5.390625,
+        "max_abs_diff": 50,
+        "n_items_changed_run1_vs_rep2": 388
+      },
+      "prog_vs_flat_contrast_by_gap": {
+        "stale": {
+          "run1": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -16.072916666666668,
+            "prog_lt_flat": 71,
+            "prog_gt_flat": 14,
+            "tied": 11,
+            "sign_test_two_sided_p": 2.427174154689865e-10
+          },
+          "run2_replicate": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -15.572916666666666,
+            "prog_lt_flat": 70,
+            "prog_gt_flat": 10,
+            "tied": 16,
+            "sign_test_two_sided_p": 3.161290522649495e-12
+          }
+        },
+        "fresh": {
+          "run1": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -5.552083333333333,
+            "prog_lt_flat": 52,
+            "prog_gt_flat": 16,
+            "tied": 28,
+            "sign_test_two_sided_p": 1.4074155775977473e-05
+          },
+          "run2_replicate": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -6.041666666666667,
+            "prog_lt_flat": 57,
+            "prog_gt_flat": 15,
+            "tied": 24,
+            "sign_test_two_sided_p": 6.539968221733264e-07
+          }
+        }
+      }
+    },
+    "glm-5.2": {
+      "canonical": true,
+      "main_trace": "trace_z-ai-glm-5-2.jsonl",
+      "rep2_trace": "trace_rep2_z-ai-glm-5-2.jsonl",
+      "n_common_items": 576,
+      "n_only_in_main": 0,
+      "n_only_in_rep2": 0,
+      "parse_field_agreement": {
+        "percent_agreement": 0.9982638888888888,
+        "cohens_kappa": 0.0,
+        "observed_agreement_po": 0.9982638888888888,
+        "expected_agreement_pe": 0.9982638888888888,
+        "note": "near-degenerate: parse is OK on almost every row project-wide, so pe is close to 1 and kappa is either undefined or uninformative; see numeric diagnostics below for the substantive comparison."
+      },
+      "numeric_p_agreement": {
+        "n_both_parsed_ok": 575,
+        "identical": 371,
+        "identical_pct": 0.6452173913043479,
+        "within_5_points": 504,
+        "within_5_pct": 0.8765217391304347,
+        "within_10_points": 556,
+        "within_10_pct": 0.9669565217391304,
+        "mean_abs_diff": 2.48,
+        "max_abs_diff": 20,
+        "n_items_changed_run1_vs_rep2": 205
+      },
+      "prog_vs_flat_contrast_by_gap": {
+        "stale": {
+          "run1": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -18.520833333333332,
+            "prog_lt_flat": 79,
+            "prog_gt_flat": 4,
+            "tied": 13,
+            "sign_test_two_sided_p": 3.9973254947441296e-19
+          },
+          "run2_replicate": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -18.677083333333332,
+            "prog_lt_flat": 86,
+            "prog_gt_flat": 1,
+            "tied": 9,
+            "sign_test_two_sided_p": 1.137373342260413e-24
+          }
+        },
+        "fresh": {
+          "run1": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -4.427083333333333,
+            "prog_lt_flat": 33,
+            "prog_gt_flat": 0,
+            "tied": 63,
+            "sign_test_two_sided_p": 2.3283064365386963e-10
+          },
+          "run2_replicate": {
+            "n_pairs": 95,
+            "mean_diff_prog_minus_flat": -4.2105263157894735,
+            "prog_lt_flat": 33,
+            "prog_gt_flat": 2,
+            "tied": 60,
+            "sign_test_two_sided_p": 3.6729034036397934e-08
+          }
+        }
+      }
+    },
+    "deepseek-v4-flash (openrouter-unpinned, non-canonical/superseded)": {
+      "canonical": false,
+      "main_trace": "trace_deepseek-deepseek-v4-flash-openrouter-unpinned.jsonl",
+      "rep2_trace": "trace_rep2_deepseek-deepseek-v4-flash-openrouter-unpinned.jsonl",
+      "n_common_items": 576,
+      "n_only_in_main": 0,
+      "n_only_in_rep2": 0,
+      "parse_field_agreement": {
+        "percent_agreement": 1.0,
+        "cohens_kappa": null,
+        "observed_agreement_po": 1.0,
+        "expected_agreement_pe": 1.0,
+        "note": "near-degenerate: parse is OK on almost every row project-wide, so pe is close to 1 and kappa is either undefined or uninformative; see numeric diagnostics below for the substantive comparison."
+      },
+      "numeric_p_agreement": {
+        "n_both_parsed_ok": 576,
+        "identical": 213,
+        "identical_pct": 0.3697916666666667,
+        "within_5_points": 354,
+        "within_5_pct": 0.6145833333333334,
+        "within_10_points": 379,
+        "within_10_pct": 0.6579861111111112,
+        "mean_abs_diff": 18.083333333333332,
+        "max_abs_diff": 100,
+        "n_items_changed_run1_vs_rep2": 363
+      },
+      "prog_vs_flat_contrast_by_gap": {
+        "stale": {
+          "run1": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -32.229166666666664,
+            "prog_lt_flat": 66,
+            "prog_gt_flat": 17,
+            "tied": 13,
+            "sign_test_two_sided_p": 5.602931385052865e-08
+          },
+          "run2_replicate": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -29.572916666666668,
+            "prog_lt_flat": 62,
+            "prog_gt_flat": 22,
+            "tied": 12,
+            "sign_test_two_sided_p": 1.4655953475888017e-05
+          }
+        },
+        "fresh": {
+          "run1": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -9.614583333333334,
+            "prog_lt_flat": 48,
+            "prog_gt_flat": 21,
+            "tied": 27,
+            "sign_test_two_sided_p": 0.0015503169494868645
+          },
+          "run2_replicate": {
+            "n_pairs": 96,
+            "mean_diff_prog_minus_flat": -7.416666666666667,
+            "prog_lt_flat": 46,
+            "prog_gt_flat": 21,
+            "tied": 29,
+            "sign_test_two_sided_p": 0.003065317669608741
+          }
+        }
+      }
+    }
+  }
+}

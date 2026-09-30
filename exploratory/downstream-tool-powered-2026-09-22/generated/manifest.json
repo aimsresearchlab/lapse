@@ -1,0 +1,187 @@
+{
+  "ages": {
+    "M1": "2026-08-08",
+    "M3": "2026-06-08",
+    "M8": "2026-01-06"
+  },
+  "builder": "build_powered.py v1",
+  "counts": {
+    "controls": {
+      "expired_bounded@M1": 30,
+      "expired_bounded@M3": 30,
+      "expired_bounded@M8": 30,
+      "fresh@TODAY": 30,
+      "no_memory@M8": 30
+    },
+    "e2e_anchor_redated_pairs_M1": 28,
+    "e2e_anchor_redated_pairs_M8": 0,
+    "e2e_pairs_per_age": {
+      "a_preserved@M1": 34,
+      "a_preserved@M3": 34,
+      "a_preserved@M8": 34,
+      "b_simple_source@M1": 37,
+      "b_simple_source@M3": 37,
+      "b_simple_source@M8": 37
+    },
+    "excluded_r2_v0_items": 69,
+    "lapse_contents": 120,
+    "new_contents": 51,
+    "r2_contents": 69,
+    "sweep_pairs_per_age": {
+      "M1": 30,
+      "M3": 30,
+      "M8": 30
+    },
+    "target_contents": 120,
+    "target_pairs_per_age": {
+      "M1": 291,
+      "M3": 291,
+      "M8": 291
+    }
+  },
+  "e2e_dropped_no_tool_frame": [
+    "a_preserved:household:00",
+    "a_preserved:household:01",
+    "a_preserved:household:02",
+    "a_preserved:household:04",
+    "a_preserved:household:05",
+    "a_preserved:household:06",
+    "a_preserved:household:07",
+    "a_preserved:household:08",
+    "a_preserved:household:09",
+    "a_preserved:household:10",
+    "a_preserved:household:11",
+    "a_preserved:lodging:00",
+    "a_preserved:lodging:01",
+    "a_preserved:lodging:02",
+    "a_preserved:lodging:03",
+    "a_preserved:lodging:04",
+    "a_preserved:lodging:05",
+    "a_preserved:lodging:06",
+    "a_preserved:lodging:07",
+    "a_preserved:lodging:08",
+    "a_preserved:lodging:09",
+    "a_preserved:lodging:10",
+    "a_preserved:lodging:11"
+  ],
+  "excluded_r2_v0_contents": [
+    "affiliate_role:00",
+    "affiliate_role:01",
+    "affiliate_role:02",
+    "affiliate_role:03",
+    "affiliate_role:04",
+    "affiliate_role:05",
+    "affiliate_role:07",
+    "affiliate_role:08",
+    "affiliate_role:09",
+    "affiliate_role:10",
+    "affiliate_role:11",
+    "class:00",
+    "class:01",
+    "class:02",
+    "class:03",
+    "class:04",
+    "class:05",
+    "class:06",
+    "class:07",
+    "class:08",
+    "class:09",
+    "class:10",
+    "class:11",
+    "equipment:00",
+    "equipment:01",
+    "equipment:02",
+    "equipment:03",
+    "equipment:04",
+    "equipment:05",
+    "equipment:06",
+    "equipment:07",
+    "equipment:08",
+    "equipment:09",
+    "equipment:10",
+    "project:00",
+    "project:01",
+    "project:02",
+    "project:03",
+    "project:04",
+    "project:05",
+    "project:06",
+    "project:07",
+    "project:08",
+    "project:09",
+    "project:10",
+    "vehicle:00",
+    "vehicle:01",
+    "vehicle:02",
+    "vehicle:03",
+    "vehicle:04",
+    "vehicle:05",
+    "vehicle:06",
+    "vehicle:07",
+    "vehicle:08",
+    "vehicle:09",
+    "vehicle:10",
+    "vehicle:11",
+    "workplace:00",
+    "workplace:01",
+    "workplace:02",
+    "workplace:03",
+    "workplace:04",
+    "workplace:05",
+    "workplace:06",
+    "workplace:07",
+    "workplace:08",
+    "workplace:09",
+    "workplace:10",
+    "workplace:11"
+  ],
+  "hashes": {
+    "controls.jsonl": "595fd1a518ad53cf673b5e93628888ac871e32a684124b12cadd5e760e456b87",
+    "e2e.jsonl": "050fe6d8710fdb9ae9752a21862729fd5e7034c204ad2b5722d52fa0bcad0dd0",
+    "sweep.jsonl": "2045dbee051de91f646d39c6462bfbf78c040c209a66dc47989042a413e8ed3d",
+    "targets.jsonl": "3fedf90f2680231e515dbcb4bcd5e9eb9c225d1dfd3554b37509fb0a2801d416"
+  },
+  "requests": {
+    "affiliate_role": [
+      "Submit this month's affiliate teaching timesheet to my current institution.",
+      "Please file this month's affiliate teaching timesheet with my current institution.",
+      "Send my current institution this month's affiliate teaching timesheet."
+    ],
+    "class": [
+      "Register me for next week's ceramics class at my current studio.",
+      "Please sign me up for next week's ceramics class at my current studio.",
+      "Book my spot in next week's ceramics class at my current studio."
+    ],
+    "equipment": [
+      "Schedule the routine service for the cello I am currently using.",
+      "Please book the routine service for my current cello.",
+      "Set up the regular maintenance appointment for my current cello."
+    ],
+    "project": [
+      "Submit an on-track status update for my current project.",
+      "Please file an on-track status update for my current project.",
+      "Send an on-track progress update for my current project."
+    ],
+    "vehicle": [
+      "Book the annual inspection for my current car.",
+      "Please schedule the yearly inspection for my current car.",
+      "Set up my current car's annual inspection appointment."
+    ],
+    "workplace": [
+      "Submit my pending conference reimbursement to my current employer.",
+      "Please file my outstanding conference reimbursement with my current employer.",
+      "Send my current employer the conference reimbursement claim I have pending."
+    ]
+  },
+  "sources": {
+    "e2e_source": "/Users/vein/Documents/research/aspect-persistence/exploratory/unrecoverability-2026-09-08/reader_inputs.jsonl",
+    "e2e_source_sha256": "0b69bd420345d9f83765a1f244f8e34490787656bcd9c1147a2d6c5a604ee7f5",
+    "lapse_stimuli": "/Users/vein/Documents/research/aspect-persistence/data/stimuli_v2.jsonl",
+    "lapse_stimuli_sha256": "87561af0713a9fff6bb36cfb993fc6b51c8b9939d96f7f98562d2b90d534fe32",
+    "r1_generated_inputs_sha256": "4104c393f7a8e9bc53ddb41509aa292a46dbe1a0551782b6685c32bb49f1f0a9",
+    "r2_builder_sha256": "d5595e5cc114ecf78474f2bf8b11c99a0b5cac5d928a37a8a5a32a4700bdf89e",
+    "r2_generated_inputs": "/Users/vein/Documents/research/aspect-persistence/exploratory/downstream-tool-2026-09-11/generated/inputs.jsonl",
+    "r2_generated_inputs_sha256": "e99f8ad47d77a31f4bac8159e3df1e55a697b8da38a5404c3aa07aa102c51f04"
+  },
+  "today": "2026-09-08"
+}

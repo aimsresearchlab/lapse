@@ -1,0 +1,781 @@
+{
+ "input_hashes": {
+  "/Users/vein/Documents/research/aspect-persistence/exploratory/qualifier-ablation-2026-09-12/manifest.json": "359b07808d348376d76165cdcd170d350b933c5745ad23e0a971a1ee5e8fa942",
+  "/Users/vein/Documents/research/aspect-persistence/exploratory/qualifier-ablation-2026-09-12/stimuli.jsonl": "f21d5384fc2b817865502d0abab75ac0dd8b0b60df8d26e7cb26bbb5fd7d20e5",
+  "trace_ext.scored.jsonl": "8e4eab2a3c1da03420155e3088f09f13306f0fc1cba0e0ac84f3cb8ca54b48d8"
+ },
+ "models": {
+  "google/gemini-3.8-flash": {
+   "ablation": {
+    "simple_atm": {
+     "holm_p_family6": 0.6014652661979198,
+     "labels": {
+      "DATE-ONLY": 47,
+      "DROPPED": 22,
+      "MARKER-KEPT-SAME": 14,
+      "RESIDUAL": 45
+     },
+     "marker_lost_not_prog_destroyed": 16,
+     "n_pairs": 83,
+     "p_two_sided": 0.2295229434967041,
+     "per_frame": {
+      "affiliate_role": {
+       "n": 16,
+       "prog_destroyed": 1,
+       "qual_lost": 1
+      },
+      "class": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 16
+      },
+      "equipment": {
+       "n": 16,
+       "prog_destroyed": 14,
+       "qual_lost": 7
+      },
+      "household": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 14
+      },
+      "lodging": {
+       "n": 16,
+       "prog_destroyed": 2,
+       "qual_lost": 3
+      },
+      "project": {
+       "n": 16,
+       "prog_destroyed": 1,
+       "qual_lost": 11
+      },
+      "vehicle": {
+       "n": 16,
+       "prog_destroyed": 14,
+       "qual_lost": 13
+      },
+      "workplace": {
+       "n": 16,
+       "prog_destroyed": 11,
+       "qual_lost": 4
+      }
+     },
+     "prog_destroyed_not_marker_lost": 9,
+     "prog_destroyed_rate": {
+      "ci95": [
+       0.4955430069981589,
+       0.6722629337182011
+      ],
+      "n": 128,
+      "rate": 0.5859375,
+      "x": 75
+     },
+     "qual_lost_rate": {
+      "ci95": [
+       0.7332160641549492,
+       0.9046003706809302
+      ],
+      "n": 83,
+      "rate": 0.8313253012048193,
+      "x": 69
+     },
+     "rate_difference_prog_minus_marker": -0.2453878012048193,
+     "reading": "general-qualifier-loss"
+    },
+    "simple_fornow": {
+     "holm_p_family6": 0.08024642802774906,
+     "labels": {
+      "DATE-ONLY": 57,
+      "DROPPED": 21,
+      "MARKER-KEPT-CROSS": 12,
+      "MARKER-KEPT-SAME": 3,
+      "PROG-CONVERTED": 1,
+      "RESIDUAL": 33,
+      "WITNESS-DROPPED": 1
+     },
+     "marker_lost_not_prog_destroyed": 23,
+     "n_pairs": 94,
+     "p_two_sided": 0.020061607006937265,
+     "per_frame": {
+      "affiliate_role": {
+       "n": 16,
+       "prog_destroyed": 1,
+       "qual_lost": 4
+      },
+      "class": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 16
+      },
+      "equipment": {
+       "n": 16,
+       "prog_destroyed": 14,
+       "qual_lost": 9
+      },
+      "household": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 9
+      },
+      "lodging": {
+       "n": 16,
+       "prog_destroyed": 2,
+       "qual_lost": 4
+      },
+      "project": {
+       "n": 16,
+       "prog_destroyed": 1,
+       "qual_lost": 12
+      },
+      "vehicle": {
+       "n": 16,
+       "prog_destroyed": 14,
+       "qual_lost": 15
+      },
+      "workplace": {
+       "n": 16,
+       "prog_destroyed": 11,
+       "qual_lost": 9
+      }
+     },
+     "prog_destroyed_not_marker_lost": 9,
+     "prog_destroyed_rate": {
+      "ci95": [
+       0.4955430069981589,
+       0.6722629337182011
+      ],
+      "n": 128,
+      "rate": 0.5859375,
+      "x": 75
+     },
+     "qual_lost_rate": {
+      "ci95": [
+       0.738352657586989,
+       0.8994616707487624
+      ],
+      "n": 94,
+      "rate": 0.8297872340425532,
+      "x": 78
+     },
+     "rate_difference_prog_minus_marker": -0.24384973404255317,
+     "reading": "general-qualifier-loss"
+    }
+   },
+   "errors": 0,
+   "labels": {
+    "prog|COERCED-STATIVE": 71,
+    "prog|MANUFACTURE": 4,
+    "prog|PRESERVED": 53,
+    "simple_atm|DATE-ONLY": 47,
+    "simple_atm|DROPPED": 22,
+    "simple_atm|MARKER-KEPT-SAME": 14,
+    "simple_atm|RESIDUAL": 45,
+    "simple_fornow|DATE-ONLY": 57,
+    "simple_fornow|DROPPED": 21,
+    "simple_fornow|MARKER-KEPT-CROSS": 12,
+    "simple_fornow|MARKER-KEPT-SAME": 3,
+    "simple_fornow|PROG-CONVERTED": 1,
+    "simple_fornow|RESIDUAL": 33,
+    "simple_fornow|WITNESS-DROPPED": 1,
+    "simple|MANUFACTURE": 10,
+    "simple|PRESERVED": 118
+   },
+   "placebo_marker_hits_on_unmarked_inputs": {
+    "prog||": 124,
+    "prog||C": 4,
+    "simple||": 118,
+    "simple||C": 10
+   },
+   "replication_prog_vs_simple": {
+    "b_prog_only": 66,
+    "c_simple_only": 1,
+    "frozen_run": {
+     "b": 0,
+     "c": 0,
+     "n": 0,
+     "p_one_sided": 1.0
+    },
+    "n": 128,
+    "p_one_sided": 4.607859233063394e-19
+   }
+  },
+  "mistralai/mistral-small-3.2-24b-instruct": {
+   "ablation": {
+    "simple_atm": {
+     "holm_p_family6": 1.862645149230957e-09,
+     "labels": {
+      "DATE-ONLY": 59,
+      "DROPPED": 52,
+      "RESIDUAL": 16,
+      "WITNESS-DROPPED": 1
+     },
+     "marker_lost_not_prog_destroyed": 33,
+     "n_pairs": 111,
+     "p_two_sided": 2.3283064365386963e-10,
+     "per_frame": {
+      "affiliate_role": {
+       "n": 16,
+       "prog_destroyed": 15,
+       "qual_lost": 16
+      },
+      "class": {
+       "n": 16,
+       "prog_destroyed": 2,
+       "qual_lost": 0
+      },
+      "equipment": {
+       "n": 16,
+       "prog_destroyed": 3,
+       "qual_lost": 16
+      },
+      "household": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 16
+      },
+      "lodging": {
+       "n": 16,
+       "prog_destroyed": 12,
+       "qual_lost": 16
+      },
+      "project": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 15
+      },
+      "vehicle": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 16
+      },
+      "workplace": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 16
+      }
+     },
+     "prog_destroyed_not_marker_lost": 0,
+     "prog_destroyed_rate": {
+      "ci95": [
+       0.5351108510265343,
+       0.7089650098495499
+      ],
+      "n": 128,
+      "rate": 0.625,
+      "x": 80
+     },
+     "qual_lost_rate": {
+      "ci95": [
+       0.9673130059760522,
+       1.0
+      ],
+      "n": 111,
+      "rate": 1.0,
+      "x": 111
+     },
+     "rate_difference_prog_minus_marker": -0.375,
+     "reading": "general-qualifier-loss"
+    },
+    "simple_fornow": {
+     "holm_p_family6": 4.85684722661972e-07,
+     "labels": {
+      "DATE-ONLY": 67,
+      "DROPPED": 40,
+      "MARKER-KEPT-CROSS": 3,
+      "RESIDUAL": 17,
+      "WITNESS-DROPPED": 1
+     },
+     "marker_lost_not_prog_destroyed": 32,
+     "n_pairs": 110,
+     "p_two_sided": 6.938353180885315e-08,
+     "per_frame": {
+      "affiliate_role": {
+       "n": 16,
+       "prog_destroyed": 15,
+       "qual_lost": 16
+      },
+      "class": {
+       "n": 16,
+       "prog_destroyed": 2,
+       "qual_lost": 0
+      },
+      "equipment": {
+       "n": 16,
+       "prog_destroyed": 3,
+       "qual_lost": 13
+      },
+      "household": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 16
+      },
+      "lodging": {
+       "n": 16,
+       "prog_destroyed": 12,
+       "qual_lost": 16
+      },
+      "project": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 15
+      },
+      "vehicle": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 15
+      },
+      "workplace": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 16
+      }
+     },
+     "prog_destroyed_not_marker_lost": 2,
+     "prog_destroyed_rate": {
+      "ci95": [
+       0.5351108510265343,
+       0.7089650098495499
+      ],
+      "n": 128,
+      "rate": 0.625,
+      "x": 80
+     },
+     "qual_lost_rate": {
+      "ci95": [
+       0.9223632295004867,
+       0.9943400035585208
+      ],
+      "n": 110,
+      "rate": 0.9727272727272728,
+      "x": 107
+     },
+     "rate_difference_prog_minus_marker": -0.3477272727272728,
+     "reading": "general-qualifier-loss"
+    }
+   },
+   "errors": 0,
+   "labels": {
+    "prog|COERCED-STATIVE": 79,
+    "prog|MANUFACTURE": 1,
+    "prog|PRESERVED": 48,
+    "simple_atm|DATE-ONLY": 59,
+    "simple_atm|DROPPED": 52,
+    "simple_atm|RESIDUAL": 16,
+    "simple_atm|WITNESS-DROPPED": 1,
+    "simple_fornow|DATE-ONLY": 67,
+    "simple_fornow|DROPPED": 40,
+    "simple_fornow|MARKER-KEPT-CROSS": 3,
+    "simple_fornow|RESIDUAL": 17,
+    "simple_fornow|WITNESS-DROPPED": 1,
+    "simple|PRESERVED": 128
+   },
+   "placebo_marker_hits_on_unmarked_inputs": {
+    "prog||": 127,
+    "prog||C": 1,
+    "simple||": 128
+   },
+   "replication_prog_vs_simple": {
+    "b_prog_only": 80,
+    "c_simple_only": 0,
+    "frozen_run": {
+     "b": 0,
+     "c": 0,
+     "n": 0,
+     "p_one_sided": 1.0
+    },
+    "n": 128,
+    "p_one_sided": 8.271806125530277e-25
+   }
+  },
+  "moonshotai/kimi-k2.5": {
+   "ablation": {
+    "simple_atm": {
+     "holm_p_family6": 0.0685909252933925,
+     "labels": {
+      "DATE-ONLY": 67,
+      "DROPPED": 15,
+      "ERROR": 2,
+      "MARKER-KEPT-SAME": 14,
+      "RESIDUAL": 28,
+      "WITNESS-DROPPED": 2
+     },
+     "marker_lost_not_prog_destroyed": 30,
+     "n_pairs": 95,
+     "p_two_sided": 0.0137181850586785,
+     "per_frame": {
+      "affiliate_role": {
+       "n": 16,
+       "prog_destroyed": 3,
+       "qual_lost": 0
+      },
+      "class": {
+       "n": 16,
+       "prog_destroyed": 15,
+       "qual_lost": 12
+      },
+      "equipment": {
+       "n": 16,
+       "prog_destroyed": 15,
+       "qual_lost": 6
+      },
+      "household": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 9
+      },
+      "lodging": {
+       "n": 16,
+       "prog_destroyed": 7,
+       "qual_lost": 8
+      },
+      "project": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 15
+      },
+      "vehicle": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 16
+      },
+      "workplace": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 16
+      }
+     },
+     "prog_destroyed_not_marker_lost": 13,
+     "prog_destroyed_rate": {
+      "ci95": [
+       0.48023998941268864,
+       0.6591814244093364
+      ],
+      "n": 126,
+      "rate": 0.5714285714285714,
+      "x": 72
+     },
+     "qual_lost_rate": {
+      "ci95": [
+       0.7674364408622438,
+       0.9179152917287086
+      ],
+      "n": 96,
+      "rate": 0.8541666666666666,
+      "x": 82
+     },
+     "rate_difference_prog_minus_marker": -0.28273809523809523,
+     "reading": "general-qualifier-loss"
+    },
+    "simple_fornow": {
+     "holm_p_family6": 0.019209262604702293,
+     "labels": {
+      "DATE-ONLY": 39,
+      "DROPPED": 8,
+      "ERROR": 1,
+      "MARKER-KEPT-CROSS": 5,
+      "MARKER-KEPT-SAME": 60,
+      "RESIDUAL": 14,
+      "WITNESS-DROPPED": 1
+     },
+     "marker_lost_not_prog_destroyed": 17,
+     "n_pairs": 110,
+     "p_two_sided": 0.003201543767450382,
+     "per_frame": {
+      "affiliate_role": {
+       "n": 16,
+       "prog_destroyed": 3,
+       "qual_lost": 0
+      },
+      "class": {
+       "n": 16,
+       "prog_destroyed": 15,
+       "qual_lost": 4
+      },
+      "equipment": {
+       "n": 16,
+       "prog_destroyed": 15,
+       "qual_lost": 11
+      },
+      "household": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 4
+      },
+      "lodging": {
+       "n": 16,
+       "prog_destroyed": 7,
+       "qual_lost": 0
+      },
+      "project": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 14
+      },
+      "vehicle": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 4
+      },
+      "workplace": {
+       "n": 16,
+       "prog_destroyed": 16,
+       "qual_lost": 10
+      }
+     },
+     "prog_destroyed_not_marker_lost": 40,
+     "prog_destroyed_rate": {
+      "ci95": [
+       0.48023998941268864,
+       0.6591814244093364
+      ],
+      "n": 126,
+      "rate": 0.5714285714285714,
+      "x": 72
+     },
+     "qual_lost_rate": {
+      "ci95": [
+       0.32704193399613624,
+       0.5166006390849223
+      ],
+      "n": 112,
+      "rate": 0.41964285714285715,
+      "x": 47
+     },
+     "rate_difference_prog_minus_marker": 0.15178571428571425,
+     "reading": "intermediate"
+    }
+   },
+   "errors": 4,
+   "labels": {
+    "prog|COERCED-STATIVE": 66,
+    "prog|MANUFACTURE": 6,
+    "prog|PRESERVED": 54,
+    "prog|WITNESS-DROPPED": 2,
+    "simple_atm|DATE-ONLY": 67,
+    "simple_atm|DROPPED": 15,
+    "simple_atm|ERROR": 2,
+    "simple_atm|MARKER-KEPT-SAME": 14,
+    "simple_atm|RESIDUAL": 28,
+    "simple_atm|WITNESS-DROPPED": 2,
+    "simple_fornow|DATE-ONLY": 39,
+    "simple_fornow|DROPPED": 8,
+    "simple_fornow|ERROR": 1,
+    "simple_fornow|MARKER-KEPT-CROSS": 5,
+    "simple_fornow|MARKER-KEPT-SAME": 60,
+    "simple_fornow|RESIDUAL": 14,
+    "simple_fornow|WITNESS-DROPPED": 1,
+    "simple|ERROR": 1,
+    "simple|PRESERVED": 127
+   },
+   "placebo_marker_hits_on_unmarked_inputs": {
+    "prog||": 122,
+    "prog||C": 6,
+    "simple||": 127
+   },
+   "replication_prog_vs_simple": {
+    "b_prog_only": 72,
+    "c_simple_only": 0,
+    "frozen_run": {
+     "b": 0,
+     "c": 0,
+     "n": 0,
+     "p_one_sided": 1.0
+    },
+    "n": 126,
+    "p_one_sided": 2.117582368135751e-22
+   }
+  },
+  "qwen/qwen3-8b": {
+   "ablation": {
+    "simple_atm": {
+     "holm_p_family6": 0.6014652661979198,
+     "labels": {
+      "DATE-ONLY": 7,
+      "DROPPED": 49,
+      "MARKER-KEPT-SAME": 25,
+      "RESIDUAL": 47
+     },
+     "marker_lost_not_prog_destroyed": 19,
+     "n_pairs": 81,
+     "p_two_sided": 0.20048842206597328,
+     "per_frame": {
+      "affiliate_role": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 1
+      },
+      "class": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 3
+      },
+      "equipment": {
+       "n": 16,
+       "prog_destroyed": 8,
+       "qual_lost": 11
+      },
+      "household": {
+       "n": 16,
+       "prog_destroyed": 14,
+       "qual_lost": 9
+      },
+      "lodging": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 1
+      },
+      "project": {
+       "n": 16,
+       "prog_destroyed": 2,
+       "qual_lost": 2
+      },
+      "vehicle": {
+       "n": 16,
+       "prog_destroyed": 12,
+       "qual_lost": 15
+      },
+      "workplace": {
+       "n": 16,
+       "prog_destroyed": 15,
+       "qual_lost": 14
+      }
+     },
+     "prog_destroyed_not_marker_lost": 11,
+     "prog_destroyed_rate": {
+      "ci95": [
+       0.3129894339793543,
+       0.48869601961060016
+      ],
+      "n": 128,
+      "rate": 0.3984375,
+      "x": 51
+     },
+     "qual_lost_rate": {
+      "ci95": [
+       0.5789196420792091,
+       0.7893176456199296
+      ],
+      "n": 81,
+      "rate": 0.691358024691358,
+      "x": 56
+     },
+     "rate_difference_prog_minus_marker": -0.292920524691358,
+     "reading": "general-qualifier-loss"
+    },
+    "simple_fornow": {
+     "holm_p_family6": 0.6014652661979198,
+     "labels": {
+      "DATE-ONLY": 7,
+      "DROPPED": 43,
+      "MARKER-KEPT-CROSS": 17,
+      "MARKER-KEPT-SAME": 2,
+      "RESIDUAL": 59
+     },
+     "marker_lost_not_prog_destroyed": 19,
+     "n_pairs": 69,
+     "p_two_sided": 0.37708558747544885,
+     "per_frame": {
+      "affiliate_role": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 2
+      },
+      "class": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 2
+      },
+      "equipment": {
+       "n": 16,
+       "prog_destroyed": 8,
+       "qual_lost": 16
+      },
+      "household": {
+       "n": 16,
+       "prog_destroyed": 14,
+       "qual_lost": 2
+      },
+      "lodging": {
+       "n": 16,
+       "prog_destroyed": 0,
+       "qual_lost": 0
+      },
+      "project": {
+       "n": 16,
+       "prog_destroyed": 2,
+       "qual_lost": 4
+      },
+      "vehicle": {
+       "n": 16,
+       "prog_destroyed": 12,
+       "qual_lost": 9
+      },
+      "workplace": {
+       "n": 16,
+       "prog_destroyed": 15,
+       "qual_lost": 15
+      }
+     },
+     "prog_destroyed_not_marker_lost": 13,
+     "prog_destroyed_rate": {
+      "ci95": [
+       0.3129894339793543,
+       0.48869601961060016
+      ],
+      "n": 128,
+      "rate": 0.3984375,
+      "x": 51
+     },
+     "qual_lost_rate": {
+      "ci95": [
+       0.6038491912829196,
+       0.8253740473515698
+      ],
+      "n": 69,
+      "rate": 0.7246376811594203,
+      "x": 50
+     },
+     "rate_difference_prog_minus_marker": -0.3262001811594203,
+     "reading": "general-qualifier-loss"
+    }
+   },
+   "errors": 0,
+   "labels": {
+    "prog|COERCED-STATIVE": 41,
+    "prog|MANUFACTURE": 10,
+    "prog|PRESERVED": 77,
+    "simple_atm|DATE-ONLY": 7,
+    "simple_atm|DROPPED": 49,
+    "simple_atm|MARKER-KEPT-SAME": 25,
+    "simple_atm|RESIDUAL": 47,
+    "simple_fornow|DATE-ONLY": 7,
+    "simple_fornow|DROPPED": 43,
+    "simple_fornow|MARKER-KEPT-CROSS": 17,
+    "simple_fornow|MARKER-KEPT-SAME": 2,
+    "simple_fornow|RESIDUAL": 59,
+    "simple|MANUFACTURE": 4,
+    "simple|PRESERVED": 124
+   },
+   "placebo_marker_hits_on_unmarked_inputs": {
+    "prog|T|": 1,
+    "prog||": 119,
+    "prog||C": 8,
+    "simple||": 124,
+    "simple||C": 4
+   },
+   "replication_prog_vs_simple": {
+    "b_prog_only": 51,
+    "c_simple_only": 4,
+    "frozen_run": {
+     "b": 0,
+     "c": 0,
+     "n": 0,
+     "p_one_sided": 1.0
+    },
+    "n": 128,
+    "p_one_sided": 1.0237116709888028e-11
+   }
+  }
+ },
+ "tests": []
+}

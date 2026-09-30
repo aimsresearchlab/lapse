@@ -1,0 +1,561 @@
+{
+ "cells": {
+  "deepseek/deepseek-v4.1-flash|M1": {
+   "age": "M1",
+   "complete_pairs": 69,
+   "execute": {
+    "progressive": 28,
+    "simple": 33
+   },
+   "flat_only": 5,
+   "holm_p_family6": 0.3125,
+   "n": {
+    "progressive": 69,
+    "simple": 69
+   },
+   "n_pairs": 69,
+   "p_two_sided": 0.0625,
+   "per_frame": {
+    "affiliate_role": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "class": {
+     "flat_exec": 12,
+     "n": 12,
+     "prog_exec": 12
+    },
+    "equipment": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "project": {
+     "flat_exec": 8,
+     "n": 11,
+     "prog_exec": 6
+    },
+    "vehicle": {
+     "flat_exec": 12,
+     "n": 12,
+     "prog_exec": 10
+    },
+    "workplace": {
+     "flat_exec": 1,
+     "n": 12,
+     "prog_exec": 0
+    }
+   },
+   "prog_only": 0,
+   "rate": {
+    "progressive": 0.4057971014492754,
+    "simple": 0.4782608695652174
+   },
+   "reader": "deepseek/deepseek-v4.1-flash",
+   "risk_difference": 0.07246376811594203,
+   "saturation": [],
+   "unparsed": {
+    "progressive": 0,
+    "simple": 0
+   }
+  },
+  "deepseek/deepseek-v4.1-flash|M3": {
+   "age": "M3",
+   "complete_pairs": 69,
+   "execute": {
+    "progressive": 14,
+    "simple": 20
+   },
+   "flat_only": 9,
+   "holm_p_family6": 0.583984375,
+   "n": {
+    "progressive": 69,
+    "simple": 69
+   },
+   "n_pairs": 69,
+   "p_two_sided": 0.14599609375,
+   "per_frame": {
+    "affiliate_role": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "class": {
+     "flat_exec": 10,
+     "n": 12,
+     "prog_exec": 10
+    },
+    "equipment": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "project": {
+     "flat_exec": 4,
+     "n": 11,
+     "prog_exec": 2
+    },
+    "vehicle": {
+     "flat_exec": 6,
+     "n": 12,
+     "prog_exec": 2
+    },
+    "workplace": {
+     "flat_exec": 0,
+     "n": 12,
+     "prog_exec": 0
+    }
+   },
+   "prog_only": 3,
+   "rate": {
+    "progressive": 0.2028985507246377,
+    "simple": 0.2898550724637681
+   },
+   "reader": "deepseek/deepseek-v4.1-flash",
+   "risk_difference": 0.08695652173913043,
+   "saturation": [],
+   "unparsed": {
+    "progressive": 0,
+    "simple": 0
+   }
+  },
+  "deepseek/deepseek-v4.1-flash|M8": {
+   "age": "M8",
+   "complete_pairs": 69,
+   "execute": {
+    "progressive": 2,
+    "simple": 5
+   },
+   "flat_only": 5,
+   "n": {
+    "progressive": 69,
+    "simple": 69
+   },
+   "n_pairs": 69,
+   "p_two_sided": 0.453125,
+   "per_frame": {
+    "affiliate_role": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "class": {
+     "flat_exec": 4,
+     "n": 12,
+     "prog_exec": 0
+    },
+    "equipment": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "project": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 2
+    },
+    "vehicle": {
+     "flat_exec": 1,
+     "n": 12,
+     "prog_exec": 0
+    },
+    "workplace": {
+     "flat_exec": 0,
+     "n": 12,
+     "prog_exec": 0
+    }
+   },
+   "prog_only": 2,
+   "rate": {
+    "progressive": 0.028985507246376812,
+    "simple": 0.07246376811594203
+   },
+   "reader": "deepseek/deepseek-v4.1-flash",
+   "risk_difference": 0.043478260869565216,
+   "saturation": [
+    "simple",
+    "progressive"
+   ],
+   "unparsed": {
+    "progressive": 0,
+    "simple": 0
+   }
+  },
+  "openai/gpt-5.6-luna|M1": {
+   "age": "M1",
+   "complete_pairs": 69,
+   "execute": {
+    "progressive": 0,
+    "simple": 1
+   },
+   "flat_only": 1,
+   "holm_p_family6": 1.0,
+   "n": {
+    "progressive": 69,
+    "simple": 69
+   },
+   "n_pairs": 69,
+   "p_two_sided": 1.0,
+   "per_frame": {
+    "affiliate_role": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "class": {
+     "flat_exec": 0,
+     "n": 12,
+     "prog_exec": 0
+    },
+    "equipment": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "project": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "vehicle": {
+     "flat_exec": 1,
+     "n": 12,
+     "prog_exec": 0
+    },
+    "workplace": {
+     "flat_exec": 0,
+     "n": 12,
+     "prog_exec": 0
+    }
+   },
+   "prog_only": 0,
+   "rate": {
+    "progressive": 0.0,
+    "simple": 0.014492753623188406
+   },
+   "reader": "openai/gpt-5.6-luna",
+   "risk_difference": 0.014492753623188406,
+   "saturation": [
+    "simple",
+    "progressive"
+   ],
+   "unparsed": {
+    "progressive": 0,
+    "simple": 0
+   }
+  },
+  "openai/gpt-5.6-luna|M3": {
+   "age": "M3",
+   "complete_pairs": 69,
+   "execute": {
+    "progressive": 0,
+    "simple": 1
+   },
+   "flat_only": 1,
+   "holm_p_family6": 1.0,
+   "n": {
+    "progressive": 69,
+    "simple": 69
+   },
+   "n_pairs": 69,
+   "p_two_sided": 1.0,
+   "per_frame": {
+    "affiliate_role": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "class": {
+     "flat_exec": 0,
+     "n": 12,
+     "prog_exec": 0
+    },
+    "equipment": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "project": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "vehicle": {
+     "flat_exec": 1,
+     "n": 12,
+     "prog_exec": 0
+    },
+    "workplace": {
+     "flat_exec": 0,
+     "n": 12,
+     "prog_exec": 0
+    }
+   },
+   "prog_only": 0,
+   "rate": {
+    "progressive": 0.0,
+    "simple": 0.014492753623188406
+   },
+   "reader": "openai/gpt-5.6-luna",
+   "risk_difference": 0.014492753623188406,
+   "saturation": [
+    "simple",
+    "progressive"
+   ],
+   "unparsed": {
+    "progressive": 0,
+    "simple": 0
+   }
+  },
+  "openai/gpt-5.6-luna|M8": {
+   "age": "M8",
+   "complete_pairs": 69,
+   "execute": {
+    "progressive": 0,
+    "simple": 0
+   },
+   "flat_only": 0,
+   "n": {
+    "progressive": 69,
+    "simple": 69
+   },
+   "n_pairs": 69,
+   "p_two_sided": 1.0,
+   "per_frame": {
+    "affiliate_role": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "class": {
+     "flat_exec": 0,
+     "n": 12,
+     "prog_exec": 0
+    },
+    "equipment": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "project": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "vehicle": {
+     "flat_exec": 0,
+     "n": 12,
+     "prog_exec": 0
+    },
+    "workplace": {
+     "flat_exec": 0,
+     "n": 12,
+     "prog_exec": 0
+    }
+   },
+   "prog_only": 0,
+   "rate": {
+    "progressive": 0.0,
+    "simple": 0.0
+   },
+   "reader": "openai/gpt-5.6-luna",
+   "risk_difference": 0.0,
+   "saturation": [
+    "simple",
+    "progressive"
+   ],
+   "unparsed": {
+    "progressive": 0,
+    "simple": 0
+   }
+  },
+  "z-ai/glm-5.2|M1": {
+   "age": "M1",
+   "complete_pairs": 65,
+   "execute": {
+    "progressive": 66,
+    "simple": 61
+   },
+   "flat_only": 1,
+   "holm_p_family6": 1.0,
+   "n": {
+    "progressive": 69,
+    "simple": 69
+   },
+   "n_pairs": 69,
+   "p_two_sided": 0.375,
+   "per_frame": {
+    "affiliate_role": {
+     "flat_exec": 11,
+     "n": 11,
+     "prog_exec": 11
+    },
+    "class": {
+     "flat_exec": 12,
+     "n": 12,
+     "prog_exec": 12
+    },
+    "equipment": {
+     "flat_exec": 7,
+     "n": 11,
+     "prog_exec": 10
+    },
+    "project": {
+     "flat_exec": 11,
+     "n": 11,
+     "prog_exec": 11
+    },
+    "vehicle": {
+     "flat_exec": 8,
+     "n": 8,
+     "prog_exec": 8
+    },
+    "workplace": {
+     "flat_exec": 12,
+     "n": 12,
+     "prog_exec": 12
+    }
+   },
+   "prog_only": 4,
+   "rate": {
+    "progressive": 0.9565217391304348,
+    "simple": 0.8840579710144928
+   },
+   "reader": "z-ai/glm-5.2",
+   "risk_difference": -0.046153846153846156,
+   "saturation": [
+    "progressive"
+   ],
+   "unparsed": {
+    "progressive": 2,
+    "simple": 4
+   }
+  },
+  "z-ai/glm-5.2|M3": {
+   "age": "M3",
+   "complete_pairs": 67,
+   "execute": {
+    "progressive": 50,
+    "simple": 59
+   },
+   "flat_only": 14,
+   "holm_p_family6": 0.07635498046875,
+   "n": {
+    "progressive": 69,
+    "simple": 69
+   },
+   "n_pairs": 69,
+   "p_two_sided": 0.012725830078125,
+   "per_frame": {
+    "affiliate_role": {
+     "flat_exec": 11,
+     "n": 11,
+     "prog_exec": 7
+    },
+    "class": {
+     "flat_exec": 12,
+     "n": 12,
+     "prog_exec": 9
+    },
+    "equipment": {
+     "flat_exec": 4,
+     "n": 11,
+     "prog_exec": 2
+    },
+    "project": {
+     "flat_exec": 10,
+     "n": 11,
+     "prog_exec": 8
+    },
+    "vehicle": {
+     "flat_exec": 10,
+     "n": 10,
+     "prog_exec": 10
+    },
+    "workplace": {
+     "flat_exec": 12,
+     "n": 12,
+     "prog_exec": 12
+    }
+   },
+   "prog_only": 3,
+   "rate": {
+    "progressive": 0.7246376811594203,
+    "simple": 0.855072463768116
+   },
+   "reader": "z-ai/glm-5.2",
+   "risk_difference": 0.16417910447761194,
+   "saturation": [],
+   "unparsed": {
+    "progressive": 0,
+    "simple": 2
+   }
+  },
+  "z-ai/glm-5.2|M8": {
+   "age": "M8",
+   "complete_pairs": 67,
+   "execute": {
+    "progressive": 28,
+    "simple": 38
+   },
+   "flat_only": 17,
+   "n": {
+    "progressive": 69,
+    "simple": 69
+   },
+   "n_pairs": 69,
+   "p_two_sided": 0.01690053939819336,
+   "per_frame": {
+    "affiliate_role": {
+     "flat_exec": 5,
+     "n": 11,
+     "prog_exec": 3
+    },
+    "class": {
+     "flat_exec": 11,
+     "n": 12,
+     "prog_exec": 4
+    },
+    "equipment": {
+     "flat_exec": 0,
+     "n": 11,
+     "prog_exec": 0
+    },
+    "project": {
+     "flat_exec": 4,
+     "n": 11,
+     "prog_exec": 2
+    },
+    "vehicle": {
+     "flat_exec": 10,
+     "n": 10,
+     "prog_exec": 10
+    },
+    "workplace": {
+     "flat_exec": 8,
+     "n": 12,
+     "prog_exec": 7
+    }
+   },
+   "prog_only": 5,
+   "rate": {
+    "progressive": 0.4057971014492754,
+    "simple": 0.5507246376811594
+   },
+   "reader": "z-ai/glm-5.2",
+   "risk_difference": 0.1791044776119403,
+   "saturation": [],
+   "unparsed": {
+    "progressive": 0,
+    "simple": 2
+   }
+  }
+ },
+ "hashes": {
+  "age_targets.jsonl": "d19a6c30c6ae262da71161c9ebd40bfd953981c692f6b170ce04f7190c033439",
+  "trace_age_controls.jsonl": "495c676a756ee7e00e60036305fc60fe49b1f304a6359daf6128f14ebeacea0d",
+  "trace_age_targets.jsonl": "7d30376764ab18834212d7d10e462132d8ba9a4f0afc5e16aad5d4e56461badf"
+ },
+ "r2_target_trace_sha256": "3f8b1068827615e42b1605ccbea5a766d2807c4728dea41069c3d337ca79404d"
+}

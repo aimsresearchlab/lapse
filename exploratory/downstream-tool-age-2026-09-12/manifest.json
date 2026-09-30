@@ -1,0 +1,27 @@
+{
+  "ages": {
+    "M1": "2026-08-08",
+    "M3": "2026-06-08"
+  },
+  "counts": {
+    "age_controls": 180,
+    "age_targets": 828
+  },
+  "experiment": "downstream-tool-note-age",
+  "hard_cost_cap_usd": 1.0,
+  "hashes": {
+    "age_controls": "ed98be73dc1c76b945da421beee67a62924807172469ce0692f0f3af40c30a42",
+    "age_targets": "d19a6c30c6ae262da71161c9ebd40bfd953981c692f6b170ce04f7190c033439"
+  },
+  "instrument": "unchanged from R2 (prompt policy, tools, enum field, readers, temperature 0, max 1024 tokens); only the note's written date varies",
+  "r2_source": {
+    "calibration_gate_sha256": "f2f2308970cbc7bc75c8fa6d3c74413df881de3cf1cbd14b5469af4d8c9972f6",
+    "calibration_trace_sha256": "a2377a9ca63d2ae80e264ef546b6f6689458df8ac9f7ffad4238b43daa2ac21f",
+    "control": "/Users/vein/Documents/research/aspect-persistence/exploratory/downstream-tool-2026-09-11/frozen-r2/control.jsonl",
+    "control_sha256": "5f28474520cb381a28396dba7046189a3119abf62772396b3e13e3d3e9fd33ef",
+    "freeze_manifest_sha256": "406417d24e64cb6341ad8ee386105fb4b778a38fccdae406e06ec1887d7e34a1",
+    "target": "/Users/vein/Documents/research/aspect-persistence/exploratory/downstream-tool-2026-09-11/frozen-r2/target.jsonl",
+    "target_sha256": "e2b09410a4f77c318c6ec23d37c9075d8425bbea6a11ed10d82aefefff4a7fb0"
+  },
+  "today": "2026-09-08"
+}

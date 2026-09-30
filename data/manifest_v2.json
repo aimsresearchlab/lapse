@@ -1,0 +1,39 @@
+{
+  "spec": "research/PILOT_SPEC_v2.md (FROZEN 2026-08-12)",
+  "status": "FROZEN 2026-08-12 \u2014 smoke test permitted; full scored run gated on launch sign-off (spec \u00a78/\u00a79)",
+  "eval_date": "2026-08-11",
+  "gap_offsets_days": {
+    "fresh": 2,
+    "near": 42,
+    "boundary": 60,
+    "stale": 245,
+    "stale_long": 425
+  },
+  "expired_soon_rule": "bound month = calendar month of eval-date (prev month if day<8, skipping Dec/Jan); session day 9, three months back (skip-adjusted)",
+  "bound_rule": "session month +3, never Dec/Jan (skip forward), year-qualified iff cross-year; v1-containment cells keep literal 'until December'",
+  "stimuli_sha256": "87561af0713a9fff6bb36cfb993fc6b51c8b9939d96f7f98562d2b90d534fe32",
+  "n_cases": 5916,
+  "n_run_rows": 5496,
+  "per_component": {
+    "anchor": 960,
+    "behavioral_boundary": 480,
+    "behavioral_core": 960,
+    "carrier_behavioral_p2": 160,
+    "carrier_e1": 400,
+    "carrier_fresh_p3": 80,
+    "e1_boundary": 256,
+    "e1_fresh_gate": 128,
+    "e1_primary": 256,
+    "explicit": 96,
+    "gap_gradient": 1080,
+    "l2": 256,
+    "lexeme_subject": 144,
+    "perf": 240,
+    "v1_grid_extra": 420
+  },
+  "derived_at_run": "512/model: e2 from the 256 e1_primary rows, l2e2 from the 256 l2 rows \u2014 downstream_query is present ONLY on rows that spawn a derived call (plus v1_grid_extra rows, where the field is part of the v1 containment schema but those rows are not run)",
+  "split_rule": "cluster % 5 == 4 -> test (20%), else dev",
+  "git_commit": "6ee58ab9a4ee985e8f482ad9c5e9dd216342457e",
+  "generator_version": "v2.0.1",
+  "system_template": "You are a personal assistant with long-term memory of your conversations with the user. Today's date: 2026-08-11. Relevant excerpts from your conversation history are shown below.\n\n--- Conversation history ---\n{history}\n--- End of history ---"
+}

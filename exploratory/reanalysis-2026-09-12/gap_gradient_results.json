@@ -1,0 +1,2917 @@
+{
+  "generated_by": "exploratory/reanalysis-2026-09-12/gap_gradient.py",
+  "noncommit_labels": [
+    "HEDGE",
+    "TEMPLATE"
+  ],
+  "commit_labels": [
+    "PROCEED",
+    "PROCEED-WITH-CAVEAT"
+  ],
+  "six_gap_components": [
+    "behavioral_boundary",
+    "behavioral_core",
+    "gap_gradient"
+  ],
+  "columns": {
+    "deepseek/deepseek-v4-flash": {
+      "tier": "confirmatory",
+      "trace_base": "run-v2-full-20260825-010312",
+      "n_behavioral_six_gap_rows": 2520,
+      "rows_missing_judge_label": 0,
+      "cells": {
+        "fresh|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 2,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "fresh|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 158,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 158
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018781714429240873
+        },
+        "fresh|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 158,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 154,
+            "PROCEED-WITH-CAVEAT": 5,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 158
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018781714429240873
+        },
+        "near|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "near|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 6
+          },
+          "judge_label_counts": {
+            "PROCEED": 119,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "near|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 112,
+            "PROCEED-WITH-CAVEAT": 8
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 119
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "boundary|prog": {
+          "n_total": 160,
+          "non_commit": 1,
+          "commit": 159,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.00625,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 151,
+            "PROCEED-WITH-CAVEAT": 8
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 159
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "boundary|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 160,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018549134077503752
+        },
+        "boundary|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 157,
+          "disagree": 3,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 156,
+            "PROCEED-WITH-CAVEAT": 3,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018900205511968193
+        },
+        "expired_soon|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "expired_soon|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 112,
+            "PROCEED-WITH-CAVEAT": 8
+          },
+          "judge_label_counts": {
+            "PROCEED": 119,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "expired_soon|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 7
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "stale|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 160,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 156,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018549134077503752
+        },
+        "stale|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 160,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 152,
+            "PROCEED-WITH-CAVEAT": 8
+          },
+          "judge_label_counts": {
+            "PROCEED": 159,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018549134077503752
+        },
+        "stale|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 150,
+            "PROCEED-WITH-CAVEAT": 10
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 159
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "stale_long|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 119
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "stale_long|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 6
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "stale_long|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 116,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 119
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        }
+      },
+      "mcnemar_prog_vs_simple_by_gap": {
+        "fresh": {
+          "pairs": 157,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 3,
+          "two_sided_exact_p": NaN
+        },
+        "near": {
+          "pairs": 120,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "boundary": {
+          "pairs": 160,
+          "discordant_prog_noncommit_simple_commit": 1,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": 1.0
+        },
+        "expired_soon": {
+          "pairs": 120,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "stale": {
+          "pairs": 160,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "stale_long": {
+          "pairs": 119,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": NaN
+        }
+      }
+    },
+    "openai/gpt-5.6-luna": {
+      "tier": "confirmatory",
+      "trace_base": "run-v2-full-20260825-010323",
+      "n_behavioral_six_gap_rows": 2520,
+      "rows_missing_judge_label": 0,
+      "cells": {
+        "fresh|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 158,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 159
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "fresh|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 160,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 160
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018549134077503752
+        },
+        "fresh|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 160,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 160
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018549134077503752
+        },
+        "near|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 119,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 119
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "near|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 120
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "near|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 118,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 118
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.025068007442686724
+        },
+        "boundary|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 160,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 159,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018549134077503752
+        },
+        "boundary|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 160,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 160
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018549134077503752
+        },
+        "boundary|bound": {
+          "n_total": 160,
+          "non_commit": 1,
+          "commit": 158,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.006289308176100629,
+          "cascade_label_counts": {
+            "PROCEED": 158,
+            "PROCEED-WITH-CAVEAT": 1,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 158,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "expired_soon|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 120
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "expired_soon|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 120
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "expired_soon|bound": {
+          "n_total": 120,
+          "non_commit": 2,
+          "commit": 118,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.016666666666666666,
+          "cascade_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 118
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 159,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 159
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "stale|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 160,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 160
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018549134077503752
+        },
+        "stale|bound": {
+          "n_total": 160,
+          "non_commit": 4,
+          "commit": 154,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.02531645569620253,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 154,
+            "PROCEED-WITH-CAVEAT": 2,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 154,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale_long|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 119
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "stale_long|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 120
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "stale_long|bound": {
+          "n_total": 120,
+          "non_commit": 1,
+          "commit": 119,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.008333333333333333,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 119
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        }
+      },
+      "mcnemar_prog_vs_simple_by_gap": {
+        "fresh": {
+          "pairs": 159,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": NaN
+        },
+        "near": {
+          "pairs": 119,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": NaN
+        },
+        "boundary": {
+          "pairs": 160,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "expired_soon": {
+          "pairs": 120,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "stale": {
+          "pairs": 159,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": NaN
+        },
+        "stale_long": {
+          "pairs": 119,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": NaN
+        }
+      }
+    },
+    "z-ai/glm-5.2": {
+      "tier": "confirmatory",
+      "trace_base": "run-v2-full-20260825-234313",
+      "n_behavioral_six_gap_rows": 2520,
+      "rows_missing_judge_label": 0,
+      "cells": {
+        "fresh|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 155,
+            "PROCEED-WITH-CAVEAT": 5
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 159
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "fresh|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 159
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "fresh|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 154,
+            "PROCEED-WITH-CAVEAT": 6
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 159
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "near|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 118,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 115,
+            "PROCEED-WITH-CAVEAT": 5
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 118
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.025068007442686724
+        },
+        "near|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "near|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 112,
+            "PROCEED-WITH-CAVEAT": 8
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "boundary|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 158,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 154,
+            "PROCEED-WITH-CAVEAT": 5,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 159
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018781714429240873
+        },
+        "boundary|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 158,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 159
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "boundary|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 148,
+            "PROCEED-WITH-CAVEAT": 12
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 152,
+            "PROCEED-WITH-CAVEAT": 7
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "expired_soon|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 119
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "expired_soon|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 120,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 116,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024655401055656393
+        },
+        "expired_soon|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 91,
+            "PROCEED-WITH-CAVEAT": 29
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 87,
+            "PROCEED-WITH-CAVEAT": 32
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "stale|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 159,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 159
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "stale|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 156,
+          "disagree": 4,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 151,
+            "PROCEED-WITH-CAVEAT": 8,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 157,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019020201125919456
+        },
+        "stale|bound": {
+          "n_total": 160,
+          "non_commit": 5,
+          "commit": 153,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.03164556962025317,
+          "cascade_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 109,
+            "PROCEED-WITH-CAVEAT": 46
+          },
+          "judge_label_counts": {
+            "HEDGE": 7,
+            "PROCEED": 105,
+            "PROCEED-WITH-CAVEAT": 48
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale_long|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 118,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 118,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.025068007442686724
+        },
+        "stale_long|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 119
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "stale_long|bound": {
+          "n_total": 120,
+          "non_commit": 4,
+          "commit": 112,
+          "disagree": 4,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.034482758620689655,
+          "cascade_label_counts": {
+            "HEDGE": 4,
+            "PROCEED": 87,
+            "PROCEED-WITH-CAVEAT": 29
+          },
+          "judge_label_counts": {
+            "HEDGE": 8,
+            "PROCEED": 84,
+            "PROCEED-WITH-CAVEAT": 28
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        }
+      },
+      "mcnemar_prog_vs_simple_by_gap": {
+        "fresh": {
+          "pairs": 158,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 2,
+          "two_sided_exact_p": NaN
+        },
+        "near": {
+          "pairs": 118,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 2,
+          "two_sided_exact_p": NaN
+        },
+        "boundary": {
+          "pairs": 157,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 3,
+          "two_sided_exact_p": NaN
+        },
+        "expired_soon": {
+          "pairs": 119,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": NaN
+        },
+        "stale": {
+          "pairs": 155,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 5,
+          "two_sided_exact_p": NaN
+        },
+        "stale_long": {
+          "pairs": 118,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": NaN
+        }
+      }
+    },
+    "anthropic/claude-sonnet-5": {
+      "tier": "frontier-subset",
+      "trace_base": "run-v2-full-frontier-sonnet5-20260826-104357",
+      "n_behavioral_six_gap_rows": 0,
+      "rows_missing_judge_label": 0,
+      "cells": {
+        "fresh|prog": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "fresh|simple": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "fresh|bound": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "near|prog": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "near|simple": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "near|bound": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "boundary|prog": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "boundary|simple": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "boundary|bound": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "expired_soon|prog": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "expired_soon|simple": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "expired_soon|bound": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale|prog": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale|simple": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale|bound": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale_long|prog": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale_long|simple": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale_long|bound": {
+          "n_total": 0,
+          "non_commit": 0,
+          "commit": 0,
+          "disagree": 0,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": null,
+          "cascade_label_counts": {},
+          "judge_label_counts": {},
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        }
+      },
+      "mcnemar_prog_vs_simple_by_gap": {
+        "fresh": {
+          "pairs": 0,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "near": {
+          "pairs": 0,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "boundary": {
+          "pairs": 0,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "expired_soon": {
+          "pairs": 0,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "stale": {
+          "pairs": 0,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "stale_long": {
+          "pairs": 0,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        }
+      }
+    },
+    "local/qwen3-8b": {
+      "tier": "local",
+      "trace_base": "run-v2-full-local-qwen3-8b-20260813-060538",
+      "n_behavioral_six_gap_rows": 2520,
+      "rows_missing_judge_label": 0,
+      "cells": {
+        "fresh|prog": {
+          "n_total": 160,
+          "non_commit": 3,
+          "commit": 156,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.018867924528301886,
+          "cascade_label_counts": {
+            "PROCEED": 156,
+            "RESIDUAL": 1,
+            "TEMPLATE": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 156,
+            "TEMPLATE": 3
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "fresh|simple": {
+          "n_total": 160,
+          "non_commit": 1,
+          "commit": 158,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.006289308176100629,
+          "cascade_label_counts": {
+            "PROCEED": 158,
+            "RESIDUAL": 1,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 159,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "fresh|bound": {
+          "n_total": 160,
+          "non_commit": 4,
+          "commit": 155,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025157232704402517,
+          "cascade_label_counts": {
+            "PROCEED": 155,
+            "RESIDUAL": 1,
+            "TEMPLATE": 4
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 150,
+            "PROCEED-WITH-CAVEAT": 5,
+            "TEMPLATE": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "near|prog": {
+          "n_total": 120,
+          "non_commit": 3,
+          "commit": 116,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025210084033613446,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 116,
+            "RESIDUAL": 1,
+            "TEMPLATE": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 116,
+            "TEMPLATE": 2
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "near|simple": {
+          "n_total": 120,
+          "non_commit": 2,
+          "commit": 117,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.01680672268907563,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 117,
+            "RESIDUAL": 1,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 118,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "near|bound": {
+          "n_total": 120,
+          "non_commit": 3,
+          "commit": 116,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025210084033613446,
+          "cascade_label_counts": {
+            "PROCEED": 116,
+            "RESIDUAL": 1,
+            "TEMPLATE": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 3,
+            "TEMPLATE": 3
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "boundary|prog": {
+          "n_total": 160,
+          "non_commit": 3,
+          "commit": 154,
+          "disagree": 3,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.01910828025477707,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 154,
+            "RESIDUAL": 3,
+            "TEMPLATE": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 4,
+            "PROCEED": 154,
+            "TEMPLATE": 2
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "boundary|simple": {
+          "n_total": 160,
+          "non_commit": 2,
+          "commit": 157,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.012578616352201259,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 157,
+            "RESIDUAL": 1,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 158,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "boundary|bound": {
+          "n_total": 160,
+          "non_commit": 4,
+          "commit": 155,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025157232704402517,
+          "cascade_label_counts": {
+            "PROCEED": 155,
+            "RESIDUAL": 1,
+            "TEMPLATE": 4
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 150,
+            "PROCEED-WITH-CAVEAT": 5,
+            "TEMPLATE": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "expired_soon|prog": {
+          "n_total": 120,
+          "non_commit": 3,
+          "commit": 116,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025210084033613446,
+          "cascade_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 116,
+            "RESIDUAL": 1,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 116,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "expired_soon|simple": {
+          "n_total": 120,
+          "non_commit": 2,
+          "commit": 117,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.01680672268907563,
+          "cascade_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 117,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 118
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "expired_soon|bound": {
+          "n_total": 120,
+          "non_commit": 3,
+          "commit": 116,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025210084033613446,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 116,
+            "RESIDUAL": 1,
+            "TEMPLATE": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 2,
+            "TEMPLATE": 2
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale|prog": {
+          "n_total": 160,
+          "non_commit": 4,
+          "commit": 155,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025157232704402517,
+          "cascade_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 155,
+            "RESIDUAL": 1,
+            "TEMPLATE": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 155,
+            "TEMPLATE": 2
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale|simple": {
+          "n_total": 160,
+          "non_commit": 2,
+          "commit": 156,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.012658227848101266,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 156,
+            "RESIDUAL": 2,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 157,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale|bound": {
+          "n_total": 160,
+          "non_commit": 4,
+          "commit": 155,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025157232704402517,
+          "cascade_label_counts": {
+            "PROCEED": 155,
+            "RESIDUAL": 1,
+            "TEMPLATE": 4
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 150,
+            "PROCEED-WITH-CAVEAT": 5,
+            "TEMPLATE": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale_long|prog": {
+          "n_total": 120,
+          "non_commit": 1,
+          "commit": 117,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.00847457627118644,
+          "cascade_label_counts": {
+            "PROCEED": 117,
+            "RESIDUAL": 2,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 117,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale_long|simple": {
+          "n_total": 120,
+          "non_commit": 3,
+          "commit": 116,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025210084033613446,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 116,
+            "RESIDUAL": 1,
+            "TEMPLATE": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 117,
+            "TEMPLATE": 2
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale_long|bound": {
+          "n_total": 120,
+          "non_commit": 3,
+          "commit": 116,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025210084033613446,
+          "cascade_label_counts": {
+            "PROCEED": 116,
+            "RESIDUAL": 1,
+            "TEMPLATE": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 2,
+            "TEMPLATE": 3
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        }
+      },
+      "mcnemar_prog_vs_simple_by_gap": {
+        "fresh": {
+          "pairs": 159,
+          "discordant_prog_noncommit_simple_commit": 2,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": 0.5
+        },
+        "near": {
+          "pairs": 119,
+          "discordant_prog_noncommit_simple_commit": 1,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": 1.0
+        },
+        "boundary": {
+          "pairs": 157,
+          "discordant_prog_noncommit_simple_commit": 1,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 2,
+          "two_sided_exact_p": 1.0
+        },
+        "expired_soon": {
+          "pairs": 119,
+          "discordant_prog_noncommit_simple_commit": 1,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": 1.0
+        },
+        "stale": {
+          "pairs": 158,
+          "discordant_prog_noncommit_simple_commit": 1,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": 1.0
+        },
+        "stale_long": {
+          "pairs": 118,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 1,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": 1.0
+        }
+      }
+    },
+    "local/mistral-small-3.2-24b-it": {
+      "tier": "local",
+      "trace_base": "run-v2-full-local-mistral-small-3.2-24b-20260813-064704",
+      "n_behavioral_six_gap_rows": 2520,
+      "rows_missing_judge_label": 0,
+      "cells": {
+        "fresh|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 150,
+          "disagree": 10,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 152,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 150,
+            "PROCEED-WITH-CAVEAT": 5
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.01977343816450844
+        },
+        "fresh|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 154,
+          "disagree": 6,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 156,
+            "PROCEED-WITH-CAVEAT": 3,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 155
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019264822039886942
+        },
+        "fresh|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 154,
+          "disagree": 6,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 155,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 152,
+            "PROCEED-WITH-CAVEAT": 5
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019264822039886942
+        },
+        "near|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 113,
+          "disagree": 7,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 4,
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.026162575993197216
+        },
+        "near|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 113,
+          "disagree": 7,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 115,
+            "PROCEED-WITH-CAVEAT": 1,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.026162575993197216
+        },
+        "near|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 115,
+          "disagree": 5,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 117
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.025713475748387837
+        },
+        "boundary|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 152,
+          "disagree": 8,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 153,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "judge_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 150,
+            "PROCEED-WITH-CAVEAT": 5
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019515816917848264
+        },
+        "boundary|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 151,
+          "disagree": 9,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 153,
+            "PROCEED-WITH-CAVEAT": 3,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 151,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019643782952651737
+        },
+        "boundary|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 153,
+          "disagree": 7,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 155,
+            "PROCEED-WITH-CAVEAT": 1,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 151,
+            "PROCEED-WITH-CAVEAT": 6
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019389507264345462
+        },
+        "expired_soon|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 114,
+          "disagree": 6,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.02593608201362846
+        },
+        "expired_soon|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 113,
+          "disagree": 7,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 2,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.026162575993197216
+        },
+        "expired_soon|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 114,
+          "disagree": 6,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 116,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.02593608201362846
+        },
+        "stale|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 151,
+          "disagree": 9,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 153,
+            "PROCEED-WITH-CAVEAT": 3,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 150,
+            "PROCEED-WITH-CAVEAT": 5
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019643782952651737
+        },
+        "stale|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 151,
+          "disagree": 9,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 154,
+            "PROCEED-WITH-CAVEAT": 2,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 152,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019643782952651737
+        },
+        "stale|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 154,
+          "disagree": 6,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 149,
+            "PROCEED-WITH-CAVEAT": 6
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019264822039886942
+        },
+        "stale_long|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 113,
+          "disagree": 7,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 3,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.026162575993197216
+        },
+        "stale_long|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 113,
+          "disagree": 7,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 2,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.026162575993197216
+        },
+        "stale_long|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 115,
+          "disagree": 5,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 117,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.025713475748387837
+        }
+      },
+      "mcnemar_prog_vs_simple_by_gap": {
+        "fresh": {
+          "pairs": 149,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 6,
+          "two_sided_exact_p": NaN
+        },
+        "near": {
+          "pairs": 112,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 2,
+          "two_sided_exact_p": NaN
+        },
+        "boundary": {
+          "pairs": 151,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": NaN
+        },
+        "expired_soon": {
+          "pairs": 113,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": NaN
+        },
+        "stale": {
+          "pairs": 151,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "stale_long": {
+          "pairs": 113,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        }
+      }
+    },
+    "local/gpt-oss-20b": {
+      "tier": "extension",
+      "trace_base": "run-v2-full-local-gpt-oss-20b-20260826-052612",
+      "n_behavioral_six_gap_rows": 2520,
+      "rows_missing_judge_label": 0,
+      "cells": {
+        "fresh|prog": {
+          "n_total": 160,
+          "non_commit": 3,
+          "commit": 156,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.018867924528301886,
+          "cascade_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 151,
+            "PROCEED-WITH-CAVEAT": 5,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 157,
+            "TEMPLATE": 3
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "fresh|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 154,
+            "PROCEED-WITH-CAVEAT": 5,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "fresh|bound": {
+          "n_total": 160,
+          "non_commit": 1,
+          "commit": 157,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.006329113924050633,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 149,
+            "PROCEED-WITH-CAVEAT": 8,
+            "RESIDUAL": 1,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 159,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "near|prog": {
+          "n_total": 120,
+          "non_commit": 1,
+          "commit": 118,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.008403361344537815,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 111,
+            "PROCEED-WITH-CAVEAT": 7,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 119,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "near|simple": {
+          "n_total": 120,
+          "non_commit": 1,
+          "commit": 118,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.008403361344537815,
+          "cascade_label_counts": {
+            "PROCEED": 112,
+            "PROCEED-WITH-CAVEAT": 6,
+            "RESIDUAL": 1,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 119,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "near|bound": {
+          "n_total": 120,
+          "non_commit": 1,
+          "commit": 116,
+          "disagree": 3,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.008547008547008548,
+          "cascade_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 111,
+            "PROCEED-WITH-CAVEAT": 5,
+            "RESIDUAL": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 118,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "boundary|prog": {
+          "n_total": 160,
+          "non_commit": 1,
+          "commit": 158,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.006289308176100629,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 151,
+            "PROCEED-WITH-CAVEAT": 7,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 159,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "boundary|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 154,
+            "PROCEED-WITH-CAVEAT": 5,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "boundary|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 158,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 152,
+            "PROCEED-WITH-CAVEAT": 6,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018781714429240873
+        },
+        "expired_soon|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 112,
+            "PROCEED-WITH-CAVEAT": 7,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "expired_soon|simple": {
+          "n_total": 120,
+          "non_commit": 1,
+          "commit": 118,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.008403361344537815,
+          "cascade_label_counts": {
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 5,
+            "RESIDUAL": 1,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 119,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "expired_soon|bound": {
+          "n_total": 120,
+          "non_commit": 3,
+          "commit": 115,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025423728813559324,
+          "cascade_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 108,
+            "PROCEED-WITH-CAVEAT": 7,
+            "RESIDUAL": 2,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 116,
+            "TEMPLATE": 3
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale|prog": {
+          "n_total": 160,
+          "non_commit": 2,
+          "commit": 157,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.012578616352201259,
+          "cascade_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 151,
+            "PROCEED-WITH-CAVEAT": 6,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 1,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 159,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 146,
+            "PROCEED-WITH-CAVEAT": 13,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 160
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018664699758660752
+        },
+        "stale|bound": {
+          "n_total": 160,
+          "non_commit": 1,
+          "commit": 157,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.006329113924050633,
+          "cascade_label_counts": {
+            "PROCEED": 145,
+            "PROCEED-WITH-CAVEAT": 12,
+            "RESIDUAL": 2,
+            "TEMPLATE": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 158,
+            "TEMPLATE": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale_long|prog": {
+          "n_total": 120,
+          "non_commit": 3,
+          "commit": 116,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.025210084033613446,
+          "cascade_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 111,
+            "PROCEED-WITH-CAVEAT": 5,
+            "RESIDUAL": 1,
+            "TEMPLATE": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 117,
+            "TEMPLATE": 2
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        },
+        "stale_long|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 113,
+            "PROCEED-WITH-CAVEAT": 6,
+            "RESIDUAL": 1
+          },
+          "judge_label_counts": {
+            "PROCEED": 120
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "stale_long|bound": {
+          "n_total": 120,
+          "non_commit": 2,
+          "commit": 117,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.01680672268907563,
+          "cascade_label_counts": {
+            "PROCEED": 112,
+            "PROCEED-WITH-CAVEAT": 5,
+            "RESIDUAL": 1,
+            "TEMPLATE": 2
+          },
+          "judge_label_counts": {
+            "PROCEED": 118,
+            "TEMPLATE": 2
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": null
+        }
+      },
+      "mcnemar_prog_vs_simple_by_gap": {
+        "fresh": {
+          "pairs": 159,
+          "discordant_prog_noncommit_simple_commit": 3,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": 0.25
+        },
+        "near": {
+          "pairs": 119,
+          "discordant_prog_noncommit_simple_commit": 1,
+          "discordant_simple_noncommit_prog_commit": 1,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": 1.0
+        },
+        "boundary": {
+          "pairs": 159,
+          "discordant_prog_noncommit_simple_commit": 1,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": 1.0
+        },
+        "expired_soon": {
+          "pairs": 119,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 1,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": 1.0
+        },
+        "stale": {
+          "pairs": 159,
+          "discordant_prog_noncommit_simple_commit": 2,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": 0.5
+        },
+        "stale_long": {
+          "pairs": 119,
+          "discordant_prog_noncommit_simple_commit": 3,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": 0.25
+        }
+      }
+    },
+    "local/olmo-2-32b-instruct": {
+      "tier": "extension",
+      "trace_base": "run-v2-full-local-olmo-2-32b-instruct-20260826-060733",
+      "n_behavioral_six_gap_rows": 2520,
+      "rows_missing_judge_label": 0,
+      "cells": {
+        "fresh|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 157,
+          "disagree": 3,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 159,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 156,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018900205511968193
+        },
+        "fresh|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 157,
+          "disagree": 3,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 156,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018900205511968193
+        },
+        "fresh|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 155,
+          "disagree": 5,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 5,
+            "PROCEED": 154,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019141730108768244
+        },
+        "near|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 118,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 119,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.025068007442686724
+        },
+        "near|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 119,
+          "disagree": 1,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 1,
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.024859992430424416
+        },
+        "near|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 118,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 116,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.025068007442686724
+        },
+        "boundary|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 157,
+          "disagree": 3,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 158,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 155,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.018900205511968193
+        },
+        "boundary|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 156,
+          "disagree": 4,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 156,
+            "PROCEED-WITH-CAVEAT": 4
+          },
+          "judge_label_counts": {
+            "HEDGE": 4,
+            "PROCEED": 155,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019020201125919456
+        },
+        "boundary|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 156,
+          "disagree": 4,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 160
+          },
+          "judge_label_counts": {
+            "HEDGE": 4,
+            "PROCEED": 155,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019020201125919456
+        },
+        "expired_soon|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 118,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 119,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.025068007442686724
+        },
+        "expired_soon|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 118,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.025068007442686724
+        },
+        "expired_soon|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 118,
+          "disagree": 2,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 119,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "judge_label_counts": {
+            "HEDGE": 2,
+            "PROCEED": 115,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.025068007442686724
+        },
+        "stale|prog": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 156,
+          "disagree": 4,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 158,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 4,
+            "PROCEED": 155,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019020201125919456
+        },
+        "stale|simple": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 156,
+          "disagree": 4,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 4,
+            "PROCEED": 156
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019020201125919456
+        },
+        "stale|bound": {
+          "n_total": 160,
+          "non_commit": 0,
+          "commit": 156,
+          "disagree": 4,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 157,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 4,
+            "PROCEED": 155,
+            "PROCEED-WITH-CAVEAT": 1
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.019020201125919456
+        },
+        "stale_long|prog": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 117,
+          "disagree": 3,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 117
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.02527953274955136
+        },
+        "stale_long|simple": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 117,
+          "disagree": 3,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 118,
+            "PROCEED-WITH-CAVEAT": 2
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 117
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.02527953274955136
+        },
+        "stale_long|bound": {
+          "n_total": 120,
+          "non_commit": 0,
+          "commit": 117,
+          "disagree": 3,
+          "missing_judge": 0,
+          "non_commit_over_binary_n": 0.0,
+          "cascade_label_counts": {
+            "PROCEED": 117,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "judge_label_counts": {
+            "HEDGE": 3,
+            "PROCEED": 114,
+            "PROCEED-WITH-CAVEAT": 3
+          },
+          "floor_0_of_n_one_sided_cp_upper_95": 0.02527953274955136
+        }
+      },
+      "mcnemar_prog_vs_simple_by_gap": {
+        "fresh": {
+          "pairs": 156,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 2,
+          "two_sided_exact_p": NaN
+        },
+        "near": {
+          "pairs": 118,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 1,
+          "two_sided_exact_p": NaN
+        },
+        "boundary": {
+          "pairs": 155,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 3,
+          "two_sided_exact_p": NaN
+        },
+        "expired_soon": {
+          "pairs": 117,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 2,
+          "two_sided_exact_p": NaN
+        },
+        "stale": {
+          "pairs": 156,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        },
+        "stale_long": {
+          "pairs": 117,
+          "discordant_prog_noncommit_simple_commit": 0,
+          "discordant_simple_noncommit_prog_commit": 0,
+          "pairs_dropped_missing_or_disagree": 0,
+          "two_sided_exact_p": NaN
+        }
+      }
+    }
+  },
+  "implementation_choices": [
+    "The six-gap x {prog,simple,bound} grid is assembled from the behavioral_core + behavioral_boundary + gap_gradient stimuli components (all carrier c0_original) -- see module docstring. carrier_behavioral_p2 (c1-c5, stale only) and carrier_fresh_p3 (c1-c5, fresh only, simple only) are excluded from this table.",
+    "Records with no judge counterpart (case_id absent from the judged file, e.g. any final-error retries that changed case coverage) are dropped and counted separately per cell.",
+    "McNemar pairing key is (frame, cluster, carrier); since all three components use carrier=c0_original exclusively this is empirically equivalent to (frame, cluster), but carrier is still carried in the key and asserted constant."
+  ]
+}

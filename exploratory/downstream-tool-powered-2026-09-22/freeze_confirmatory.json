@@ -1,0 +1,48 @@
+{
+ "analysis_sha256": "a13d5e056514b90d7b5929a8a0b0346e45456f0e5be5fe2a443bfde2bd4c5e23",
+ "candidate_outcomes": {
+  "gemini3flash-aistudio": {
+   "admission": "passed",
+   "sweep": "M1 14/30, M3 17/30, M8 4/30 -> M1"
+  },
+  "mistralsmall32-deepinfra-fp8": {
+   "excluded": "admission gate failed: expired-bound VERIFY 12/30 (threshold 24)"
+  },
+  "qwen38max-alibaba": {
+   "excluded": "API-incompatible: thinking mode rejects tool_choice=required; with reasoning disabled the endpoint returns 'Reasoning is mandatory' (dev probe, 72/72 HTTP 400)"
+  }
+ },
+ "cells": [
+  "glm52-baidu-fp8|M8",
+  "deepseek-v41-firstparty-nonthinking|M1",
+  "gemini3flash-aistudio|M1"
+ ],
+ "compiled_hashes": {
+  "cellgate|deepseek-v41-firstparty-nonthinking|M1": "aa5d453c5f04e8dc40b3e055234e8cb22b251c2d9930c90f310f95bc1ed732ba",
+  "cellgate|gemini3flash-aistudio|M1": "54bf64c48c4281c3281bd9bf65cc6b0cb01770f87bc45a54dee358f729c184a8",
+  "cellgate|glm52-baidu-fp8|M8": "27e7e8f231720c3dea6551ada6fc567bd5ca434b3327eed6d212931d4706f643",
+  "e2e|deepseek-v41-firstparty-nonthinking|M1": "22c7441236ab4102e4c6e1e6941e47114c384d434b9c21547226c6c44bfce6d7",
+  "e2e|gemini3flash-aistudio|M1": "14102476b1f8a1bfd1d5bddac5a1b3cfc27478365a4093ecab19f2322a42bfa2",
+  "e2e|glm52-baidu-fp8|M8": "0539cf4298ed427cd7d15e08282dff74945011ecdd9acf01a48d6cab6779358a",
+  "target|deepseek-v41-firstparty-nonthinking|M1": "9433fa44b7d4bd62f2299169f50c52f11d425e5dad45e5a7bb2c95c1bf01e328",
+  "target|gemini3flash-aistudio|M1": "2ad01d22f74374948dcb82c4ec62b2915d872bf2cfc021487f62e961be31eff1",
+  "target|glm52-baidu-fp8|M8": "7d7281defc33aef7850ebb48533556dca3b59c933efa340ee135e0cd72993125"
+ },
+ "config_sha256": "f9eac0d583356020cc27cf512c416621ff71103aac9507f2bfe1ff5f0d3242ab",
+ "frozen_at_utc": "2026-09-23T03:59:37+00:00",
+ "gate_hashes": {
+  "admission-gemini3flash-aistudio.json": "f092878caed5954955665d5fdafe343a600ea1c43f544496e8109f5732f2732a",
+  "admission-mistralsmall32-deepinfra-fp8.json": "07f4a79828bebeb0fb421e62b1388bfbf5fa8890ba5fdd0a05b3587e25ab3df5",
+  "sweep-gemini3flash-aistudio.json": "ca1f2a89a1643813cea1ebca6d1bfec5e5c0daf262b466b7035b2f62ff5e6321"
+ },
+ "generated_manifest_sha256": "f4f0a9fa19c1ece175072b318857403448bdd1f34b75a9f448f36a9065211c98",
+ "holm_family": "item-level and content-level families each = the interpretable cells among these three; a cell whose gate fails is removed before its target calls",
+ "primary_cell": "glm52-baidu-fp8|M8",
+ "roles": {
+  "deepseek-v41-firstparty-nonthinking": "secondary",
+  "gemini3flash-aistudio": "included by sweep rule",
+  "glm52-baidu-fp8": "primary"
+ },
+ "runner_sha256": "de6270a0de4f1361aadb709270aab4fec54203365841046f19f47dc1c578d11a",
+ "spec": "research/DOWNSTREAM_TOOL_POWERED_SPEC_2026-09-22.md"
+}

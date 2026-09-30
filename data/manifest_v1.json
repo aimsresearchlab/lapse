@@ -1,0 +1,8 @@
+{
+  "spec": "research/PILOT_SPEC_v1.md",
+  "stimuli_sha256": "6ce47975413992d37458295561720666a41c7ce85a15b9238e624db5ccf1b80b",
+  "n_cases": 1400,
+  "git_commit": "HEAD",
+  "built": "2026-08-11",
+  "system_template": "You are a personal assistant with long-term memory of your conversations with the user. Today's date: 2026-08-11. Relevant excerpts from your conversation history are shown below.\n\n--- Conversation history ---\n{history}\n--- End of history ---"
+}
