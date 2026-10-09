@@ -1,7 +1,7 @@
 # LAPSE: aspectual flattening in LLM memory consolidation
 
-Code, data, model outputs, and labels for the submission *Memory
-Consolidation Flattens the Temporal Shape of User Facts*. This copy is
+Code, data, model outputs, and labels for the submission *Language Model
+Memory Flattens the Temporal Form of User Facts*. This copy is
 anonymized for review.
 
 A user says "I am driving a Peugeot." The memory writer stores "The user drives
