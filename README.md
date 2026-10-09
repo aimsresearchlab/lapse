@@ -66,26 +66,62 @@ shasum -a 256 -c --quiet MANIFEST.sha256
 
 ## Use the stimuli
 
-Each row of `data/stimuli_v2.jsonl` is one model call. Fill the manifest's
-system template with the row's conversation history and send the row's query
-as the user turn:
+`data/stimuli_v2.jsonl` holds the 5,916 LAPSE items, one model call per line
+("v2" is an internal build number). Each item is a dated conversation
+(`history`) and a request (`query`). Put the history into the system prompt
+from `data/manifest_v2.json` and send the request as the user turn:
 
 ```python
 import json
 
 manifest = json.load(open("data/manifest_v2.json"))
-rows = [json.loads(line) for line in open("data/stimuli_v2.jsonl")]
+items = [json.loads(line) for line in open("data/stimuli_v2.jsonl")]
 
-row = next(r for r in rows if r["component"] == "e1_primary")
+# The main test: memory-write items, progressive vs simple present, months old.
+main_test = [r for r in items if r["component"] == "e1_primary"]
+
+item = main_test[0]
 messages = [
-    {"role": "system", "content": manifest["system_template"].format(history=row["history"])},
-    {"role": "user", "content": row["query"]},
+    {"role": "system", "content": manifest["system_template"].format(history=item["history"])},
+    {"role": "user", "content": item["query"]},
 ]
 ```
 
-Skip rows with `component == "v1_grid_extra"`; they exist only so the tests
-can check v2 against the earlier build. Field meanings are in
-`data/README.md`.
+Two fields say what an item tests. `arm` is the task, named as in the paper:
+
+| `arm` | Task in the paper | The model is asked to |
+|---|---|---|
+| `e1` | memory write | write memory notes about the conversation |
+| `l2` | guided memory write | write notes, told to keep tense and aspect |
+| `behavioral` | direct use | act on the user's fact |
+| `explicit` | validity question | say whether the fact still holds |
+| `anchor` | send-or-check choice | send now or check with the user first |
+
+Memory-write items also get a second call at run time, built from the model's
+own notes: `e2` (memory use) and `l2e2` (guided memory use). These are not
+rows in the file.
+
+`component` is the design cell:
+
+| `component` | Task | What the cell varies |
+|---|---|---|
+| `e1_primary` | memory write | **main test**: progressive vs simple present, statement months old |
+| `e1_boundary` | memory write | the same pairs, dated at the boundary gap (see `gap`) |
+| `e1_fresh_gate` | memory write | simple present stated just before; the writer should keep it |
+| `carrier_e1` | memory write | the main-test pairs in five other sentence frames (`carrier`) |
+| `l2` | guided memory write | the main-test pairs |
+| `explicit` | validity question | progressive vs simple present, months old |
+| `behavioral_core` | direct use | progressive, simple present, and bounded statements; fresh and months old |
+| `behavioral_boundary` | direct use | the same, at the boundary gap |
+| `carrier_behavioral_p2`, `carrier_fresh_p3` | direct use | five other sentence frames; months old / fresh simple present |
+| `anchor` | send-or-check choice | the `behavioral_core` design |
+| `gap_gradient` | direct use | three more gaps: near, just expired, over a year |
+| `perf` | memory write, direct use | perfect forms ("I've been living") |
+| `lexeme_subject` | memory write | different verbs across a pair; third-person subjects |
+| `v1_grid_extra` | none | not run; kept so the tests can compare with the earlier build. Skip these. |
+
+`tier` marks how the paper uses a row: `CONF` confirmatory, `SEC` secondary,
+`EXP` exploratory. The other fields are described in `data/README.md`.
 
 ## Evaluate a new model
 
