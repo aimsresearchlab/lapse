@@ -1,7 +1,8 @@
 # LAPSE: aspectual flattening in LLM memory consolidation
 
-Code, data, model outputs, and labels for *Memory Consolidation Flattens the
-Temporal Shape of User Facts* ([arXiv:2609.36457](https://arxiv.org/abs/2609.36457)).
+Code, data, model outputs, and labels for the submission *Memory
+Consolidation Flattens the Temporal Shape of User Facts*. This copy is
+anonymized for review.
 
 A user says "I am driving a Peugeot." The memory writer stores "The user drives
 a Peugeot." The progressive told a later reader the fact might not last; the
@@ -28,7 +29,7 @@ reverse (DeepSeek V4 Flash 104/0 of 128, GPT-5.6 Luna 79/0 of 128, GLM-5.2
 data/          LAPSE stimuli (5,916 rows: 4,791 dev, 1,125 test), build manifests,
                scorer-validation gold sets, witness contamination checks
 tools/         stimulus builder, model runner, rule-based scorer, judge,
-               preregistered and secondary analyses (see tools/README.md)
+               confirmatory and secondary analyses (see tools/README.md)
 tests/         scorer regressions and stimulus audits
 traces/        11 model columns: raw outputs, scored labels, judge labels
 results/       frozen analysis outputs the paper reports
@@ -42,9 +43,9 @@ MANIFEST.sha256  SHA-256 of every data file, results file, and script
 Python 3.10 or newer. The scorer and analyses use only the standard library;
 `openai` is needed to query models and `pytest` to run the tests.
 
+Download the repository, unpack it, and run the commands below from its root:
+
 ```bash
-git clone https://github.com/aimsresearchlab/lapse.git
-cd lapse
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -152,15 +153,4 @@ All runs used temperature 0 and the frozen generator v2.0.1.
 
 ## Citation
 
-```bibtex
-@misc{panthi2026lapse,
-  title         = {Memory Consolidation Flattens the Temporal Shape of User Facts},
-  author        = {Panthi, Sugam and Yeamin, Muhaiminul and Luo, Siyan and Abdelfattah, Rabab},
-  year          = {2026},
-  eprint        = {2609.36457},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CL},
-  doi           = {10.48550/arXiv.2609.36457},
-  url           = {https://arxiv.org/abs/2609.36457}
-}
-```
+Withheld during anonymous review.
