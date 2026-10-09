@@ -36,7 +36,7 @@ Naming used below:
 | 4b. | `sample_gold.py` | Draws the 250-item human annotation sample and blinds it for the web annotator. | `web/data/gold_items.js`, `data/gold_key_v1.json` |
 | 4c. | `judge_gold.py` | Runs the judge on the 250 blinded items. | `data/gold_items.judged.*.jsonl` |
 | 4d. | `gold_agreement.py` | Human-human and human-scorer agreement (Cohen's kappa) from annotator exports. | report, `data/gold_disagreements.jsonl` |
-| 5. Analyze | `analysis_v2.py` | Preregistered tests: paired McNemar on progressive vs simple-present notes per model, Holm-corrected; robustness checks. | `research/ANALYSIS_V2_*.txt` |
+| 5. Analyze | `analysis_v2.py` | Confirmatory tests: paired McNemar on progressive vs simple-present notes per model, Holm-corrected; robustness checks. | `research/ANALYSIS_V2_*.txt` |
 | 5a. | `analysis_v2_secondary.py` | Descriptive secondary analyses (guided-writing lever, send-or-check choice, gap gradient). Not part of the confirmatory tests. | `research/ANALYSIS_V2_SECONDARY_*.txt` |
 | 6. Natural-text screens | `screen_ecological.py` | Finds naturally occurring temporally marked user facts in LongMemEval and LoCoMo. No API calls. | `data/ecological_screen_v1.json` |
 | 6a. | `screen_wildchat.py` | Same pattern screen over WildChat-1M user turns. | `data/wildchat_screen_v1.json` |
