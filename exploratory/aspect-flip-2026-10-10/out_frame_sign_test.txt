@@ -1,0 +1,10 @@
+deepseek/deepseek-v4-flash {'positive': 8, 'negative': 0, 'tied': 0, 'p_one_sided': 0.00390625, 'p_holm': 0.01171875}
+openai/gpt-5.6-luna {'positive': 6, 'negative': 0, 'tied': 2, 'p_one_sided': 0.015625, 'p_holm': 0.015625}
+z-ai/glm-5.2 {'positive': 7, 'negative': 0, 'tied': 1, 'p_one_sided': 0.0078125, 'p_holm': 0.015625}
+anthropic/claude-sonnet-5 {'positive': 6, 'negative': 0, 'tied': 2, 'p_one_sided': 0.015625}
+local/qwen3-8b {'positive': 6, 'negative': 0, 'tied': 2, 'p_one_sided': 0.015625}
+local/mistral-small-3.2-24b-it {'positive': 6, 'negative': 0, 'tied': 2, 'p_one_sided': 0.015625}
+local/gpt-oss-20b {'positive': 4, 'negative': 0, 'tied': 4, 'p_one_sided': 0.0625}
+local/olmo-2-32b-instruct {'positive': 5, 'negative': 0, 'tied': 3, 'p_one_sided': 0.03125}
+pooled confirmatory {'positive': 21, 'negative': 0, 'tied': 3, 'p_one_sided': 4.76837158203125e-07}
+pooled all {'positive': 48, 'negative': 0, 'tied': 16, 'p_one_sided': 3.552713678800501e-15}

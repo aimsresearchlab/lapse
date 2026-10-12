@@ -1,0 +1,43 @@
+{
+ "ages": {
+  "M1": {
+   "progressive_scores_descriptive_only": {
+    "VERIFY": 30
+   },
+   "simple_execute": 0,
+   "simple_n": 30,
+   "simple_rate": 0.0,
+   "simple_scores": {
+    "VERIFY": 30
+   }
+  },
+  "M3": {
+   "progressive_scores_descriptive_only": {
+    "VERIFY": 30
+   },
+   "simple_execute": 0,
+   "simple_n": 30,
+   "simple_rate": 0.0,
+   "simple_scores": {
+    "VERIFY": 30
+   }
+  },
+  "M8": {
+   "progressive_scores_descriptive_only": {
+    "VERIFY": 30
+   },
+   "simple_execute": 0,
+   "simple_n": 30,
+   "simple_rate": 0.0,
+   "simple_scores": {
+    "VERIFY": 30
+   }
+  }
+ },
+ "chosen_age": null,
+ "included": false,
+ "reader": "haiku55-anthropic",
+ "rule": "closest simple-arm execute rate to 50% within [30%,70%] over 30 calibration pairs; tie -> older age; none -> excluded (floor/ceiling)",
+ "trace": "traces/sweep-haiku55-anthropic.jsonl",
+ "trace_sha256": "3a2adfbe2c54e0059f7d5e3e312ae25b23a32532020fcaa6c42437b51a936b55"
+}

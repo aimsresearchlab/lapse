@@ -1,0 +1,42 @@
+{
+ "age": "M8",
+ "controls": {
+  "expired_bounded": {
+   "by_variant": {
+    "v0": "12/12",
+    "v1": "12/12",
+    "v2": "6/6"
+   },
+   "correct": 30,
+   "expected": "VERIFY",
+   "n": 30,
+   "passed": true,
+   "threshold": 24
+  },
+  "fresh": {
+   "by_variant": {
+    "v0": "12/12",
+    "v1": "11/12",
+    "v2": "6/6"
+   },
+   "correct": 29,
+   "expected": "EXECUTE",
+   "n": 30,
+   "passed": true,
+   "threshold": 22
+  }
+ },
+ "errors_final": 0,
+ "failures": [],
+ "kind": "cellgate",
+ "n": 60,
+ "passed": true,
+ "reader": "glm52-baidu-fp8",
+ "scores": {
+  "EXECUTE": 29,
+  "UNPARSED": 1,
+  "VERIFY": 30
+ },
+ "trace": "traces/cellgate-glm52-baidu-fp8-M8.jsonl",
+ "trace_sha256": "4e61370fd9de75603783dcd964a9b31b28da80d2ecb636717adefcf7c299e2dc"
+}

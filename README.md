@@ -11,16 +11,25 @@ and Stability Evaluation) measures this with matched user statements that
 differ only in temporal form.
 
 On the three confirmatory writers, the progressive was flattened while its
-simple-present match was kept in 244 of 381 matched pairs, and never the
-reverse (DeepSeek V4 Flash 104/0 of 128, GPT-5.6 Luna 79/0 of 128, GLM-5.2
-61/0 of 125). The installed mem0, Graphiti, and Letta pipelines flatten too.
+simple-present match was kept in 210 of 381 matched pairs, and never the
+reverse (DeepSeek V4 Flash 87/0 of 128, GPT-5.6 Luna 71/0 of 128, GLM-5.2
+52/0 of 125). Across all 11 model configurations the count is 722 to 0. The
+installed mem0, Graphiti, and Letta pipelines flatten too.
+
+These counts use the paper's main outcome, the *aspect flip*: a progressive
+statement flips when its note states it as a simple-present state, and a
+simple-present statement flips when its note adds a progressive. The planned
+outcome also counted notes that add "currently" or an undated progressive;
+under it the counts are 244 of 381 and 807 to 2 (paper, Appendix B). The
+frozen analysis programs in `tools/` compute the planned outcome; the
+aspect-flip numbers come from `exploratory/aspect-flip-2026-10-10/`.
 
 <p align="center">
   <img src="docs/img/overview.png" alt="A user says &quot;I'm working at Corvida Analytics.&quot; The memory writer stores &quot;User works at Corvida Analytics as of August 27, 2026&quot;: the progressive, which marks an ongoing event, becomes a simple-present standing fact. LAPSE tests the write (was the temporal form preserved?) separately from the read (does a later reader use the form that survived?)." width="100%">
 </p>
 
 <p align="center">
-  <img src="docs/img/direction-frames.png" alt="(a) Across all 11 model configurations, 807 matched pairs had only the progressive destroyed and 2 had only the simple form destroyed. (b) Progressive destruction per frame for the three confirmatory writers under the controlled prompt, and temporal cues lost by the installed mem0 pipeline." width="100%">
+  <img src="docs/img/direction-frames.png" alt="(a) Across all 11 model configurations, 722 matched pairs had only the progressive note flipped and none had only the simple-present note flipped. (b) Progressive statements flattened per frame for the three confirmatory writers under the controlled prompt, and temporal cues lost by the installed mem0 pipeline." width="100%">
 </p>
 
 ## Contents
@@ -34,7 +43,9 @@ tests/         scorer regressions and stimulus audits
 traces/        11 model columns: raw outputs, scored labels, judge labels
 results/       frozen analysis outputs the paper reports
 exploratory/   follow-up experiments: installed pipelines, reader tasks,
-               verification tool, qualifier ablation, reanalyses
+               verification tool and its added readers, qualifier ablation,
+               reanalyses, aspect-flip outcome, frame sign test,
+               stative-only recount, free-text note vs structured record
 MANIFEST.sha256  SHA-256 of every data file, results file, and script
 ```
 
@@ -62,6 +73,17 @@ python3 tools/analysis_v2.py | cmp - results/ANALYSIS_V2_2026-08-27.txt
 python3 tools/analysis_v2_secondary.py | cmp - results/ANALYSIS_V2_SECONDARY_2026-08-27.txt
 python3 -m pytest -q tests                 # 85 passed
 shasum -a 256 -c --quiet MANIFEST.sha256
+```
+
+The aspect-flip outcome (the paper's headline counts) relabels the committed
+traces and reruns the same frozen programs on them:
+
+```bash
+D=exploratory/aspect-flip-2026-10-10
+python3 $D/relabel.py                    # writes $D/root/traces/
+python3 $D/run_frozen.py analysis_v2 | cmp - $D/out_analysis_v2.txt
+python3 $D/run_frozen.py frame_sign_test | cmp - $D/out_frame_sign_test.txt
+python3 $D/numbers.py                    # writes $D/numbers.json
 ```
 
 ## Use the stimuli

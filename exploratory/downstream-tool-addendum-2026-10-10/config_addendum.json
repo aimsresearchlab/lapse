@@ -1,0 +1,83 @@
+{
+  "experiment": "downstream-tool-addendum-2026-10-10",
+  "spec": "research/DOWNSTREAM_TOOL_READER_ADDENDUM_2026-10-10.md",
+  "base_url": "https://openrouter.ai/api/v1",
+  "api_key_env": "OPENROUTER_API_KEY",
+  "hard_cost_cap_usd": 5.0,
+  "workers": 32,
+  "temperature": 0,
+  "max_output_tokens": 1024,
+  "tool_choice": "required",
+  "price_snapshot": {
+    "catalog_timestamp": "2026-10-10",
+    "note": "OpenRouter /models/anthropic/claude-haiku-5.5/endpoints, Anthropic endpoint; per-million USD. Recorded spend uses usage.cost.",
+    "prices": {
+      "anthropic/claude-haiku-5.5": {
+        "endpoint": "Anthropic (first party)",
+        "input_per_million": 0.1,
+        "output_per_million": 0.5
+      },
+      "moonshotai/kimi-k2.6": {
+        "endpoint": "Moonshot AI (first party, int4)",
+        "input_per_million": 0.95,
+        "output_per_million": 4.0
+      },
+      "google/gemma-4-31b-it": {
+        "endpoint": "Crusoe bf16",
+        "input_per_million": 0.14,
+        "output_per_million": 0.4
+      }
+    }
+  },
+  "readers": {
+    "haiku55-anthropic": {
+      "model": "anthropic/claude-haiku-5.5",
+      "provider": {
+        "only": [
+          "Anthropic"
+        ],
+        "allow_fallbacks": false
+      },
+      "reasoning": {
+        "enabled": false
+      },
+      "role": "added reader (addendum 2026-10-10)",
+      "workers": 32
+    },
+    "kimik26-moonshot": {
+      "model": "moonshotai/kimi-k2.6",
+      "provider": {
+        "only": [
+          "Moonshot AI"
+        ],
+        "allow_fallbacks": false
+      },
+      "reasoning": {
+        "enabled": false
+      },
+      "role": "added reader (addendum 2026-10-10, section 8)",
+      "workers": 32
+    },
+    "gemma4-31b-crusoe-bf16": {
+      "model": "google/gemma-4-31b-it",
+      "provider": {
+        "only": [
+          "Crusoe"
+        ],
+        "quantizations": [
+          "bf16"
+        ],
+        "allow_fallbacks": false
+      },
+      "reasoning": {
+        "enabled": false
+      },
+      "role": "added reader (addendum 2026-10-10, section 10)",
+      "workers": 8
+    }
+  },
+  "excluded_readers": {
+    "luna-firstparty": "openai/gpt-5.6-luna requested confirmation on 0-1 of 69 simple-present notes at 1, 3, and 8 months (note-age run) while executing 30/30 same-day notes; no age in the tested range is off the floor."
+  },
+  "parent_spec": "research/DOWNSTREAM_TOOL_POWERED_SPEC_2026-09-22.md"
+}

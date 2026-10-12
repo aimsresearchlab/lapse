@@ -1,0 +1,18 @@
+{
+ "age": "M1",
+ "targets": 2328,
+ "pairs_per_arm": {
+  "F": 291,
+  "S_full": 291,
+  "S_noquote": 291,
+  "SRC": 291
+ },
+ "excluded_redate": [],
+ "gate_controls": 60,
+ "sha256": {
+  "target-M1": "c7ee20deceab34cd7d9ffc11964dd615c8c5276a425de1699fc6975e1d07eb9e",
+  "cellgate-M1": "7e861cf2b1d371956b64da270d2c1ad584fe3b0c3b1c27bdb9f6f9dd55f4f135",
+  "notes.jsonl": "b02fb809ce82efb2dfcdcc4f0f167fa34077ded57731dce81fccfc3adf48af7f",
+  "writer_trace.jsonl": "925c8df7c7b06516e28178943becea2e1c4f5c235bb4686fbb43d67aafe8972b"
+ }
+}

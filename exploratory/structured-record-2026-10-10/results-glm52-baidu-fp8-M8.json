@@ -1,0 +1,108 @@
+{
+ "reader": "glm52-baidu-fp8",
+ "age": "M8",
+ "trace": "traces/target-glm52-baidu-fp8-M8.jsonl",
+ "trace_sha256": "e18cf5ae87c28df1c25817c859732f4f317d8b89660924f2f6a34fb67f5ae044",
+ "calls_final": 2910,
+ "unparsed": 56,
+ "arms": {
+  "F": {
+   "pairs": 278,
+   "simple_acted": 160,
+   "progressive_acted": 156,
+   "simple_only": 23,
+   "progressive_only": 19,
+   "p_one_sided": 0.32198447818518616,
+   "p_two_sided": 0.6439689563703723
+  },
+  "S_full": {
+   "pairs": 287,
+   "simple_acted": 177,
+   "progressive_acted": 82,
+   "simple_only": 113,
+   "progressive_only": 18,
+   "p_one_sided": 2.5813504245962692e-18,
+   "p_two_sided": 5.1627008491925384e-18
+  },
+  "S_noquote": {
+   "pairs": 285,
+   "simple_acted": 157,
+   "progressive_acted": 133,
+   "simple_only": 49,
+   "progressive_only": 25,
+   "p_one_sided": 0.0035421263369402466,
+   "p_two_sided": 0.007084252673880493
+  },
+  "SRC": {
+   "pairs": 279,
+   "simple_acted": 137,
+   "progressive_acted": 77,
+   "simple_only": 75,
+   "progressive_only": 15,
+   "p_one_sided": 4.588242747857363e-11,
+   "p_two_sided": 9.176485495714726e-11
+  }
+ },
+ "H1": {
+  "pairs": 276,
+  "pair_D_pos": 106,
+  "pair_D_neg": 24,
+  "pair_p_one_sided": 8.577171074651869e-14,
+  "contents": 116,
+  "content_pos": 64,
+  "content_neg": 13,
+  "content_p_one_sided": 1.5118173757871118e-09
+ },
+ "fidelity_F": {
+  "progressive": {
+   "items": 280,
+   "agree": 176
+  },
+  "simple": {
+   "items": 274,
+   "agree": 190
+  }
+ },
+ "H2": {
+  "items": 279,
+  "agree_arm": 218,
+  "arm_only_agrees": 78,
+  "F_only_agrees": 35,
+  "p_one_sided": 3.222690505160353e-05,
+  "p_two_sided": 6.445381010320707e-05
+ },
+ "H2_check_simple": {
+  "items": 274,
+  "agree_arm": 166,
+  "arm_only_agrees": 42,
+  "F_only_agrees": 66,
+  "p_one_sided": 0.9921253544254363,
+  "p_two_sided": 0.026423520277147814
+ },
+ "noquote_progressive": {
+  "items": 279,
+  "agree_arm": 199,
+  "arm_only_agrees": 47,
+  "F_only_agrees": 23,
+  "p_one_sided": 0.0027913336755116874,
+  "p_two_sided": 0.005582667351023375
+ },
+ "noquote_simple": {
+  "items": 274,
+  "agree_arm": 175,
+  "arm_only_agrees": 33,
+  "F_only_agrees": 48,
+  "p_one_sided": 0.9626059228585832,
+  "p_two_sided": 0.11927366831176445
+ },
+ "SRC_retest": {
+  "progressive": {
+   "items": 285,
+   "agree": 221
+  },
+  "simple": {
+   "items": 281,
+   "agree": 208
+  }
+ }
+}

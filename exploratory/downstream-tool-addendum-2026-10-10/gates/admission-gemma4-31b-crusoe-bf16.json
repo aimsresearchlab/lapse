@@ -1,0 +1,151 @@
+{
+ "age": null,
+ "controls": {
+  "expired_bounded": {
+   "by_variant": {
+    "v0": "12/12",
+    "v1": "12/12",
+    "v2": "6/6"
+   },
+   "correct": 30,
+   "expected": "VERIFY",
+   "n": 30,
+   "passed": true,
+   "threshold": 24
+  },
+  "fresh": {
+   "by_variant": {
+    "v0": "12/12",
+    "v1": "12/12",
+    "v2": "6/6"
+   },
+   "correct": 30,
+   "expected": "EXECUTE",
+   "n": 30,
+   "passed": true,
+   "threshold": 22
+  },
+  "no_memory": {
+   "by_variant": {
+    "v0": "12/12",
+    "v1": "12/12",
+    "v2": "6/6"
+   },
+   "correct": 30,
+   "expected": "VERIFY",
+   "n": 30,
+   "passed": true,
+   "threshold": 24
+  }
+ },
+ "errors_final": 0,
+ "failures": [],
+ "frame_control_cells": {
+  "affiliate_role/expired_bounded": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "affiliate_role/fresh": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "affiliate_role/no_memory": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "class/expired_bounded": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "class/fresh": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "class/no_memory": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "equipment/expired_bounded": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "equipment/fresh": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "equipment/no_memory": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "project/expired_bounded": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "project/fresh": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "project/no_memory": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "vehicle/expired_bounded": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "vehicle/fresh": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "vehicle/no_memory": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "workplace/expired_bounded": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "workplace/fresh": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  },
+  "workplace/no_memory": {
+   "correct": 5,
+   "n": 5,
+   "passed": true
+  }
+ },
+ "kind": "admission",
+ "n": 90,
+ "passed": true,
+ "reader": "gemma4-31b-crusoe-bf16",
+ "scores": {
+  "EXECUTE": 30,
+  "VERIFY": 60
+ },
+ "trace": "traces/admission-gemma4-31b-crusoe-bf16.jsonl",
+ "trace_sha256": "67c3e0c2d1744d7ec1cebd7e69819562f69bea37d1099e0a6c0919e5afc99791",
+ "valid_parse": {
+  "n": 90,
+  "passed": true,
+  "threshold": 86,
+  "valid": 90
+ }
+}

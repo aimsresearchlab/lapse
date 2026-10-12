@@ -1,0 +1,4 @@
+wrote /Users/vein/Documents/research/aspect-persistence/exploratory/aspect-flip-2026-10-10/out_frame_jackknife/frame_jackknife_results.json
+{'model': 'deepseek/deepseek-v4-flash', 'loo_p_max_over_0.05_over_3': False, 'loo_direction_ever_flips': False, 'frame_boot_risk_diff_ci_includes_zero': False, 'cluster_boot_risk_diff_ci_includes_zero': False}
+{'model': 'openai/gpt-5.6-luna', 'loo_p_max_over_0.05_over_3': False, 'loo_direction_ever_flips': False, 'frame_boot_risk_diff_ci_includes_zero': False, 'cluster_boot_risk_diff_ci_includes_zero': False}
+{'model': 'z-ai/glm-5.2', 'loo_p_max_over_0.05_over_3': False, 'loo_direction_ever_flips': False, 'frame_boot_risk_diff_ci_includes_zero': False, 'cluster_boot_risk_diff_ci_includes_zero': False}

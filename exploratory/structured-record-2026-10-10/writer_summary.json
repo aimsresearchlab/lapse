@@ -1,0 +1,40 @@
+{
+ "flags": {
+  "F_witness_missing": 0,
+  "F_multi_line": 0,
+  "S_record_missing": 0,
+  "S_multi_record": 0,
+  "S_missing_field": 0
+ },
+ "progressive": {
+  "n": 120,
+  "F_keeps_progressive": 21,
+  "F_labels": {
+   "COERCED-STATIVE": 99,
+   "MANUFACTURE": 2,
+   "PRESERVED": 19
+  },
+  "S_said_verbatim": 120,
+  "S_said_progressive": 120,
+  "S_fact_progressive": 24,
+  "S_form_correct": 112,
+  "S_form_labels": {
+   "present progressive": 112,
+   "simple present": 8
+  }
+ },
+ "simple": {
+  "n": 120,
+  "F_keeps_progressive": 0,
+  "F_labels": {
+   "PRESERVED": 120
+  },
+  "S_said_verbatim": 120,
+  "S_said_progressive": 0,
+  "S_fact_progressive": 0,
+  "S_form_correct": 120,
+  "S_form_labels": {
+   "simple present": 120
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "analysis_sha256": {
+  "analyze_sr.py": "784aceff521f5dbd4f710707a606214b5328fe03fe4b64e5a73b44aaa2c0ea31"
+ },
+ "cells": [
+  "gemini3flash-aistudio|M1",
+  "glm52-baidu-fp8|M8"
+ ],
+ "compiled_hashes": {
+  "target|gemini3flash-aistudio|M1": "73a05eb894df46428cb49e946888fd5d94c6de8d2504d4cb50e31304b78b4dbd",
+  "target|glm52-baidu-fp8|M8": "7916566acf8bb79c559a3a9229472d4798132fe541947ca6af50d2c68364198b"
+ },
+ "config_sha256": "4932db2de401214db2f37f0f5059c3668d4a34910a3eb5e15635210392d01688",
+ "frozen_at_utc": "2026-10-10T23:57:30+00:00",
+ "gate": "gates/cellgate-gemini3flash-aistudio-M1.json passed 60/60",
+ "generated_manifest_sha256": "3fba18053841f739e3408853501ce8c9326d1efea44033e0b338c0e1b6484a40",
+ "spec": "research/STRUCTURED_RECORD_SPEC_2026-10-10.md (sections 6, 9)",
+ "stage2": {
+  "analysis_sha256": {
+   "analyze_sr.py": "ecd9d41e11b813f58632e33aafb65e403c13d859b316b61d11d6b9b79dbd48ab"
+  },
+  "config_sha256": "e5e989ac8eabaaf94d142ea7fcdca7b8f44d8b403ac97d9975897619d3f6a4c7",
+  "frozen_at_utc": "2026-10-11T00:11:51+00:00",
+  "gate": "gates/cellgate-glm52-baidu-fp8-M8.json passed (fresh 29/30, expired 30/30)",
+  "generated_manifest_sha256": "4d1d3eba99ffbcc4260c6256a1cf04095bc1592f30f86bfa6aeb1791d725c4bd",
+  "spec": "section 12"
+ }
+}
