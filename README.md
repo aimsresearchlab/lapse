@@ -1,7 +1,13 @@
-# LAPSE: aspectual flattening in LLM memory consolidation
+# LAPSE: aspectual flattening in LLM agent memory
+
+[![arXiv](https://img.shields.io/badge/arXiv-2609.36457-b31b1b.svg)](https://arxiv.org/abs/2609.36457)
+[![Dataset on Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-vein05%2Flapse-yellow)](https://huggingface.co/datasets/vein05/lapse)
+[![License: MIT (code), CC BY 4.0 (data)](https://img.shields.io/badge/license-MIT%20%2F%20CC%20BY%204.0-blue.svg)](DATA_LICENSES.md)
 
 Code, data, model outputs, and labels for *Memory Consolidation Flattens the
-Temporal Shape of User Facts* ([arXiv:2609.36457](https://arxiv.org/abs/2609.36457)).
+Temporal Shape of User Facts* ([arXiv:2609.36457](https://arxiv.org/abs/2609.36457)),
+a benchmark for long-term memory in LLM agents. The stimuli are also on
+Hugging Face: [vein05/lapse](https://huggingface.co/datasets/vein05/lapse).
 
 A user says "I am driving a Peugeot." The memory writer stores "The user drives
 a Peugeot." The progressive told a later reader the fact might not last; the
@@ -10,16 +16,25 @@ and Stability Evaluation) measures this with matched user statements that
 differ only in temporal form.
 
 On the three confirmatory writers, the progressive was flattened while its
-simple-present match was kept in 244 of 381 matched pairs, and never the
-reverse (DeepSeek V4 Flash 104/0 of 128, GPT-5.6 Luna 79/0 of 128, GLM-5.2
-61/0 of 125). The installed mem0, Graphiti, and Letta pipelines flatten too.
+simple-present match was kept in 210 of 381 matched pairs, and never the
+reverse (DeepSeek V4 Flash 87/0 of 128, GPT-5.6 Luna 71/0 of 128, GLM-5.2
+52/0 of 125). Across all 11 model configurations the count is 722 to 0. The
+installed mem0, Graphiti, and Letta pipelines flatten too.
+
+These counts use the paper's main outcome, the *aspect flip*: a progressive
+statement flips when its note states it as a simple-present state, and a
+simple-present statement flips when its note adds a progressive. The planned
+outcome also counted notes that add "currently" or an undated progressive;
+under it the counts are 244 of 381 and 807 to 2 (paper, Appendix B). The
+frozen analysis programs in `tools/` compute the planned outcome; the
+aspect-flip numbers come from `exploratory/aspect-flip-2026-10-10/`.
 
 <p align="center">
   <img src="docs/img/overview.png" alt="A user says &quot;I'm working at Corvida Analytics.&quot; The memory writer stores &quot;User works at Corvida Analytics as of August 27, 2026&quot;: the progressive, which marks an ongoing event, becomes a simple-present standing fact. LAPSE tests the write (was the temporal form preserved?) separately from the read (does a later reader use the form that survived?)." width="100%">
 </p>
 
 <p align="center">
-  <img src="docs/img/direction-frames.png" alt="(a) Across all 11 model configurations, 807 matched pairs had only the progressive destroyed and 2 had only the simple form destroyed. (b) Progressive destruction per frame for the three confirmatory writers under the controlled prompt, and temporal cues lost by the installed mem0 pipeline." width="100%">
+  <img src="docs/img/direction-frames.png" alt="(a) Across all 11 model configurations, 722 matched pairs had only the progressive note flipped and none had only the simple-present note flipped. (b) Progressive statements flattened per frame for the three confirmatory writers under the controlled prompt, and temporal cues lost by the installed mem0 pipeline." width="100%">
 </p>
 
 ## Contents
@@ -28,12 +43,14 @@ reverse (DeepSeek V4 Flash 104/0 of 128, GPT-5.6 Luna 79/0 of 128, GLM-5.2
 data/          LAPSE stimuli (5,916 rows: 4,791 dev, 1,125 test), build manifests,
                scorer-validation gold sets, witness contamination checks
 tools/         stimulus builder, model runner, rule-based scorer, judge,
-               preregistered and secondary analyses (see tools/README.md)
+               confirmatory and secondary analyses (see tools/README.md)
 tests/         scorer regressions and stimulus audits
 traces/        11 model columns: raw outputs, scored labels, judge labels
 results/       frozen analysis outputs the paper reports
 exploratory/   follow-up experiments: installed pipelines, reader tasks,
-               verification tool, qualifier ablation, reanalyses
+               verification tool and its added readers, qualifier ablation,
+               reanalyses, aspect-flip outcome, frame sign test,
+               stative-only recount, free-text note vs structured record
 MANIFEST.sha256  SHA-256 of every data file, results file, and script
 ```
 
@@ -63,28 +80,75 @@ python3 -m pytest -q tests                 # 85 passed
 shasum -a 256 -c --quiet MANIFEST.sha256
 ```
 
+The aspect-flip outcome (the paper's headline counts) relabels the committed
+traces and reruns the same frozen programs on them:
+
+```bash
+D=exploratory/aspect-flip-2026-10-10
+python3 $D/relabel.py                    # writes $D/root/traces/
+python3 $D/run_frozen.py analysis_v2 | cmp - $D/out_analysis_v2.txt
+python3 $D/run_frozen.py frame_sign_test | cmp - $D/out_frame_sign_test.txt
+python3 $D/numbers.py                    # writes $D/numbers.json
+```
+
 ## Use the stimuli
 
-Each row of `data/stimuli_v2.jsonl` is one model call. Fill the manifest's
-system template with the row's conversation history and send the row's query
-as the user turn:
+`data/stimuli_v2.jsonl` holds the 5,916 LAPSE items, one model call per line
+("v2" is an internal build number). Each item is a dated conversation
+(`history`) and a request (`query`). Put the history into the system prompt
+from `data/manifest_v2.json` and send the request as the user turn:
 
 ```python
 import json
 
 manifest = json.load(open("data/manifest_v2.json"))
-rows = [json.loads(line) for line in open("data/stimuli_v2.jsonl")]
+items = [json.loads(line) for line in open("data/stimuli_v2.jsonl")]
 
-row = next(r for r in rows if r["component"] == "e1_primary")
+# The main test: memory-write items, progressive vs simple present, months old.
+main_test = [r for r in items if r["component"] == "e1_primary"]
+
+item = main_test[0]
 messages = [
-    {"role": "system", "content": manifest["system_template"].format(history=row["history"])},
-    {"role": "user", "content": row["query"]},
+    {"role": "system", "content": manifest["system_template"].format(history=item["history"])},
+    {"role": "user", "content": item["query"]},
 ]
 ```
 
-Skip rows with `component == "v1_grid_extra"`; they exist only so the tests
-can check v2 against the earlier build. Field meanings are in
-`data/README.md`.
+Two fields say what an item tests. `arm` is the task, named as in the paper:
+
+| `arm` | Task in the paper | The model is asked to |
+|---|---|---|
+| `e1` | memory write | write memory notes about the conversation |
+| `l2` | guided memory write | write notes, told to keep tense and aspect |
+| `behavioral` | direct use | act on the user's fact |
+| `explicit` | validity question | say whether the fact still holds |
+| `anchor` | send-or-check choice | send now or check with the user first |
+
+Memory-write items also get a second call at run time, built from the model's
+own notes: `e2` (memory use) and `l2e2` (guided memory use). These are not
+rows in the file.
+
+`component` is the design cell:
+
+| `component` | Task | What the cell varies |
+|---|---|---|
+| `e1_primary` | memory write | **main test**: progressive vs simple present, statement months old |
+| `e1_boundary` | memory write | the same pairs, dated at the boundary gap (see `gap`) |
+| `e1_fresh_gate` | memory write | simple present stated just before; the writer should keep it |
+| `carrier_e1` | memory write | the main-test pairs in five other sentence frames (`carrier`) |
+| `l2` | guided memory write | the main-test pairs |
+| `explicit` | validity question | progressive vs simple present, months old |
+| `behavioral_core` | direct use | progressive, simple present, and bounded statements; fresh and months old |
+| `behavioral_boundary` | direct use | the same, at the boundary gap |
+| `carrier_behavioral_p2`, `carrier_fresh_p3` | direct use | five other sentence frames; months old / fresh simple present |
+| `anchor` | send-or-check choice | the `behavioral_core` design |
+| `gap_gradient` | direct use | three more gaps: near, just expired, over a year |
+| `perf` | memory write, direct use | perfect forms ("I've been living") |
+| `lexeme_subject` | memory write | different verbs across a pair; third-person subjects |
+| `v1_grid_extra` | none | not run; kept so the tests can compare with the earlier build. Skip these. |
+
+`tier` marks how the paper uses a row: `CONF` confirmatory, `SEC` secondary,
+`EXP` exploratory. The other fields are described in `data/README.md`.
 
 ## Evaluate a new model
 

@@ -1,0 +1,41 @@
+{
+ "age": "M1",
+ "controls": {
+  "expired_bounded": {
+   "by_variant": {
+    "v0": "12/12",
+    "v1": "12/12",
+    "v2": "6/6"
+   },
+   "correct": 30,
+   "expected": "VERIFY",
+   "n": 30,
+   "passed": true,
+   "threshold": 24
+  },
+  "fresh": {
+   "by_variant": {
+    "v0": "12/12",
+    "v1": "12/12",
+    "v2": "6/6"
+   },
+   "correct": 30,
+   "expected": "EXECUTE",
+   "n": 30,
+   "passed": true,
+   "threshold": 22
+  }
+ },
+ "errors_final": 0,
+ "failures": [],
+ "kind": "cellgate",
+ "n": 60,
+ "passed": true,
+ "reader": "gemini3flash-aistudio",
+ "scores": {
+  "EXECUTE": 30,
+  "VERIFY": 30
+ },
+ "trace": "traces/cellgate-gemini3flash-aistudio-M1.jsonl",
+ "trace_sha256": "dd34bc6ecfffe5595e90a7c142a95b7ec0994a28c7b9729b412eec56df33812d"
+}

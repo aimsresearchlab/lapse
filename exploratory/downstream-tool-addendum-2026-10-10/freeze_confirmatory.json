@@ -1,0 +1,38 @@
+{
+ "analysis_sha256": {
+  "analyze_addendum.py": "e885092c6e1601cf5149f9fa04e8ba05634bf82b92a502b83b72a70413c662e8",
+  "analyze_powered.py": "a13d5e056514b90d7b5929a8a0b0346e45456f0e5be5fe2a443bfde2bd4c5e23"
+ },
+ "candidate_outcomes": {
+  "haiku55-anthropic": {
+   "admission": "passed 90/90",
+   "sweep": "M1 0/30, M3 0/30, M8 0/30 -> excluded at floor"
+  },
+  "kimik26-moonshot": {
+   "admission": "passed 90/90",
+   "sweep": "M1 26/30, M3 18/30, M8 11/30 -> M3"
+  }
+ },
+ "cells": [
+  "kimik26-moonshot|M3"
+ ],
+ "compiled_hashes": {
+  "cellgate|kimik26-moonshot|M3": "5fe84ecf89e32bdcb579e3c23842444bf28b1070ecc9f66f99581be2de92aaaf",
+  "e2e|kimik26-moonshot|M3": "3f8c88d0cf01cb1f9bddae90c9034c5c6ae2092c15be5989b167aeff674e1fff",
+  "target|kimik26-moonshot|M3": "00d5a50b0c3f548a6fb728d4faacb161d166f3d50357f2eca5433070e67c75d5"
+ },
+ "config_sha256": "c332a0073186fc00eabcac5aad15ba0b2f47cafca095b94338b5b1095208d532",
+ "frozen_at_utc": "2026-10-10T22:35:32+00:00",
+ "generated_manifest_sha256": "f4f0a9fa19c1ece175072b318857403448bdd1f34b75a9f448f36a9065211c98",
+ "holm_family": "this cell alone (no adjustment with the frozen cells or Haiku); e2e subsets: family of two",
+ "parent_spec": "research/DOWNSTREAM_TOOL_POWERED_SPEC_2026-09-22.md",
+ "primary_cell": "kimik26-moonshot|M3",
+ "roles": {
+  "kimik26-moonshot": "added reader (addendum 2026-10-10, section 8)"
+ },
+ "runner_sha256": {
+  "run_addendum.py": "393ec7de43cc91266c94adbe1f79ee5591541b95860aaa9f05a42f6ad2472cbc",
+  "run_powered.py": "de6270a0de4f1361aadb709270aab4fec54203365841046f19f47dc1c578d11a"
+ },
+ "spec": "research/DOWNSTREAM_TOOL_READER_ADDENDUM_2026-10-10.md (section 8)"
+}

@@ -1,6 +1,6 @@
 import wandb, json
 run = wandb.init(
-    entity="sugam-panthi-university-of-southern-mississippi",
+    entity=None,
     project="lapse",
     id="mem0-scale-gemini-3-flash-2026-09-22",
     resume="must",

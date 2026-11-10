@@ -1,0 +1,41 @@
+{
+ "age": "M3",
+ "controls": {
+  "expired_bounded": {
+   "by_variant": {
+    "v0": "12/12",
+    "v1": "12/12",
+    "v2": "6/6"
+   },
+   "correct": 30,
+   "expected": "VERIFY",
+   "n": 30,
+   "passed": true,
+   "threshold": 24
+  },
+  "fresh": {
+   "by_variant": {
+    "v0": "12/12",
+    "v1": "12/12",
+    "v2": "6/6"
+   },
+   "correct": 30,
+   "expected": "EXECUTE",
+   "n": 30,
+   "passed": true,
+   "threshold": 22
+  }
+ },
+ "errors_final": 0,
+ "failures": [],
+ "kind": "cellgate",
+ "n": 60,
+ "passed": true,
+ "reader": "kimik26-moonshot",
+ "scores": {
+  "EXECUTE": 30,
+  "VERIFY": 30
+ },
+ "trace": "traces/cellgate-kimik26-moonshot-M3.jsonl",
+ "trace_sha256": "d88bb65ac09c3c8c0355cf74670682d168b25c9c00a193b5d4ea48fbf415415b"
+}

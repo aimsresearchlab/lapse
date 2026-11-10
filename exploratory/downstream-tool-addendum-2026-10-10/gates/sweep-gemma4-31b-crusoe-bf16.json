@@ -1,0 +1,43 @@
+{
+ "ages": {
+  "M1": {
+   "progressive_scores_descriptive_only": {
+    "EXECUTE": 30
+   },
+   "simple_execute": 30,
+   "simple_n": 30,
+   "simple_rate": 1.0,
+   "simple_scores": {
+    "EXECUTE": 30
+   }
+  },
+  "M3": {
+   "progressive_scores_descriptive_only": {
+    "EXECUTE": 30
+   },
+   "simple_execute": 30,
+   "simple_n": 30,
+   "simple_rate": 1.0,
+   "simple_scores": {
+    "EXECUTE": 30
+   }
+  },
+  "M8": {
+   "progressive_scores_descriptive_only": {
+    "EXECUTE": 30
+   },
+   "simple_execute": 30,
+   "simple_n": 30,
+   "simple_rate": 1.0,
+   "simple_scores": {
+    "EXECUTE": 30
+   }
+  }
+ },
+ "chosen_age": null,
+ "included": false,
+ "reader": "gemma4-31b-crusoe-bf16",
+ "rule": "closest simple-arm execute rate to 50% within [30%,70%] over 30 calibration pairs; tie -> older age; none -> excluded (floor/ceiling)",
+ "trace": "traces/sweep-gemma4-31b-crusoe-bf16.jsonl",
+ "trace_sha256": "20d8d1cdc4313b1543efb4960321f83247836ba437991c4c526131df94882e8c"
+}

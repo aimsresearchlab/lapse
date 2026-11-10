@@ -1,0 +1,19 @@
+{
+ "age": "M8",
+ "targets": 2910,
+ "pairs_per_arm": {
+  "F": 291,
+  "S_full": 291,
+  "S_noquote": 291,
+  "SRC": 291,
+  "SRC_retest": 291
+ },
+ "excluded_redate": [],
+ "gate_controls": 60,
+ "sha256": {
+  "target-M8": "90cc70840ad23795675ef0e14b6db079a74a082865ac089162e0483a533024d2",
+  "cellgate-M8": "fdd26180460a34f0da3f4fe8fc847299450dfa6500927525177c87cdb83f4cce",
+  "notes.jsonl": "b02fb809ce82efb2dfcdcc4f0f167fa34077ded57731dce81fccfc3adf48af7f",
+  "writer_trace.jsonl": "925c8df7c7b06516e28178943becea2e1c4f5c235bb4686fbb43d67aafe8972b"
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "experiment": "structured-record-2026-10-10",
+ "spec": "research/STRUCTURED_RECORD_SPEC_2026-10-10.md",
+ "base_url": "https://openrouter.ai/api/v1",
+ "api_key_env": "OPENROUTER_API_KEY",
+ "hard_cost_cap_usd": 8.0,
+ "workers": 32,
+ "temperature": 0,
+ "max_output_tokens": 1024,
+ "tool_choice": "required",
+ "price_snapshot": {
+  "catalog_timestamp": "2026-09-23T03:43:22Z",
+  "note": "OpenRouter /models/{id}/endpoints; per-million USD. Recorded spend uses the per-response usage.cost that OpenRouter returns.",
+  "prices": {
+   "z-ai/glm-5.2": {
+    "endpoint": "Baidu baidu/fp8",
+    "input_per_million": 1.4,
+    "output_per_million": 4.4
+   },
+   "deepseek/deepseek-v4.1-flash": {
+    "endpoint": "DeepSeek (first party)",
+    "input_per_million": 0.3,
+    "output_per_million": 1.2
+   },
+   "google/gemini-3-flash-preview": {
+    "endpoint": "Google AI Studio (first party)",
+    "input_per_million": 0.5,
+    "output_per_million": 3.0
+   },
+   "qwen/qwen3.8-max": {
+    "endpoint": "Alibaba (first party)",
+    "input_per_million": 2.0,
+    "output_per_million": 6.0
+   },
+   "mistralai/mistral-small-3.2-24b-instruct": {
+    "endpoint": "DeepInfra deepinfra/fp8",
+    "input_per_million": 0.075,
+    "output_per_million": 0.2
+   }
+  }
+ },
+ "readers": {
+  "gemini3flash-aistudio": {
+   "model": "google/gemini-3-flash-preview",
+   "provider": {
+    "only": [
+     "Google AI Studio"
+    ],
+    "allow_fallbacks": false
+   },
+   "role": "stage-1 reader (spec section 9)",
+   "age": "M1",
+   "workers": 32
+  },
+  "glm52-baidu-fp8": {
+   "model": "z-ai/glm-5.2",
+   "provider": {
+    "only": [
+     "Baidu"
+    ],
+    "quantizations": [
+     "fp8"
+    ],
+    "allow_fallbacks": false
+   },
+   "role": "stage-2 reader (spec section 12)",
+   "age": "M8",
+   "age_source": "R2 (8 months): simple-note arm executed 38/69",
+   "workers": 100
+  }
+ }
+}

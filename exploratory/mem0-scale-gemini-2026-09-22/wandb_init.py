@@ -1,7 +1,7 @@
 import wandb, subprocess, json
-commit = subprocess.check_output(["git","rev-parse","HEAD"], cwd="/Users/vein/Documents/research/aspect-persistence").decode().strip()
+commit = subprocess.check_output(["git","rev-parse","HEAD"], cwd=".").decode().strip()
 run = wandb.init(
-    entity="sugam-panthi-university-of-southern-mississippi",
+    entity=None,
     project="lapse",
     group="mem0-scale",
     name="mem0-scale-gemini-3-flash-2026-09-22",

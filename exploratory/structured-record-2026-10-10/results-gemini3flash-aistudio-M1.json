@@ -1,0 +1,98 @@
+{
+ "reader": "gemini3flash-aistudio",
+ "age": "M1",
+ "trace": "traces/target-gemini3flash-aistudio-M1.jsonl",
+ "trace_sha256": "a52ff87a01ce4a646aadc1ddcd3331f9c2abab60dee8aecf48293134caaa29ee",
+ "calls_final": 2328,
+ "unparsed": 0,
+ "arms": {
+  "F": {
+   "pairs": 291,
+   "simple_acted": 129,
+   "progressive_acted": 128,
+   "simple_only": 11,
+   "progressive_only": 10,
+   "p_one_sided": 0.5,
+   "p_two_sided": 1.0
+  },
+  "S_full": {
+   "pairs": 291,
+   "simple_acted": 180,
+   "progressive_acted": 138,
+   "simple_only": 45,
+   "progressive_only": 3,
+   "p_one_sided": 6.562927978848165e-11,
+   "p_two_sided": 1.312585595769633e-10
+  },
+  "S_noquote": {
+   "pairs": 291,
+   "simple_acted": 161,
+   "progressive_acted": 153,
+   "simple_only": 17,
+   "progressive_only": 9,
+   "p_one_sided": 0.08431877195835114,
+   "p_two_sided": 0.16863754391670227
+  },
+  "SRC": {
+   "pairs": 291,
+   "simple_acted": 94,
+   "progressive_acted": 53,
+   "simple_only": 47,
+   "progressive_only": 6,
+   "p_one_sided": 2.9026612224924975e-09,
+   "p_two_sided": 5.805322444984995e-09
+  }
+ },
+ "H1": {
+  "pairs": 291,
+  "pair_D_pos": 43,
+  "pair_D_neg": 8,
+  "pair_p_one_sided": 3.433558868337627e-07,
+  "contents": 120,
+  "content_pos": 35,
+  "content_neg": 6,
+  "content_p_one_sided": 2.436799150018487e-06
+ },
+ "fidelity_F": {
+  "progressive": {
+   "items": 291,
+   "agree": 212
+  },
+  "simple": {
+   "items": 291,
+   "agree": 236
+  }
+ },
+ "H2": {
+  "items": 291,
+  "agree_arm": 206,
+  "arm_only_agrees": 22,
+  "F_only_agrees": 28,
+  "p_one_sided": 0.8388818398212265,
+  "p_two_sided": 0.47988766169832786
+ },
+ "H2_check_simple": {
+  "items": 291,
+  "agree_arm": 203,
+  "arm_only_agrees": 11,
+  "F_only_agrees": 44,
+  "p_one_sided": 0.9999989713677422,
+  "p_two_sided": 8.699371704778969e-06
+ },
+ "noquote_progressive": {
+  "items": 291,
+  "agree_arm": 191,
+  "arm_only_agrees": 12,
+  "F_only_agrees": 33,
+  "p_one_sided": 0.9995879588202001,
+  "p_two_sided": 0.0024589003220967243
+ },
+ "noquote_simple": {
+  "items": 291,
+  "agree_arm": 220,
+  "arm_only_agrees": 12,
+  "F_only_agrees": 28,
+  "p_one_sided": 0.9967867119521543,
+  "p_two_sided": 0.01658900337497471
+ }
+}

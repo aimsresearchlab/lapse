@@ -1,0 +1,49 @@
+{
+ "ages": {
+  "M1": {
+   "progressive_scores_descriptive_only": {
+    "EXECUTE": 24,
+    "VERIFY": 6
+   },
+   "simple_execute": 26,
+   "simple_n": 30,
+   "simple_rate": 0.8666666666666667,
+   "simple_scores": {
+    "EXECUTE": 26,
+    "VERIFY": 4
+   }
+  },
+  "M3": {
+   "progressive_scores_descriptive_only": {
+    "EXECUTE": 19,
+    "VERIFY": 11
+   },
+   "simple_execute": 18,
+   "simple_n": 30,
+   "simple_rate": 0.6,
+   "simple_scores": {
+    "EXECUTE": 18,
+    "VERIFY": 12
+   }
+  },
+  "M8": {
+   "progressive_scores_descriptive_only": {
+    "EXECUTE": 10,
+    "VERIFY": 20
+   },
+   "simple_execute": 11,
+   "simple_n": 30,
+   "simple_rate": 0.36666666666666664,
+   "simple_scores": {
+    "EXECUTE": 11,
+    "VERIFY": 19
+   }
+  }
+ },
+ "chosen_age": "M3",
+ "included": true,
+ "reader": "kimik26-moonshot",
+ "rule": "closest simple-arm execute rate to 50% within [30%,70%] over 30 calibration pairs; tie -> older age; none -> excluded (floor/ceiling)",
+ "trace": "traces/sweep-kimik26-moonshot.jsonl",
+ "trace_sha256": "5f5e649a7affd19a12933936db5e1815689239927b955c4f544b8acbe12be327"
+}

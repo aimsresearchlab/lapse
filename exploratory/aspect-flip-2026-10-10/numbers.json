@@ -1,0 +1,2258 @@
+{
+ "frozen": {
+  "columns": [
+   {
+    "rate": {
+     "prog": [
+      104,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 104,
+    "c": 0,
+    "p_one_sided": 4.930380657631324e-32,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       13,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       13,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       7,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       7,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "DeepSeek V4 Flash",
+    "tier": "confirmatory",
+    "base": "run-v2-full-20260825-010312",
+    "p_holm": 1.4791141972893971e-31
+   },
+   {
+    "rate": {
+     "prog": [
+      79,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 79,
+    "c": 0,
+    "p_one_sided": 1.6543612251060553e-24,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       3,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       4,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       8,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "GPT-5.6 Luna",
+    "tier": "confirmatory",
+    "base": "run-v2-full-20260825-010323",
+    "p_holm": 3.308722450212111e-24
+   },
+   {
+    "rate": {
+     "prog": [
+      69,
+      125
+     ],
+     "simple": [
+      8,
+      127
+     ]
+    },
+    "n": 125,
+    "b": 61,
+    "c": 0,
+    "p_one_sided": 4.336808689942018e-19,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       7,
+       15
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       15,
+       15
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       8,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       1,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       3,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       3,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       13,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       11,
+       15
+      ],
+      "simple": [
+       0,
+       15
+      ]
+     }
+    },
+    "model": "GLM-5.2",
+    "tier": "confirmatory",
+    "base": "run-v2-full-20260825-234313",
+    "p_holm": 4.336808689942018e-19
+   },
+   {
+    "rate": {
+     "prog": [
+      79,
+      128
+     ],
+     "simple": [
+      17,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 64,
+    "c": 2,
+    "p_one_sided": 2.99781900692242e-17,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       9,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       15,
+       16
+      ],
+      "simple": [
+       16,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       6,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       2,
+       16
+      ],
+      "simple": [
+       1,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       15,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Claude Sonnet 5",
+    "tier": "frontier",
+    "base": "run-v2-full-frontier-sonnet5-20260826-104357"
+   },
+   {
+    "rate": {
+     "prog": [
+      68,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 68,
+    "c": 0,
+    "p_one_sided": 3.3881317890172014e-21,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       4,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       1,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       15,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Qwen3-8B",
+    "tier": "estimation",
+    "base": "run-v2-full-local-qwen3-8b-20260813-060538"
+   },
+   {
+    "rate": {
+     "prog": [
+      72,
+      127
+     ],
+     "simple": [
+      0,
+      127
+     ]
+    },
+    "n": 127,
+    "b": 72,
+    "c": 0,
+    "p_one_sided": 2.117582368135751e-22,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       2,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       7,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       15,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       15
+      ],
+      "simple": [
+       0,
+       15
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Mistral Small 3.2",
+    "tier": "estimation",
+    "base": "run-v2-full-local-mistral-small-3.2-24b-20260813-064704"
+   },
+   {
+    "rate": {
+     "prog": [
+      86,
+      128
+     ],
+     "simple": [
+      1,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 85,
+    "c": 0,
+    "p_one_sided": 2.5849394142282115e-26,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       12,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       12,
+       16
+      ],
+      "simple": [
+       1,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       14,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "GPT-OSS-20B",
+    "tier": "extension",
+    "base": "run-v2-full-local-gpt-oss-20b-20260826-052612"
+   },
+   {
+    "rate": {
+     "prog": [
+      76,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 76,
+    "c": 0,
+    "p_one_sided": 1.3234889800848443e-23,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       14,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       14,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "OLMo-2-32B",
+    "tier": "extension",
+    "base": "run-v2-full-local-olmo-2-32b-instruct-20260826-060733"
+   },
+   {
+    "rate": {
+     "prog": [
+      84,
+      122
+     ],
+     "simple": [
+      0,
+      127
+     ]
+    },
+    "n": 122,
+    "b": 84,
+    "c": 0,
+    "p_one_sided": 5.169878828456423e-26,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       1,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       10,
+       10
+      ],
+      "simple": [
+       0,
+       15
+      ]
+     },
+     "household": {
+      "prog": [
+       8,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       1,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Gemini 3.1 Pro",
+    "tier": "frontier",
+    "base": "run-v2-full-frontier-gemini31pro-20260827-015332"
+   },
+   {
+    "rate": {
+     "prog": [
+      49,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 49,
+    "c": 0,
+    "p_one_sided": 1.7763568394002505e-15,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       2,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       2,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       13,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Grok 4.6",
+    "tier": "frontier",
+    "base": "run-v2-full-frontier-grok46-20260827-015925"
+   },
+   {
+    "rate": {
+     "prog": [
+      69,
+      127
+     ],
+     "simple": [
+      4,
+      128
+     ]
+    },
+    "n": 127,
+    "b": 65,
+    "c": 0,
+    "p_one_sided": 2.710505431213761e-20,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       13,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       4,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       9,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       15,
+       15
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Qwen3.8-Max",
+    "tier": "frontier",
+    "base": "run-v2-full-frontier-qwen38max-20260827-021106"
+   }
+  ],
+  "total_11": {
+   "n": 1397,
+   "b": 807,
+   "c": 2
+  },
+  "total_confirmatory": {
+   "n": 381,
+   "b": 244,
+   "c": 0
+  }
+ },
+ "aspect_flip": {
+  "columns": [
+   {
+    "rate": {
+     "prog": [
+      87,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 87,
+    "c": 0,
+    "p_one_sided": 6.462348535570529e-27,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       13,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       12,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       10,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       3,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       1,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "DeepSeek V4 Flash",
+    "tier": "confirmatory",
+    "base": "run-v2-full-20260825-010312",
+    "p_holm": 1.9387045606711586e-26
+   },
+   {
+    "rate": {
+     "prog": [
+      71,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 71,
+    "c": 0,
+    "p_one_sided": 4.235164736271502e-22,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       3,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       4,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "GPT-5.6 Luna",
+    "tier": "confirmatory",
+    "base": "run-v2-full-20260825-010323",
+    "p_holm": 8.470329472543003e-22
+   },
+   {
+    "rate": {
+     "prog": [
+      52,
+      125
+     ],
+     "simple": [
+      0,
+      127
+     ]
+    },
+    "n": 125,
+    "b": 52,
+    "c": 0,
+    "p_one_sided": 2.220446049250313e-16,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       7,
+       15
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       15,
+       15
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       2,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       1,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       3,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       13,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       11,
+       15
+      ],
+      "simple": [
+       0,
+       15
+      ]
+     }
+    },
+    "model": "GLM-5.2",
+    "tier": "confirmatory",
+    "base": "run-v2-full-20260825-234313",
+    "p_holm": 2.220446049250313e-16
+   },
+   {
+    "rate": {
+     "prog": [
+      66,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 66,
+    "c": 0,
+    "p_one_sided": 1.3552527156068805e-20,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       9,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       4,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       6,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       15,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Claude Sonnet 5",
+    "tier": "frontier",
+    "base": "run-v2-full-frontier-sonnet5-20260826-104357"
+   },
+   {
+    "rate": {
+     "prog": [
+      60,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 60,
+    "c": 0,
+    "p_one_sided": 8.673617379884035e-19,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       4,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       8,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       1,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       15,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Qwen3-8B",
+    "tier": "estimation",
+    "base": "run-v2-full-local-qwen3-8b-20260813-060538"
+   },
+   {
+    "rate": {
+     "prog": [
+      72,
+      127
+     ],
+     "simple": [
+      0,
+      127
+     ]
+    },
+    "n": 127,
+    "b": 72,
+    "c": 0,
+    "p_one_sided": 2.117582368135751e-22,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       2,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       7,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       15,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       15
+      ],
+      "simple": [
+       0,
+       15
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Mistral Small 3.2",
+    "tier": "estimation",
+    "base": "run-v2-full-local-mistral-small-3.2-24b-20260813-064704"
+   },
+   {
+    "rate": {
+     "prog": [
+      50,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 50,
+    "c": 0,
+    "p_one_sided": 8.881784197001252e-16,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       2,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "GPT-OSS-20B",
+    "tier": "extension",
+    "base": "run-v2-full-local-gpt-oss-20b-20260826-052612"
+   },
+   {
+    "rate": {
+     "prog": [
+      76,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 76,
+    "c": 0,
+    "p_one_sided": 1.3234889800848443e-23,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       14,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       14,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "OLMo-2-32B",
+    "tier": "extension",
+    "base": "run-v2-full-local-olmo-2-32b-instruct-20260826-060733"
+   },
+   {
+    "rate": {
+     "prog": [
+      78,
+      122
+     ],
+     "simple": [
+      0,
+      127
+     ]
+    },
+    "n": 122,
+    "b": 78,
+    "c": 0,
+    "p_one_sided": 3.308722450212111e-24,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       1,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       4,
+       10
+      ],
+      "simple": [
+       0,
+       15
+      ]
+     },
+     "household": {
+      "prog": [
+       8,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       1,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Gemini 3.1 Pro",
+    "tier": "frontier",
+    "base": "run-v2-full-frontier-gemini31pro-20260827-015332"
+   },
+   {
+    "rate": {
+     "prog": [
+      47,
+      128
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 128,
+    "b": 47,
+    "c": 0,
+    "p_one_sided": 7.105427357601002e-15,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       2,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       2,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       11,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Grok 4.6",
+    "tier": "frontier",
+    "base": "run-v2-full-frontier-grok46-20260827-015925"
+   },
+   {
+    "rate": {
+     "prog": [
+      63,
+      127
+     ],
+     "simple": [
+      0,
+      128
+     ]
+    },
+    "n": 127,
+    "b": 63,
+    "c": 0,
+    "p_one_sided": 1.0842021724855044e-19,
+    "frames": {
+     "affiliate_role": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "class": {
+      "prog": [
+       13,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "equipment": {
+      "prog": [
+       12,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "household": {
+      "prog": [
+       7,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "lodging": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "project": {
+      "prog": [
+       0,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "vehicle": {
+      "prog": [
+       16,
+       16
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     },
+     "workplace": {
+      "prog": [
+       15,
+       15
+      ],
+      "simple": [
+       0,
+       16
+      ]
+     }
+    },
+    "model": "Qwen3.8-Max",
+    "tier": "frontier",
+    "base": "run-v2-full-frontier-qwen38max-20260827-021106"
+   }
+  ],
+  "total_11": {
+   "n": 1397,
+   "b": 722,
+   "c": 0
+  },
+  "total_confirmatory": {
+   "n": 381,
+   "b": 210,
+   "c": 0
+  }
+ }
+}

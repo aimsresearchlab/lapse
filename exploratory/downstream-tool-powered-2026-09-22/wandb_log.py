@@ -16,7 +16,7 @@ import wandb
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 RUN_ID = "downstream-tool-powered-2026-09-22"
-KW = dict(entity="sugam-panthi-university-of-southern-mississippi", project="lapse", id=RUN_ID)
+KW = dict(entity=None, project="lapse", id=RUN_ID)
 
 
 def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()

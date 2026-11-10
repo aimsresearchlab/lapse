@@ -1,0 +1,362 @@
+{
+ "frozen": {
+  "guided": {
+   "deepseek/deepseek-v4-flash": {
+    "prog": [
+     104,
+     128,
+     81.2,
+     73,
+     127,
+     57.5
+    ],
+    "paired": [
+     255,
+     36,
+     6
+    ]
+   },
+   "openai/gpt-5.6-luna": {
+    "prog": [
+     79,
+     128,
+     61.7,
+     4,
+     128,
+     3.1
+    ],
+    "paired": [
+     256,
+     78,
+     3
+    ]
+   },
+   "z-ai/glm-5.2": {
+    "prog": [
+     69,
+     125,
+     55.2,
+     49,
+     127,
+     38.6
+    ],
+    "paired": [
+     250,
+     37,
+     9
+    ]
+   },
+   "local/qwen3-8b": {
+    "prog": [
+     68,
+     128,
+     53.1,
+     0,
+     128,
+     0.0
+    ],
+    "paired": [
+     256,
+     68,
+     0
+    ]
+   },
+   "local/mistral-small-3.2-24b-it": {
+    "prog": [
+     72,
+     127,
+     56.7,
+     59,
+     127,
+     46.5
+    ],
+    "paired": [
+     254,
+     13,
+     0
+    ]
+   },
+   "local/gpt-oss-20b": {
+    "prog": [
+     86,
+     128,
+     67.2,
+     96,
+     128,
+     75.0
+    ],
+    "paired": [
+     256,
+     14,
+     23
+    ]
+   },
+   "local/olmo-2-32b-instruct": {
+    "prog": [
+     76,
+     128,
+     59.4,
+     125,
+     125,
+     100.0
+    ],
+    "paired": [
+     247,
+     0,
+     52
+    ]
+   }
+  },
+  "r1": {
+   "deepseek/deepseek-v4-flash": [
+    32,
+    27,
+    0
+   ],
+   "openai/gpt-5.6-luna": [
+    32,
+    32,
+    0
+   ],
+   "z-ai/glm-5.2": [
+    32,
+    30,
+    0
+   ],
+   "local/qwen3-8b": [
+    32,
+    32,
+    0
+   ],
+   "local/mistral-small-3.2-24b-it": [
+    32,
+    32,
+    0
+   ],
+   "local/gpt-oss-20b": [
+    32,
+    32,
+    0
+   ],
+   "local/olmo-2-32b-instruct": [
+    32,
+    32,
+    0
+   ]
+  },
+  "perf_prog_lost": {
+   "run-v2-full-20260825-010312": [
+    64,
+    80
+   ],
+   "run-v2-full-20260825-010323": [
+    63,
+    80
+   ],
+   "run-v2-full-20260825-234313": [
+    54,
+    79
+   ],
+   "run-v2-full-local-gpt-oss-20b-20260826-052612": [
+    60,
+    80
+   ],
+   "run-v2-full-local-mistral-small-3": [
+    52,
+    80
+   ],
+   "run-v2-full-local-olmo-2-32b-instruct-20260826-060733": [
+    54,
+    80
+   ],
+   "run-v2-full-local-qwen3-8b-20260813-060538": [
+    61,
+    80
+   ],
+   "run-v2-smoke-20260812-202448": [
+    15,
+    16
+   ]
+  }
+ },
+ "aspect_flip": {
+  "guided": {
+   "deepseek/deepseek-v4-flash": {
+    "prog": [
+     87,
+     128,
+     68.0,
+     66,
+     127,
+     52.0
+    ],
+    "paired": [
+     255,
+     26,
+     6
+    ]
+   },
+   "openai/gpt-5.6-luna": {
+    "prog": [
+     71,
+     128,
+     55.5,
+     0,
+     128,
+     0.0
+    ],
+    "paired": [
+     256,
+     71,
+     0
+    ]
+   },
+   "z-ai/glm-5.2": {
+    "prog": [
+     52,
+     125,
+     41.6,
+     49,
+     127,
+     38.6
+    ],
+    "paired": [
+     250,
+     21,
+     17
+    ]
+   },
+   "local/qwen3-8b": {
+    "prog": [
+     60,
+     128,
+     46.9,
+     0,
+     128,
+     0.0
+    ],
+    "paired": [
+     256,
+     60,
+     0
+    ]
+   },
+   "local/mistral-small-3.2-24b-it": {
+    "prog": [
+     72,
+     127,
+     56.7,
+     59,
+     127,
+     46.5
+    ],
+    "paired": [
+     254,
+     13,
+     0
+    ]
+   },
+   "local/gpt-oss-20b": {
+    "prog": [
+     50,
+     128,
+     39.1,
+     54,
+     128,
+     42.2
+    ],
+    "paired": [
+     256,
+     8,
+     12
+    ]
+   },
+   "local/olmo-2-32b-instruct": {
+    "prog": [
+     76,
+     128,
+     59.4,
+     125,
+     125,
+     100.0
+    ],
+    "paired": [
+     247,
+     0,
+     52
+    ]
+   }
+  },
+  "r1": {
+   "deepseek/deepseek-v4-flash": [
+    32,
+    23,
+    0
+   ],
+   "openai/gpt-5.6-luna": [
+    32,
+    29,
+    0
+   ],
+   "z-ai/glm-5.2": [
+    32,
+    22,
+    0
+   ],
+   "local/qwen3-8b": [
+    32,
+    32,
+    0
+   ],
+   "local/mistral-small-3.2-24b-it": [
+    32,
+    32,
+    0
+   ],
+   "local/gpt-oss-20b": [
+    32,
+    30,
+    0
+   ],
+   "local/olmo-2-32b-instruct": [
+    32,
+    26,
+    0
+   ]
+  },
+  "perf_prog_lost": {
+   "run-v2-full-20260825-010312": [
+    53,
+    80
+   ],
+   "run-v2-full-20260825-010323": [
+    58,
+    80
+   ],
+   "run-v2-full-20260825-234313": [
+    41,
+    79
+   ],
+   "run-v2-full-local-gpt-oss-20b-20260826-052612": [
+    45,
+    80
+   ],
+   "run-v2-full-local-mistral-small-3": [
+    43,
+    80
+   ],
+   "run-v2-full-local-olmo-2-32b-instruct-20260826-060733": [
+    47,
+    80
+   ],
+   "run-v2-full-local-qwen3-8b-20260813-060538": [
+    48,
+    80
+   ],
+   "run-v2-smoke-20260812-202448": [
+    13,
+    16
+   ]
+  }
+ }
+}

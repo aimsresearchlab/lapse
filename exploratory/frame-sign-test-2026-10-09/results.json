@@ -1,0 +1,391 @@
+{
+  "input_hashes": {
+    "data/stimuli_v2.jsonl": "87561af0713a9fff6bb36cfb993fc6b51c8b9939d96f7f98562d2b90d534fe32",
+    "exploratory/reanalysis-2026-09-12/frame_jackknife.py": "d9c3c4077708a2bf2a688ba30036673e59bcdf1804479edc71504d49c22ec591",
+    "traces/run-v2-full-20260825-010312.scored.jsonl": "06966014cc4590ea0babe5f6a6dfa57ab99ccc6aa72773778ae0cfcb13d6c412",
+    "traces/run-v2-full-20260825-010323.scored.jsonl": "b7bb45fdee42c329729ed4bb2491764634cf582ee8c5cc0836ce649174500d21",
+    "traces/run-v2-full-20260825-234313.scored.jsonl": "8b243eae69d7587ad3e612c63830c8778aa611282fcdd285ccc647c24f46e4a3",
+    "traces/run-v2-full-frontier-sonnet5-20260826-104357.scored.jsonl": "afa4fec5cb51007820c29cec69a62892d3fc7d1a7b58a73d74152b81af591716",
+    "traces/run-v2-full-local-qwen3-8b-20260813-060538.scored.jsonl": "9f533cf2ac7ef96492e1e87154fd4fd870407909276a0cc31cd620cfdc6a51e2",
+    "traces/run-v2-full-local-mistral-small-3.2-24b-20260813-064704.scored.jsonl": "06369cdc25e2511d915fcd00d7fbbcade8cf95f95d2cbd0fc6d993715b1b748a",
+    "traces/run-v2-full-local-gpt-oss-20b-20260826-052612.scored.jsonl": "08444de4676ff54e3acacce4811c0ab7aceb082007ab0b4a5e03fb764117068f",
+    "traces/run-v2-full-local-olmo-2-32b-instruct-20260826-060733.scored.jsonl": "8389d7feddb481bcd3b2483dcec59e550995f5c24a624e620da2ecd2e80f8062"
+  },
+  "columns": [
+    {
+      "tier": "confirmatory",
+      "trace": "run-v2-full-20260825-010312",
+      "model": "deepseek/deepseek-v4-flash",
+      "cells": {
+        "affiliate_role": {
+          "b": 13,
+          "c": 0
+        },
+        "class": {
+          "b": 13,
+          "c": 0
+        },
+        "equipment": {
+          "b": 16,
+          "c": 0
+        },
+        "household": {
+          "b": 7,
+          "c": 0
+        },
+        "lodging": {
+          "b": 16,
+          "c": 0
+        },
+        "project": {
+          "b": 7,
+          "c": 0
+        },
+        "vehicle": {
+          "b": 16,
+          "c": 0
+        },
+        "workplace": {
+          "b": 16,
+          "c": 0
+        }
+      },
+      "sign_test": {
+        "positive": 8,
+        "negative": 0,
+        "tied": 0,
+        "p_one_sided": 0.00390625,
+        "p_holm": 0.01171875
+      }
+    },
+    {
+      "tier": "confirmatory",
+      "trace": "run-v2-full-20260825-010323",
+      "model": "openai/gpt-5.6-luna",
+      "cells": {
+        "affiliate_role": {
+          "b": 16,
+          "c": 0
+        },
+        "class": {
+          "b": 3,
+          "c": 0
+        },
+        "equipment": {
+          "b": 16,
+          "c": 0
+        },
+        "household": {
+          "b": 4,
+          "c": 0
+        },
+        "lodging": {
+          "b": 8,
+          "c": 0
+        },
+        "project": {
+          "b": 0,
+          "c": 0
+        },
+        "vehicle": {
+          "b": 16,
+          "c": 0
+        },
+        "workplace": {
+          "b": 16,
+          "c": 0
+        }
+      },
+      "sign_test": {
+        "positive": 7,
+        "negative": 0,
+        "tied": 1,
+        "p_one_sided": 0.0078125,
+        "p_holm": 0.01171875
+      }
+    },
+    {
+      "tier": "confirmatory",
+      "trace": "run-v2-full-20260825-234313",
+      "model": "z-ai/glm-5.2",
+      "cells": {
+        "affiliate_role": {
+          "b": 7,
+          "c": 0
+        },
+        "class": {
+          "b": 15,
+          "c": 0
+        },
+        "equipment": {
+          "b": 8,
+          "c": 0
+        },
+        "household": {
+          "b": 1,
+          "c": 0
+        },
+        "lodging": {
+          "b": 3,
+          "c": 0
+        },
+        "project": {
+          "b": 3,
+          "c": 0
+        },
+        "vehicle": {
+          "b": 13,
+          "c": 0
+        },
+        "workplace": {
+          "b": 11,
+          "c": 0
+        }
+      },
+      "sign_test": {
+        "positive": 8,
+        "negative": 0,
+        "tied": 0,
+        "p_one_sided": 0.00390625,
+        "p_holm": 0.01171875
+      }
+    },
+    {
+      "tier": "frontier-subset",
+      "trace": "run-v2-full-frontier-sonnet5-20260826-104357",
+      "model": "anthropic/claude-sonnet-5",
+      "cells": {
+        "affiliate_role": {
+          "b": 9,
+          "c": 0
+        },
+        "class": {
+          "b": 16,
+          "c": 0
+        },
+        "equipment": {
+          "b": 0,
+          "c": 1
+        },
+        "household": {
+          "b": 0,
+          "c": 0
+        },
+        "lodging": {
+          "b": 6,
+          "c": 0
+        },
+        "project": {
+          "b": 2,
+          "c": 1
+        },
+        "vehicle": {
+          "b": 16,
+          "c": 0
+        },
+        "workplace": {
+          "b": 15,
+          "c": 0
+        }
+      },
+      "sign_test": {
+        "positive": 6,
+        "negative": 1,
+        "tied": 1,
+        "p_one_sided": 0.0625
+      }
+    },
+    {
+      "tier": "local",
+      "trace": "run-v2-full-local-qwen3-8b-20260813-060538",
+      "model": "local/qwen3-8b",
+      "cells": {
+        "affiliate_role": {
+          "b": 4,
+          "c": 0
+        },
+        "class": {
+          "b": 0,
+          "c": 0
+        },
+        "equipment": {
+          "b": 16,
+          "c": 0
+        },
+        "household": {
+          "b": 16,
+          "c": 0
+        },
+        "lodging": {
+          "b": 1,
+          "c": 0
+        },
+        "project": {
+          "b": 0,
+          "c": 0
+        },
+        "vehicle": {
+          "b": 15,
+          "c": 0
+        },
+        "workplace": {
+          "b": 16,
+          "c": 0
+        }
+      },
+      "sign_test": {
+        "positive": 6,
+        "negative": 0,
+        "tied": 2,
+        "p_one_sided": 0.015625
+      }
+    },
+    {
+      "tier": "local",
+      "trace": "run-v2-full-local-mistral-small-3.2-24b-20260813-064704",
+      "model": "local/mistral-small-3.2-24b-it",
+      "cells": {
+        "affiliate_role": {
+          "b": 2,
+          "c": 0
+        },
+        "class": {
+          "b": 0,
+          "c": 0
+        },
+        "equipment": {
+          "b": 7,
+          "c": 0
+        },
+        "household": {
+          "b": 16,
+          "c": 0
+        },
+        "lodging": {
+          "b": 15,
+          "c": 0
+        },
+        "project": {
+          "b": 0,
+          "c": 0
+        },
+        "vehicle": {
+          "b": 16,
+          "c": 0
+        },
+        "workplace": {
+          "b": 16,
+          "c": 0
+        }
+      },
+      "sign_test": {
+        "positive": 6,
+        "negative": 0,
+        "tied": 2,
+        "p_one_sided": 0.015625
+      }
+    },
+    {
+      "tier": "extension",
+      "trace": "run-v2-full-local-gpt-oss-20b-20260826-052612",
+      "model": "local/gpt-oss-20b",
+      "cells": {
+        "affiliate_role": {
+          "b": 0,
+          "c": 0
+        },
+        "class": {
+          "b": 12,
+          "c": 0
+        },
+        "equipment": {
+          "b": 11,
+          "c": 0
+        },
+        "household": {
+          "b": 14,
+          "c": 0
+        },
+        "lodging": {
+          "b": 16,
+          "c": 0
+        },
+        "project": {
+          "b": 0,
+          "c": 0
+        },
+        "vehicle": {
+          "b": 16,
+          "c": 0
+        },
+        "workplace": {
+          "b": 16,
+          "c": 0
+        }
+      },
+      "sign_test": {
+        "positive": 6,
+        "negative": 0,
+        "tied": 2,
+        "p_one_sided": 0.015625
+      }
+    },
+    {
+      "tier": "extension",
+      "trace": "run-v2-full-local-olmo-2-32b-instruct-20260826-060733",
+      "model": "local/olmo-2-32b-instruct",
+      "cells": {
+        "affiliate_role": {
+          "b": 0,
+          "c": 0
+        },
+        "class": {
+          "b": 0,
+          "c": 0
+        },
+        "equipment": {
+          "b": 16,
+          "c": 0
+        },
+        "household": {
+          "b": 16,
+          "c": 0
+        },
+        "lodging": {
+          "b": 14,
+          "c": 0
+        },
+        "project": {
+          "b": 0,
+          "c": 0
+        },
+        "vehicle": {
+          "b": 16,
+          "c": 0
+        },
+        "workplace": {
+          "b": 14,
+          "c": 0
+        }
+      },
+      "sign_test": {
+        "positive": 5,
+        "negative": 0,
+        "tied": 3,
+        "p_one_sided": 0.03125
+      }
+    }
+  ],
+  "pooled_confirmatory": {
+    "positive": 23,
+    "negative": 0,
+    "tied": 1,
+    "p_one_sided": 1.1920928955078125e-07
+  },
+  "pooled_all_columns": {
+    "positive": 52,
+    "negative": 1,
+    "tied": 11,
+    "p_one_sided": 5.995204332975845e-15
+  }
+}
